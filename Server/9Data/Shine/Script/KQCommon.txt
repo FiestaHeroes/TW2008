@@ -1,0 +1,27 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; ???? ??
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+
+#Record	KQRouReturn30	"You will be warped back to Roumen in 30 seconds."	
+#Record	KQRouReturn20	"You will be warped back to Roumen in 20 seconds."	
+#Record	KQRouReturn10	"You will be warped back to Roumen in 10 seconds."	
+#Record	KQRouReturn5	"You will be warped back to Roumen in 5 seconds."	
+
+
+#Record	KQEldReturn30	"You will be warped back to Elderine in 30 seconds."	
+#Record	KQEldReturn20	"You will be warped back to Elderine in 20 seconds."
+#Record	KQEldReturn10	"You will be warped back to Elderine in 10 seconds."
+#Record	KQEldReturn5	"You will be warped back to Elderine in 5 seconds."
+
+
+#Record	KQUrgReturn30	"You will be warped back to Uruga in 30 seconds."
+#Record	KQUrgReturn20	"You will be warped back to Uruga in 20 seconds."
+#Record	KQUrgReturn10	"You will be warped back to Uruga in 10 seconds."
+#Record	KQUrgReturn5	"You will be warped back to Uruga in 5 seconds."
+
+#End		

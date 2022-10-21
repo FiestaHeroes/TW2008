@@ -1,0 +1,20 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[64]		
+#ColumnName	ScrIndex	ScrString		
+#Record	KQReturn60	幼龍礦石掉落了		
+#Record	KQReturn50	剩下的時間裏，認真開採幼龍礦石吧。		
+#Record	KQReturn40	沒剩下多少時間了，你還是努力採礦吧。		
+#Record	KQReturn30	30秒後回到艾德林城。快點去採礦吧。		
+#Record	KQReturn20	20秒後回到艾德林城。沒有時間了。		
+#Record	KQReturn10	10秒後回到艾德林城。		
+#Record	KQReturn50	5秒後回到艾德林城。		
+				
+#Record	KQFReturn30	30秒後回到艾德林城。		
+#Record	KQFReturn20	20秒後回到艾德林城。		
+#Record	KQFReturn10	10秒後回到艾德林城。		
+#Record	KQFReturn5	5秒後回到艾德林城。		
+#End				

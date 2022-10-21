@@ -1,0 +1,83 @@
+;	ItemRandomOption														
+#IGNORE	\o042			;인용부호무시											
+#EXCHANGE	#	\x20		;#=>space											
+;															
+#TABLE	RandomOptionTable														
+;					이후 파라미터 순서 바꾸지 말것!!!										
+;		"OptionHide : 0이면 떨어질때부터 옵션이 알려져 있음, 1이면 판독을 해야 옵션을 확인, 사용할 수 있음"													
+#COLUMNTYPE	STRING[33]	BYTE	BYTE	BYTE	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	BYTE
+#COLUMNNAME	DropItemIndex	OptionHide	MinOpCount	MaxOpCount	StrMin	StrMax	ConMin	ConMax	DexMin	DexMax	IntMin	IntMax	MenMin	MenMax	CheckSum
+#RECORD	RandomNamedW01	0	1	5	1	2	1	2	1	2	1	2	1	2	6
+#RECORD	RandomNamedW02	0	1	5	1	5	1	5	1	5	1	5	1	5	6
+#RECORD	RandomNamedW03	0	1	5	1	7	1	7	1	7	1	7	1	7	6
+#RECORD	RandomNamedW04	0	1	5	1	10	1	10	1	10	1	10	1	10	6
+#RECORD	RandomNamedW05	0	1	5	1	15	1	15	1	15	1	15	1	15	6
+#RECORD	RandomNamedW06	0	1	5	1	20	1	20	1	20	1	20	1	20	6
+#RECORD	RandomNamedW07	0	1	5	1	25	1	25	1	25	1	25	1	25	6
+#RECORD	RandomNamedW08	0	1	5	1	30	1	30	1	30	1	30	1	30	6
+#RECORD	RandomNamedW09	0	1	5	1	35	1	35	1	35	1	35	1	35	6
+#RECORD	RandomNamedW10	0	1	5	1	40	1	40	1	40	1	40	1	40	6
+#RECORD	RandomNamedW11	0	1	5	1	45	1	45	1	45	1	45	1	45	6
+#RECORD	RandomNamedA02	0	1	3	1	7	1	7	1	7	1	7	1	7	4
+#RECORD	RandomNamedA03	0	1	3	1	10	1	10	1	10	1	10	1	10	4
+#RECORD	RandomNamedA04	0	1	3	1	15	1	15	1	15	1	15	1	15	4
+#RECORD	RandomNamedA05	0	1	3	1	20	1	20	1	20	1	20	1	20	4
+#RECORD	RandomNamedA06	0	1	3	1	25	1	25	1	25	1	25	1	25	4
+#RECORD	RandomNamedA07	0	1	3	1	30	1	30	1	30	1	30	1	30	4
+#RECORD	RandomNamedA08	0	1	3	1	35	1	35	1	35	1	35	1	35	4
+#RECORD	RandomNamedA09	0	1	3	1	40	1	40	1	40	1	40	1	40	4
+#RECORD	RandomNamedA10	0	1	3	1	45	1	45	1	45	1	45	1	45	4
+#RECORD	RandomNamedP02	0	1	3	1	6	1	6	1	6	1	6	1	6	4
+#RECORD	RandomNamedP03	0	1	3	1	9	1	9	1	9	1	9	1	9	4
+#RECORD	RandomNamedP04	0	1	3	1	14	1	14	1	14	1	14	1	14	4
+#RECORD	RandomNamedP05	0	1	3	1	19	1	19	1	19	1	19	1	19	4
+#RECORD	RandomNamedP06	0	1	3	1	24	1	24	1	24	1	24	1	24	4
+#RECORD	RandomNamedP07	0	1	3	1	29	1	29	1	29	1	29	1	29	4
+#RECORD	RandomNamedP08	0	1	3	1	34	1	34	1	34	1	34	1	34	4
+#RECORD	RandomNamedP09	0	1	3	1	39	1	39	1	39	1	39	1	39	4
+#RECORD	RandomNamedP10	0	1	3	1	44	1	44	1	44	1	44	1	44	4
+#RECORD	RandomNamedH02	0	1	2	1	5	1	5	1	5	1	5	1	5	3
+#RECORD	RandomNamedH03	0	1	2	1	8	1	8	1	8	1	8	1	8	3
+#RECORD	RandomNamedH04	0	1	2	1	13	1	13	1	13	1	13	1	13	3
+#RECORD	RandomNamedH05	0	1	2	1	18	1	18	1	18	1	18	1	18	3
+#RECORD	RandomNamedH06	0	1	2	1	23	1	23	1	23	1	23	1	23	3
+#RECORD	RandomNamedH07	0	1	2	1	28	1	28	1	28	1	28	1	28	3
+#RECORD	RandomNamedH08	0	1	2	1	33	1	33	1	33	1	33	1	33	3
+#RECORD	RandomNamedH09	0	1	2	1	38	1	38	1	38	1	38	1	38	3
+#RECORD	RandomNamedH10	0	1	2	1	43	1	43	1	43	1	43	1	43	3
+#RECORD	RandomNamedB02	0	1	2	1	4	1	4	1	4	1	4	1	4	3
+#RECORD	RandomNamedB03	0	1	2	1	7	1	7	1	7	1	7	1	7	3
+#RECORD	RandomNamedB04	0	1	2	1	12	1	12	1	12	1	12	1	12	3
+#RECORD	RandomNamedB05	0	1	2	1	17	1	17	1	17	1	17	1	17	3
+#RECORD	RandomNamedB06	0	1	2	1	22	1	22	1	22	1	22	1	22	3
+#RECORD	RandomNamedB07	0	1	2	1	27	1	27	1	27	1	27	1	27	3
+#RECORD	RandomNamedB08	0	1	2	1	32	1	32	1	32	1	32	1	32	3
+#RECORD	RandomNamedB09	0	1	2	1	37	1	37	1	37	1	37	1	37	3
+#RECORD	RandomNamedB10	0	1	2	1	42	1	42	1	42	1	42	1	42	3
+#RECORD	RandomNamedS01	0	1	3	1	2	1	2	1	2	1	2	1	2	4
+#RECORD	RandomNamedS02	0	1	3	1	7	1	7	1	7	1	7	1	7	4
+#RECORD	RandomNamedS03	0	1	3	1	10	1	10	1	10	1	10	1	10	4
+#RECORD	RandomNamedS04	0	1	3	1	15	1	15	1	15	1	15	1	15	4
+#RECORD	RandomNamedS05	0	1	3	1	20	1	20	1	20	1	20	1	20	4
+#RECORD	RandomNamedS06	0	1	3	1	25	1	25	1	25	1	25	1	25	4
+#RECORD	RandomNamedS07	0	1	3	1	30	1	30	1	30	1	30	1	30	4
+#RECORD	RandomNamedS08	0	1	3	1	35	1	35	1	35	1	35	1	35	4
+#RECORD	RandomNamedS09	0	1	3	1	40	1	40	1	40	1	40	1	40	4
+#RECORD	RandomNamedS10	0	1	3	1	45	1	45	1	45	1	45	1	45	4
+#RECORD	RandomNamedS11	0	1	3	1	50	1	50	1	50	1	50	1	50	4
+#RECORD	RandomNamedMW01	0	1	5	1	5	1	5	1	5	1	5	1	5	6
+#RECORD	RandomNamedMW02	0	1	5	1	7	1	7	1	7	1	7	1	7	6
+#RECORD	RandomNamedMW03	0	1	5	1	10	1	10	1	10	1	10	1	10	6
+#RECORD	RandomNamedMW04	0	1	5	1	15	1	15	1	15	1	15	1	15	6
+#RECORD	RandomNamedMW05	0	1	5	1	20	1	20	1	20	1	20	1	20	6
+#RECORD	RandomNamedMW06	0	1	5	1	25	1	25	1	25	1	25	1	25	6
+#RECORD	RandomNamedMW07	0	1	5	1	30	1	30	1	30	1	30	1	30	6
+#RECORD	RandomNamedMW08	0	1	5	1	35	1	35	1	35	1	35	1	35	6
+#RECORD	RandomNamedMW09	0	1	5	1	40	1	40	1	40	1	40	1	40	6
+#RECORD	RandomNamedMW10	0	1	5	1	45	1	45	1	45	1	45	1	45	6
+#RECORD	RandomNamedMW11	0	1	5	1	50	1	50	1	50	1	50	1	50	6
+#RECORD	RandomNamedMW12	0	1	5	1	55	1	55	1	55	1	55	1	55	6
+#RECORD	RandomRare50	0	2	5	1	25	1	25	1	25	1	25	1	25	7
+#RECORD	RandomRare70	0	2	5	1	35	1	35	1	35	1	35	1	35	7	
+																
+#END																

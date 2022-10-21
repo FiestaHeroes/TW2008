@@ -1,0 +1,34 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	ReftMob10	There are still 10 zombies left.	
+#Record	ReftMob9	That's almost nine zombies.		
+#Record	ReftMob8	That's almost eight zombies.		
+#Record	ReftMob7	That's almost seven zombies.		
+#Record	ReftMob6	That's almost six zombies.		
+#Record	ReftMob5	That's almost five zombies.		
+#Record	ReftMob4	That's almost four zombies.		
+#Record	ReftMob3	That's almost three zombies.		
+#Record	ReftMob2	That's almost two zombies.		
+#Record	ReftMob1	Last one!	
+				
+#Record	Scream0	Ahh!!		
+#Record	Scream1	Ohh!!		
+#Record	Scream2	Uh!		
+				
+#Record	KQReturn30	In 30 seconds, you'll be moved to Grand master Sean		
+#Record	KQReturn20	In 20 seconds, you'll be moved to Grand master Sean		
+#Record	KQReturn10	In 10 seconds, you'll be moved to Grand master Sean		
+#Record	KQReturn5	In 5 seconds, you'll be moved to Grand master Sean		
+				
+#Record	RouReturn30	In 30 seconds, you'll be moved to Roumen		
+#Record	RouReturn20	In 20 seconds, you'll be moved to Roumen		
+#Record	RouReturn10	In 10 seconds, you'll be moved to Roumen		
+#Record	RouReturn5	In 5 seconds, you'll be moved to Roumen		
+				
+#End				

@@ -1,0 +1,100 @@
+;		ItemList in NPC																									
+#ignore	\o042			; 인용부호 무시																							
+#exchange	#	\x20		; # => space																							
+;		2006.01.25																									
+																											
+#Table	Tab00	;파이터 액티브																									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																				
+#Record	0 	TripleHit01	TripleHit02	-	-	-	-																				
+#Record	1 	SeverBone01	SeverBone02	-	-	-	-																				
+#Record	2 	SnearKick01	-	-	-	-	-																				
+#Record	3 	RedSlash01	RedSlash02	-	-	-	-																				
+#Record	4 	BattleBlow01	-	-	-	-	-																				
+																											
+#Table	Tab01	;파이터 패시브																									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																				
+#Record	0 	BraveMastery01	-	-	-	-	-																				
+#Record	1 	OHSwdMastery01	OHSwdMastery02	-	-	-	-																				
+																											
+#Table	Tab02	;클레릭 액티브																									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																				
+#Record	0 	Heal01	Heal02	Heal03	-	-	-																				
+#Record	1 	Wield01	Wield02	-	-	-	-																				
+#Record	2 	Blessing01	-	-	-	-	-																				
+#Record	3 	MentalShout01	-	-	-	-	-																				
+																											
+#Table	Tab03	;클레릭 패시브																									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																				
+#Record	0 	MaceMastery01	MaceMastery02	-	-	-	-																				
+#Record	1 	HolySpirit01	-	-	-	-	-																				
+																											
+#Table	Tab04	;아처 액티브																									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																				
+#Record	0 	AimingShot01	AimingShot02	-	-	-	-																				
+#Record	1 	PowerShot01	PowerShot02	-	-	-	-																				
+#Record	2 	PuryImpact01	-	-	-	-	-																				
+#Record	3 	BoneArrow01	-	-	-	-	-																				
+																											
+#Table	Tab05	;아처 패시브																									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																				
+#Record	0 	BowMastery01	BowMastery02	-	-	-	-																				
+#Record	1 	DodgeMastery01	-	-	-	-	-																				
+																											
+#Table	Tab06	;메이지 액티브																																																																																																					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																																																
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																																																
+#Record	0 	MagicMissile02	MagicMissile03	MagicMissile04	-	-	-																																																																																																
+#Record	1 	IceBolt01	IceBolt02	IceBolt03	-	-	-																																																																																																
+#Record	2 	FireBolt01	FireBolt02	FireBolt03	-	-	-																																																																																																
+#Record	3 	LightningBolt01	LightningBolt02	LightningBolt03	-	-	-																																																																																																
+																																																																																																							
+#Table	Tab07	;메이지 패시브																																																																																																					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																																																
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																																																
+#Record	0 	StaffMastery01	StaffMastery02	-	-	-	-																																																																																																
+#Record	1 	WisdomMastery01	-	-	-	-	-																																																																																																
+																																																																																																							
+#Table	Tab08	;연금술 																																																																																																					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																																																																
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																																																						
+#Record	0 	-	-	-	-	-	-																																																																																						
+#Record	1 	-	-	-	-	-	-																																																																																						
+#Record	2 	-	-	-	-	-	-																																																																																						
+#Record	3 	-	-	-	-	-	-																																																																																						
+#Record	4 	-	-	-	-	-	-																																																																																						
+#Record	5 	-	-	-	-	-	-																																																																																						
+#Record	6 	-	-	-	-	-	-																																																																																						
+#Record	7 	-	-	-	-	-	-																																																																																						
+#Record	8 	-	-	-	-	-	-																																																																																						
+#Record	9 	-	-	-	-	-	-																																																																																						
+#Record	10 	-	-	-	-	-	-																																																																																						
+#Record	11 	-	-	-	-	-	-																																																																																						
+#Record	12 	-	-	-	-	-	-																																																																																						
+#Record	13 	-	-	-	-	-	-																																																																																						
+#Record	14 	-	-	-	-	-	-																																																																																						
+#Record	15 	-	-	-	-	-	-
+#Record	16 	-	-	-	-	-	-
+#Record	17 	-	-	-	-	-	-
+#Record	18 	-	-	-	-	-	-
+#Record	19 	-	-	-	-	-	-
+#Record	20 	-	-	-	-	-	-
+#Record	21 	-	-	-	-	-	-
+#Record	22 	-	-	-	-	-	-
+							
+#End							
+							
+							
+							
+							
+							
+							
+		
+		
+		
+		

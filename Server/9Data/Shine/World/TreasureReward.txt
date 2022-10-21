@@ -1,0 +1,111 @@
+;	TreasureReward												
+;													
+													
+#Ignore	\o042									; 인용부호 무시			
+#Exchange	#	\x20								; # => space			
+;#delimeter	\x20												
+#Table	Container												
+#ColumnType		DWRD	WORD	String[33]	WORD	WORD	String[33]						
+#ColumnName		ItemID	Index	CardInx	MinLot	MaxLot	DummyInx						
+													
+#Table	Content												
+#ColumnType		DWRD	WORD		String[33]	WORD	BYTE	BYTE	DWRD	WORD			
+#ColumnName		ItemID	Index		RewardInx	RewardLot	UpgradeLow	UpgradeHigh	RewardRate	CheckSum			
+													
+													
+;													
+#RecordIn	Container	0	0	Tbag01	1	1	DTbag01					;	
+#RecordIn	Content	1001	0		BestLowHpPotion	1	0	0	150000	1001		;	15
+#RecordIn	Content	1002	0		LowHpPotion	1	0	0	50000	1002		;	5
+#RecordIn	Content	1003	0		BestLowSpPotion	1	0	0	120000	1003		;	12
+#RecordIn	Content	1004	0		LowSpPotion	1	0	0	50000	1004		;	5
+#RecordIn	Content	1005	0		CopperLump	1	0	0	120000	1005		;	12
+#RecordIn	Content	1006	0		SilverLump	1	0	0	50000	1006		;	5
+#RecordIn	Content	1007	0		BestLowACScroll	1	0	0	60000	1007		;	6
+#RecordIn	Content	1008	0		BestLowTHScroll	1	0	0	60000	1008		;	6
+#RecordIn	Content	1009	0		LightningRoumenSword	1	0	0	60000	1009		;	6
+#RecordIn	Content	1010	0		LightningCutlas	1	0	0	25000	1010		;	2.5
+#RecordIn	Content	1011	0		LightningSplitter	1	0	0	5000	1011		;	0.5
+#RecordIn	Content	1012	0		LightningHeavenHammer	1	0	0	60000	1012		;	6
+#RecordIn	Content	1013	0		LightningHorsemansHammer	1	0	0	25000	1013		;	2.5
+#RecordIn	Content	1014	0		LightningWarHammer	1	0	0	5000	1014		;	0.5
+#RecordIn	Content	1015	0		LightningRoumenBow	1	0	0	60000	1015		;	6
+#RecordIn	Content	1016	0		LightningHeavyBow	1	0	0	5000	1016		;	0.5
+#RecordIn	Content	1017	0		LightningWarBow	1	0	0	5000	1017		;	0.5
+#RecordIn	Content	1018	0		LightningRuneWand	1	0	0	60000	1018		;	6
+#RecordIn	Content	1019	0		LightningPowerWand	1	0	0	25000	1019		;	2.5
+#RecordIn	Content	1020	0		LightningFairyWand	1	0	0	5000	1020		;	0.5
+;									"1,000,000 "			;	100
+#RecordIn	Container	0	1	Tbag02	1	3	-					;	
+#RecordIn	Content	2001	1		CopperLump	30	0	0	200000	2001		;	20
+#RecordIn	Content	2002	1		LuckyLix2	5	0	0	150000	2002		;	15
+#RecordIn	Content	2003	1		StageRouRecallScroll	3	0	0	100000	2003		;	10
+#RecordIn	Content	2004	1		StageEldRecallScroll	3	0	0	100000	2004		;	10
+#RecordIn	Content	2005	1		StageUrgRecallScroll	3	0	0	100000	2005		;	10
+#RecordIn	Content	2006	1		StrNamedSilverRing	1	0	0	60000	2006		;	6
+#RecordIn	Content	2007	1		RareRoumenNeck01	1	0	0	60000	2007		;	6
+#RecordIn	Content	2008	1		LowStrCriPotion	5	0	0	30000	2008		;	3
+#RecordIn	Content	2009	1		D_GiantGblKingCutlas	1	0	0	20000	2009		;	2
+#RecordIn	Content	2010	1		D_GoblinSwordmanZweihander	1	0	0	20000	2010		;	2
+#RecordIn	Content	2011	1		GobleKingPoleAxe	1	0	0	20000	2011		;	2
+#RecordIn	Content	2012	1		S_WereBearHorsemansFlail	1	0	0	20000	2012		;	2
+#RecordIn	Content	2013	1		D_GiantGblKingHorsemansHammer	1	0	0	20000	2013		;	2
+#RecordIn	Content	2014	1		D_GiantGblKingHeavyBow	1	0	0	20000	2014		;	2
+#RecordIn	Content	2015	1		S_WereBearHeavyCrossBow	1	0	0	20000	2015		;	2
+#RecordIn	Content	2016	1		RoboPowerStaff	1	0	0	20000	2016		;	2
+#RecordIn	Content	2017	1		D_GiantGblKingPowerWand	1	0	0	20000	2017		;	2
+#RecordIn	Content	2018	1		IN_AntiqueDrawer01	1	0	0	10000	2018		;	1
+#RecordIn	Content	2019	1		IN_AntiqueSofa01	1	0	0	10000	2019		;	1
+;									"1,000,000 "			;	100
+#RecordIn	Container	0	2	Tbag03	2	2	-					;	
+#RecordIn	Content	3001	2		SilverLump	10	0	0	200000	3001		;	20
+#RecordIn	Content	3002	2		LuckyLix3	5	0	0	150000	3002		;	15
+#RecordIn	Content	3003	2		StageRouRecallScroll	6	0	0	100000	3003		;	10
+#RecordIn	Content	3004	2		StageEldRecallScroll	6	0	0	100000	3004		;	10
+#RecordIn	Content	3005	2		StageUrgRecallScroll	6	0	0	100000	3005		;	10
+#RecordIn	Content	3006	2		StrNamedGraceRing	1	0	0	60000	3006		;	6
+#RecordIn	Content	3007	2		RareElderinNeck02	1	0	0	60000	3007		;	6
+#RecordIn	Content	3008	2		NorStrCriPotion	5	0	0	30000	3008		;	3
+#RecordIn	Content	3009	2		D_HarpyAvantGardeSword	1	0	0	20000	3009		;	2
+#RecordIn	Content	3010	2		D_HarpyFlamberge	1	0	0	20000	3010		;	2
+#RecordIn	Content	3011	2		D_HarpyBikingAxe	1	0	0	20000	3011		;	2
+#RecordIn	Content	3012	2		D_HarpyBattleMace	1	0	0	20000	3012		;	2
+#RecordIn	Content	3013	2		D_HarpyBattleHammer	1	0	0	20000	3013		;	2
+#RecordIn	Content	3014	2		D_HarpyBattleBow	1	0	0	20000	3014		;	2
+#RecordIn	Content	3015	2		D_HarpyBattleCrossBow	1	0	0	20000	3015		;	2
+#RecordIn	Content	3016	2		D_HarpyBattleStaff	1	0	0	20000	3016		;	2
+#RecordIn	Content	3017	2		D_HarpyBattleWand	1	0	0	20000	3017		;	2
+#RecordIn	Content	3018	2		IN_AntiqueBad01	1	0	0	10000	3018		;	1
+#RecordIn	Content	3019	2		IN_AntiqueBookcase01	1	0	0	10000	3019		;	1
+;									"1,000,000 "			;	100
+#RecordIn	Container	0	3	Tbag04	2	5	-					;	
+#RecordIn	Content	4001	3		SilverLump	30	0	0	200000	4001		;	20
+#RecordIn	Content	4002	3		LuckyLix4	5	0	0	150000	4002		;	15
+#RecordIn	Content	4003	3		StageRouRecallScroll	10	0	0	100000	4003		;	10
+#RecordIn	Content	4004	3		StageEldRecallScroll	10	0	0	100000	4004		;	10
+#RecordIn	Content	4005	3		StageUrgRecallScroll	10	0	0	100000	4005		;	10
+#RecordIn	Content	4006	3		StrNamedTopazRing	1	0	0	60000	4006		;	6
+#RecordIn	Content	4007	3		RareUrgaNeck01	1	0	0	60000	4007		;	6
+#RecordIn	Content	4008	3		HighStrCriPotion	5	0	0	30000	4008		;	3
+#RecordIn	Content	4009	3		BellowKnightVulcanSword	1	0	0	20000	4009		;	2
+#RecordIn	Content	4010	3		BellowKnightTitanicSword	1	0	0	20000	4010		;	2
+#RecordIn	Content	4011	3		BellowKnightTitanicAxe	1	0	0	20000	4011		;	2
+#RecordIn	Content	4012	3		BellowKnightTitanicMace	1	0	0	20000	4012		;	2
+#RecordIn	Content	4013	3		BellowKnightTitanicHammer	1	0	0	20000	4013		;	2
+#RecordIn	Content	4014	3		BellowKnightTitanicBow	1	0	0	20000	4014		;	2
+#RecordIn	Content	4015	3		BellowKnightTitanicCrossBow	1	0	0	20000	4015		;	2
+#RecordIn	Content	4016	3		BellowKnightTitanicStaff	1	0	0	20000	4016		;	2
+#RecordIn	Content	4017	3		BellowKnightTitanicWand	1	0	0	20000	4017		;	2
+#RecordIn	Content	4018	3		IN_GothicFlag01	1	0	0	10000	4018		;	1
+#RecordIn	Content	4019	3		IN_Normalpicture02	1	0	0	10000	4019		;	1
+;									"1,000,000 "			;	100
+#RecordIn	Container	0	4	Tbag05	3	3	-					;	
+#RecordIn	Content	5001	4		GoldLump	10	0	0	300000	5001		;	30
+#RecordIn	Content	5002	4		LuckyLix5	5	0	0	300000	5002		;	30
+#RecordIn	Content	5003	4		StageRouRecallScroll	15	0	0	100000	5003		;	10
+#RecordIn	Content	5004	4		StageEldRecallScroll	15	0	0	100000	5004		;	10
+#RecordIn	Content	5005	4		StageUrgRecallScroll	15	0	0	100000	5005		;	10
+#RecordIn	Content	5006	4		BestHighStrCriPotion	5	0	0	100000	5006		;	10
+;									"1,000,000 "			;	100
+													
+#end

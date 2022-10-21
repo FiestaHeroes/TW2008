@@ -1,0 +1,39 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[64]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	StartDear0	Q. Who am I? A.I am the person you are looking for.	
+#Record	StartDear1	Like a useless person, you don't deserve to live in this world!	
+#Record	StartDear2	I'll let you disappear, replaced you with me, give the world hope again...		
+				
+#Record	ShadowFlie	Aha, you do this challenge?? Slowly with me ....	
+				
+#Record	SkellBreed0	Argghh A new kingdom has come!	
+#Record	SkellBreed1	Should talk to my children, and then come to me!		
+#Record	SkellBreed2	Move along the blue light will be able to find me.		
+				
+#Record	Last0	Here .... Also all of your appetite?	
+#Record	Last1	Here is where you will never sleep ....		
+#Record	Last2	Awareness!		
+				
+#Record	GoblinBreed	This will be your last hours here!	
+				
+#Record	ShadowDead0	Seems stronger than I imagined.	
+#Record	ShadowDead1	I'm not used to such a strong power!		
+				
+#Record	KQReturn30	In 30 seconds, You'll be moved to grand master sean		
+#Record	KQReturn20	In 20 seconds, You'll be moved to grand master sean		
+#Record	KQReturn10	In 10 seconds, You'll be moved to grand master sean		
+#Record	KQReturn5	In 5 seconds, You'll be moved to grand master sean		
+				
+#Record	RouReturn30	In 30 seconds, You'll be moved to roumen		
+#Record	RouReturn20	In 20 seconds, You'll be moved to roumen		
+#Record	RouReturn10	In 10 seconds, You'll be moved to roumen		
+#Record	RouReturn5	In 5 seconds, You'll be moved to roumen		
+				
+				
+#End				

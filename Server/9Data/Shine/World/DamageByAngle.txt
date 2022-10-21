@@ -1,0 +1,22 @@
+;		Damage By Attack Angle	
+
+#Ignore	\o042		
+#Exchange	#	\x20	
+;#delimeter	\x20		
+#Table	DamageByAngle		
+;			
+#ColumnType	WORD	WORD	WORD
+;			
+
+;	비어있는 각도는 보간법으로 계산		
+;	"0, 180도는 반드시 있어야 함"		
+
+#ColumnName	DamagedAngle	DamageRate	CheckSum
+#Record	0 	1000 	0 
+#Record	45 	1000 	45 
+#Record	90 	1200 	90 
+#Record	135 	1200 	135 
+#Record	170 	1200 	170 
+#Record	180 	1300 	180 
+			
+#end			

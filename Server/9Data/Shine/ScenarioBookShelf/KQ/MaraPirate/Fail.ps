@@ -1,0 +1,22 @@
+; 킹덤퀘스트가 끝난후 맵에 있는 모든 사람들을 루멘으로 쫓아내기 위한 스크립트
+
+open [main]
+    shout all "경비창병" "사령관님, 제가 없었으면 틀림없이 기습당했을 겁니다.".
+    WaitTime MilliSec 1000.             ; 1초간 대기
+
+    shout all "경비창병" "뭐, 자랑하는 것은 아닙니다만, 그냥 그렇다구요, 헤헤헤".
+    WaitTime MilliSec 1000.             ; 1초간 대기
+
+    shout all "경비창병" "그러니까 얼마전에 한 약속을...".
+    shout all "카리스마마라" "이것 가지고 꺼져라. 더이상 얼굴 보이지 말고".
+
+    broadcast all "30초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "20초후 루멘으로 이동합니다.".
+    wait sec 10.
+    broadcast all "10초후 루멘으로 이동합니다.".
+    wait sec 5.
+    broadcast all "5초후 루멘으로 이동합니다.".
+    wait sec 5.
+    linkto all "Rou" "Rou" 7907 8572.
+close

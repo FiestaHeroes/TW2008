@@ -1,0 +1,56 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+;#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[64]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Robo	千年狼王		
+#Record	FireVivi	炎魔		
+#Record	WildKebing	洞穴克比		
+#Record	DesertWolf	沙漠食人狼		
+				
+#Record	Intro00	當怪物屠殺我們的人類，精靈和妖精們........		
+#Record	Intro01	今天讓你們嘗嘗自然的報復是多麼可怕。		
+#Record	Intro02	全部殺光！		
+#Record	Intro03	殺無赦........		
+#Record	Intro04	呃！		
+#Record	Intro05	讓你們清楚地看到多麼可怕。		
+#Record	Intro06	被人類與精靈，妖精所破壞的大自然........		
+#Record	Intro07	人類要覺悟！		
+#Record	Intro08	人類要覺........		
+#Record	Intro09	別插嘴！		
+#Record	Intro10	呃！		
+#Record	Intro11	靈魂之石發光的30分鐘內我們是無敵的。你們都會死！		
+#Record	Intro12	真是，連這些秘密都給洩露了！		
+#Record	Intro13	哎喲！		
+#Record	Intro14	哎，沒辦法，30分鐘內全部消滅掉！		
+#Record	RoboOut	咳，沒用的東西，還得我親自去。		
+				
+#Record	Suc00	全部集合！		
+#Record	Suc01	坐下！		
+#Record	Suc02	起來！		
+#Record	Suc03	躺下！		
+#Record	Suc04	起床！		
+#Record	Suc05	還沒精神?臥倒！		
+#Record	Suc06	起床！		
+#Record	Suc07	看這些動作！都趴下！		
+#Record	Suc08	沙漠食人狼，你，你給當心！還不好好做?		
+#Record	Suc09	你........你，我讓你小心那張嘴，是吧?		
+#Record	Suc10	你再亂說話，看著辦........		
+#Record	Suc11	除沙漠食人狼外全部集合！		
+#Record	Suc12	以後，到下個王國任務為止，全部禁假。明白嗎！		
+;				
+;	KQ ??			
+#Record	KQReturn30	30秒後移動到艾德林城。		
+#Record	KQReturn20	20秒後移動到艾德林城。		
+#Record	KQReturn10	10秒後移動到艾德林城。		
+#Record	KQReturn5	5秒後移動到艾德林城。		
+;				
+#Record	Spider01	嘿嘿嘿！雖然你們很辛苦撐到現在，但你們的命也就到此了。		
+#Record	Spider02	你要用那麼爛的刀，箭，魔法來對付我?嘿嘿嘿		
+#Record	Roumenus01	冒險隊啊， 要堅持到底，不要放棄！要活著回來哦！		
+#Record	Roumenus02	在希望之都 艾德林城再回！		
+;				
+#End				

@@ -1,0 +1,43 @@
+;		ItemList in NPC																											
+#ignore	\o042			; 인용부호 무시																									
+#exchange	#	\x20		; # => space																									
+;		2006.01.25																											
+																													
+#Table	Tab00	;무기																											
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																						
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																						
+#Record	0 	RoumenSword	BridgeSword	Cutlas	EdgedSword	-	-																						
+#Record	1 	StealSword	Crusader	Zweihander	BastardSword	-	-																						
+#Record	2 	StealAxe	HideAxe	TwoHandAxe	PoleAxe	-	-																						
+#Record	3 	RoumenMace	StoutMace	HorsemansFlail	MorningStar	-	-																						
+#Record	4 	HeavenHammer	StoutHammer	HorsemansHammer	Morgenstern	-	-																						
+#Record	5 	RoumenBow	CloseBow	HeavyBow	CompositBow	-	-																						
+#Record	6 	StealCrossBow	CloseCrossBow	HeavyCrossBow	CompositCrossBow	-	-																						
+#Record	7 	RoumenStaff	ZestStaff	PowerStaff	SpiritStaff	-	-																						
+#Record	8 	RuneWand	ZestWand	PowerWand	SpiritWand	-	-																						
+																													
+#Table	Tab01	;방어구																											
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																						
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																						
+#Record	0 	ChainArmor	HideBoots	HideHelmet	HidePants	HideArmor	ScailBoots																						
+#Record	1 	ScailHelmet	ScailPants	ScailArmor	MithrilBoots	MithrilHelmet	MithrilPants																						
+#Record	2 	MithrilArmor	BrigandineBoots	BrigandineHelmet	BrigandinePants	-	-																						
+#Record	3 	FChainShield	HideShield	FKiteShield	FTargeShield	-	-																						
+#Record	4 	BlessArmor	RestoreBoots	RestoreHelmet	RestorePants	RestoreArmor	SplintBoots																						
+#Record	5 	SplintHelmet	SplintPants	SplintArmor	SacredBoots	SacredHelmet	SacredPants																						
+#Record	6 	SacredArmor	PlateBoots	PlateHelmet	PlatePants	-	-																						
+#Record	7 	ChainShield	Pelta	KiteShield	TargeShield	-	-																						
+#Record	8 	HardLeatherArmor	DisguiseBoots	DisguiseHat	DisguisePants	DisguiseArmor	SneakBoots																						
+#Record	9 	SneakHat	SneakPants	SneakArmor	RobberBoots	RobberHat	RobberPants																						
+#Record	10 	RobberArmor	HunterBoots	HunterHat	HunterPants	-	-																						
+#Record	11 	MagicShirt	DelightBoots	DelightHat	DelightPants	DelightShirt	SilkBoots																						
+#Record	12 	SilkHat	SilkPants	SilkShirt	MentalBoots	MentalHat	MentalPants																						
+#Record	13 	MentalShirt	NatureBoots	NatureHat	NaturePants	-	-																						
+																													
+#Table	Tab02	;악세서리																											
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																						
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																						
+#Record	0 	-	-	-	-	-	-																						
+#Record	1 	-	-	-	-	-	-																						
+																													
+#End																													

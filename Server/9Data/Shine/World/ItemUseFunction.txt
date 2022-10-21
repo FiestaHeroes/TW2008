@@ -1,0 +1,23 @@
+;		Item Use Function	
+			
+#Ignore	\o042		
+#Exchange	#	\x20	
+;#delimeter	\x20		
+#Table	ItemUseFunction		
+;			필요한 셀은 UseFunction 앞에 배치할것(CheckSum에 의존하지 않고 구조변경을 알기 위해)
+;			이미 정의된 것을 정의할 때는 '-' 사용
+#ColumnType	String[33]	BYTE	Index
+#ColumnName	ItemIndex	BroadCast	UseFunction
+#Record	SilverWings	0	UseSilverWings
+#Record	FreeStatusReloadAll	0	StatClearStat
+#Record	SkillReloadbundleAll	0	StatClearEmpow
+#Record	LicenseClear	0	LicenceClear
+#Record	HPMPotion1	0	AmountHP
+#Record	HPMPotion2	0	AmountHP
+#Record	SPMPotion1	0	AmountMP
+#Record	SPMPotion2	0	AmountMP
+#Record	MemoryFeather	0	SparrowFeather
+#Record	KQ_SoulCrystal	0	BossMobDetect
+#Record	Firecracker	1	NoEffect
+
+#end			

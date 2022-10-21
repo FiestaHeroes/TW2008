@@ -1,0 +1,26 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[64]		
+#ColumnName	ScrIndex	ScrString		
+#Record	KQReturn60	終於消滅了巨型哈尼哈尼。		
+#Record	KQReturn50	50秒後返回艾德林城。		
+#Record	KQReturn40	40秒後返回艾德林城。		
+#Record	KQReturn30	30秒後返回艾德林城。		
+#Record	KQReturn20	20秒後返回艾德林城。		
+#Record	KQReturn10	10秒後返回艾德林城。		
+#Record	KQReturn50	5秒後返回艾德林城。		
+				
+#Record	KQFReturn30	30秒後返回艾德林城。		
+#Record	KQFReturn20	20秒後返回艾德林城。		
+#Record	KQFReturn10	10秒後返回艾德林城。		
+#Record	KQFReturn5	5秒後返回艾德林城。		
+				
+#Record	Honeying01	這裏可不是隨便可以闖的地方！		
+#Record	Honeying02	你們這些傢伙一定要嘗嘗我的厲害！		
+				
+#Record	Summon01	兄弟們！一定要消滅掉這些傢伙們！！		
+				
+#End				

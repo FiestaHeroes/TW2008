@@ -1,0 +1,29 @@
+;		ItemList in NPC									
+#ignore	\o042			; 인용부호 무시							
+#exchange	#	\x20		; # => space							
+;		2006.01.25									
+											
+#Table	Tab00	;아이템 상점									
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]				
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05				
+#Record	0 	Pickaxe	Q_Peg	Q_Hammer	-	-	-				
+#Record	1 	FlyStone	Dew	-	-	-	-				
+#Record	2 	-	-	-	-	-	-				
+#Record	3 	House_MushRoom01	-	-	-	-	-				
+#Record	4 	ShortSword	LongSword	BroadSword	-	-	-				
+#Record	5 	ShortMace	LongMace	SpikedClub	-	-	-				
+#Record	6 	ShortBow	LongBow	LightBow	-	-	-				
+#Record	7 	ShortStaff	LongStaff	MagicStaff	-	-	-				
+#Record	8 	LeatherBoots	LeatherHelmet	LeatherPants	LeatherShirt	ChainBoots	ChainHelmet																														
+#Record	9 	ChainPants	WoodenShield	Buckler	-	-	-																														
+#Record	10 	LitanyBoots	LitanyHelmet	LitanyPants	LitanyArmor	BlessBoots	BlessHelmet																														
+#Record	11 	BlessPants	FighterShield	RoundShield	-	-	-																														
+#Record	12 	TrivialBoots	TrivialHat	TrivialPants	TrivialShirt	HardLeatherBoots	HardLeatherHat																														
+#Record	13 	HardLeatherPants	-	-	-	-	-																														
+#Record	14 	NoviceBoots	NoviceHat	NovicePants	NoviceShirt	MagicBoots	MagicHat																														
+#Record	15 	MagicPants	-	-	-	-	-																														
+#Record	16 	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-																														
+#Record	17 	PoiBronzeNeck	DiseBronzeNeck	CurBronzeNeck	-	-	-																														
+																																					
+#End																																					
+																																					

@@ -1,0 +1,37 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Intro00	Uhmmm, 6! For the 720,6 C2 9, when the distribution of the standard error is 2,43 ....! !		
+#Record	Intro01	Uh? Finally came. I expect you to a probability of 97.5	
+#Record	Intro02	Had just come from? Is your probability of winning
+#Record	Intro03	Unfortunately, your chances of winning less than 1.03. Would also like to challenge?
+#Record	Intro04	The game is very simple, you first select a dice, and then rotate the wheel
+#Record	Intro05	If your choice is wrong, and that in time would be and I have spent with a beautiful slave days
+				
+#Record	Roulette1	Choose dice, the rotating turntable
+				
+#Record	PlayerWin	Like my luck also got to an end.
+				
+#Record	Reward	A convention must observe. The door into the treasure taken from that bar.	
+				
+; 20060817 ??				
+#Record	Betray	So began the second game. Fight it, two of them only live one. How like?
+				
+#Record	NotSelect	Choose dice, the rotating turntable		
+#Record	Luck	I wish you good luck .... hope they have better luck ....hee hee ....
+				
+#Record	RouReturn30	In 30 Seconds, you'll be moved to Roumen	
+#Record	RouReturn20	In 20 Seconds, you'll be moved to Roumen	
+#Record	RouReturn10	In 10 Seconds, you'll be moved to Roumen	
+#Record	RouReturn5	In 5 Seconds, you'll be moved to Roumen
+				
+; 20060817 ??				
+#Record	LastScript0	Where to start wrong? Fragments of stone of light! Yes, is that it blocked my eyes.	
+#Record	LastScript1	Well, take away that bar of light stone fragments. It also would like to block your eyes!	
+				
+#End				

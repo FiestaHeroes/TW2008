@@ -1,0 +1,272 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		Fire01	N	5265	22563	0	0	969
+#record		Fire02	N	3684	21955	0	0	682
+#record		Fire03	N	6540	21453	0	0	969
+#record		Fire04	N	6635	19287	443	899	8
+#record		Fire05	N	8460	22896	0	0	1116
+#record		Fire06	N	10785	22191	0	0	1438
+#record		Fire07	N	13165	21329	0	0	1284
+#record		Fire08	N	16129	20397	0	0	1796
+#record		Fire09	N	14147	18580	0	0	1109
+#record		Fire10	N	16169	17530	0	0	1389
+#record		Fire11	N	14177	16059	0	0	1368
+#record		Fire12	N	16177	15295	0	0	850
+#record		Fire13	N	18383	13486	549	1650	-32
+#record		Fire14	N	13174	13907	0	0	1053
+#record		Fire15	N	14964	13834	0	0	1018
+#record		Fire16	N	13938	12635	0	0	633
+#record		Fire17	N	15278	11152	434	1645	1
+#record		Fire18	N	14316	6446	0	0	1249
+#record		Fire19	N	12563	4691	0	0	1221
+#record		Fire20	N	14792	3808	0	0	1368
+#record		Fire21	N	16571	5518	0	0	1095
+#record		Fire22	N	16364	2255	0	0	871
+#record		Fire23	N	16996	3767	0	0	864
+#record		Fire24	N	18587	5109	0	0	1081
+#record		Fire25	N	18568	3027	0	0	1004
+#record		Fire26	N	22574	2946	0	0	696
+#record		Fire27	N	20834	5864	0	0	1242
+#record		Fire28	N	21879	7618	0	0	1060
+#record		Fire29	N	6059	4655	1326	287	4
+#record		Fire30	N	9061	4059	367	2101	3
+#record		Fire31	N	5836	6686	0	0	763
+#record		Fire32	N	7794	6552	981	234	14
+#record		Fire33	N	9816	8209	0	0	1051
+#record		Fire34	N	9309	10329	0	0	637
+#record		Fire35	N	8120	9496	242	783	53
+#record		Fire36	N	8170	12195	0	0	500
+#record		Fire37	N	7521	11301	0	0	780
+#record		Fire38	N	6527	10545	776	396	31
+#record		Fire39	N	6304	11769	0	0	612
+#record		Fire40	N	5218	11303	0	0	787
+#record		Fire41	N	5444	12799	0	0	724
+#record		Fire42	N	3705	11051	0	0	864
+#record		Fire43	N	4232	13214	0	0	549
+#record		Fire44	N	3869	14262	0	0	822
+#record		Fire45	N	5369	13989	0	0	710
+#record		Fire46	N	3556	12719	232	990	2
+#record		Fire47	N	4648	12416	0	0	1908
+#record		Fire48	N	7178	11100	0	0	1109
+#record		Fire49	N	3311	18382	0	0	948
+#record		Fire50	N	2217	16808	0	0	955
+#record		Fire51	N	4053	16569	0	0	906
+#record		Fire52	N	3071	17107	0	0	1410
+#record		Fire53	N	9817	17302	1528	793	48
+#record		Fire54	N	8142	14570	0	0	829
+#record		Fire55	N	7001	15893	0	0	885
+#record		Fire56	N	8802	16054	776	1707	-32
+#record		Fire57	N	8768	16444	1467	2137	48
+#record		Fire58	N	11030	14176	457	1317	29
+#record		Fire59	N	11648	11803	1278	331	23
+#record		Fire60	N	12160	9317	404	1427	-29
+#record		Fire61	N	11010	10777	855	223	22
+#record		Fire62	N	20367	22395	0	0	1004
+#record		Fire63	N	18763	22960	0	0	780
+#record		Fire64	N	19199	18927	0	0	913
+#record		Fire65	N	20288	20412	385	868	6
+#record		Fire66	N	23162	17996	573	827	0
+#record		Fire67	N	24045	15749	0	0	878
+#record		Fire68	N	22355	16281	0	0	892
+#record		Fire69	N	20327	16901	0	0	1305
+#record		Fire70	N	22966	14482	0	0	962
+#record		Fire71	N	20789	14671	0	0	1312
+#record		Fire72	N	19080	15720	0	0	724
+#record		Fire73	N	22888	9920	0	0	990
+#record		Fire74	N	21421	12830	0	0	1102
+#record		Fire75	N	21996	11173	0	0	696
+#record		Fire76	N	20573	10863	0	0	892
+#record		Fire77	N	18874	10307	0	0	801
+#record		Fire78	N	17716	10906	0	0	738
+#record		Fire79	N	17100	12208	0	0	626
+#record		Fire80	N	18039	8434	0	0	1452
+#record		Fire81	N	20180	8800	0	0	1109
+#record		Fire82	N	22604	4299	0	0	1130
+#record		Fire83	N	20516	3784	0	0	1207
+#record		Fire84	N	19869	1873	0	0	836
+#record		Fire85	N	21480	2398	0	0	927
+#record		Fire86	N	3985	23463	0	0	808
+#record		Fire87	N	7120	22320	0	0	717
+#record		Fire88	N	11758	21122	0	0	710
+#record		Fire89	N	5057	15959	0	0	500
+#record		Fire90	N	2471	11755	0	0	751
+#record		Fire91	N	3436	4780	0	0	563
+#record		Fire92	N	4422	3713	936	315	24
+#record		Fire93	N	15027	8536	189	926	3
+#record		Fire94	N	2256	12181	0	0	219
+#record		Fire95	N	18913	7294	1060	200	-17
+#record		Fire96	N	21727	22823	0	0	500
+#record		Fire97	N	18175	20972	968	559	0
+#record		Fire98	N	17744	17363	0	0	717
+#record		Fire99	N	9297	11248	0	0	317
+#record		Fire100	N	16699	9536	393	1055	28
+#record		Fire101	N	16356	8005	0	0	654
+#record		Fire102	N	21683	10014	0	0	500
+#record		Fire103	N	23661	9356	682	387	-32								
+
+
+
+#table	MobRegen															
+;		GroupID	MobIndex	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Fire01	FireNix	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire02	FireNix	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire03	FireNix	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire04	FireNix	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire05	FireNix	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire06	FireNix	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire06	FireSpirit	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire07	FireNix	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire07	FireSpirit	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire07	FlameHoneying	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire08	FireSpirit	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire08	FlameHoneying	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire09	FireSpirit	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire10	FireSpirit	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire10	FlameHoneying	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire11	FlameHoneying	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire11	FireSpirit	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire12	FlameHoneying	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire12	CoreGuardian-U	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire13	FlameHoneying	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire13	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire14	FlameHoneying	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire14	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire15	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire15	FlameHoneying	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire15	FireSpirit	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire16	CoreGuardian-U	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire17	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire18	MineMole	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire18	CoreGuardian-U	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire19	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire20	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire21	MineMole	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire21	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire22	MineMole	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire22	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire23	MineMole	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire23	CoreGuardian-U	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire24	RubyGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire25	RubyGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire25	MineMole	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire26	MineMole	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire27	KartMiner	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire27	KidMon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire28	UndeadMiner	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire28	KidMon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire29	Gagoyle	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire30	Gagoyle	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire31	Gagoyle	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire32	Gagoyle	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire33	Gagoyle	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire34	Gagoyle	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire35	Gagoyle	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire36	MagmaTon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire37	MagmaTon	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire38	MagmaTon	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire39	MagmaTon	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire39	JewelTree	1	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire40	MagmaTon	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire41	MagmaTon	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire42	MagmaTon	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire43	MagmaTon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire44	MagmaTon	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire45	MagmaTon	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire46	MagmaTon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire47	JewelTree	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire48	JewelTree	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire49	MagmaTon	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire50	MagmaTon	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire51	MagmaTon	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire52	JewelTree	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire53	RubyGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire54	RubyGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire55	RubyGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire56	RubyGuardian-U	8	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire57	FlameSpirit	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire58	RubyGuardian-U	7	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire58	FlameSpirit	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire59	RubyGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire59	FlameSpirit	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire60	RubyGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire60	FlameSpirit	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire61	RubyGuardian-U	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire62	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire62	GuardianMaster	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire63	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire64	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire64	GuardianMaster	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire65	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire66	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire67	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire68	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire68	GuardianMaster	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire69	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire70	GuardianMaster	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire70	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire71	CrystalGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire71	GuardianMaster	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire72	CrystalGuardian-U	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire73	KartMiner	6	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire73	Miner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire74	UndeadMiner	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire74	JewelTree	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire75	KartMiner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire75	UndeadMiner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire76	KartMiner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire76	UndeadMiner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire76	Miner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire77	KartMiner	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire77	Miner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire78	UndeadMiner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire78	KartMiner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire78	Miner	1	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire79	UndeadMiner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire80	UndeadMiner	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire80	KartMiner	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire80	Miner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire81	KartMiner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire81	UndeadMiner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire81	Miner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire82	KartMiner	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire82	UndeadMiner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire82	KidMon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire83	KidMon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire83	KartMiner	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire83	UndeadMiner	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire84	KidMon	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire84	KartMiner	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire85	KidMon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire85	UndeadMiner	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire86	FireNix	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire87	FireNix	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire88	FireSpirit	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire89	MagmaTon	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire90	MagmaTon	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire91	Gagoyle	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire92	Gagoyle	3	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire93	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire94	GiantMagmaton	1	600	585	615	-15	8	-10	15	0	60	10	120	15
+#record		Fire95	MineMole	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire96	CrystalGuardian-U	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire97	FlameHoneying	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire98	CoreGuardian-U	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire99	Gagoyle	1	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire100	MineMole	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire101	MineMole	5	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire102	UndeadMiner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire102	KartMiner	2	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		Fire103	KartMiner	4	25	23	27	-2	8	-1	15	0	60	1	120	2
+
+#end																

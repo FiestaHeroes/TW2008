@@ -1,0 +1,69 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	MissionObj	Within the specified time try to find help.	
+				
+#Record	FirstR0	Suspect? Who are you?		
+#Record	FirstR1	That they ordered you here? In order to kill us all.		
+#Record	FirstE2	You cool, my friend seemed not to give us friendship.		
+#Record	FirstR3	Is that true? It out of here asap. It's very dangerous here.		
+#Record	FirstE4	Probably guessed the bar. We are fleeing for their lives, plus another injured.		
+#Record	FirstE5	Recovery of our people will soon catch up here any more.	
+#Record	FirstR6	After 30 minutes if the reinforcements come, they can retreat ....		
+#Record	FirstR7	They have to recover all back!		
+				
+#Record	SecondR0	We are also seriously wounded, there is no way to help you.		
+#Record	SecondE1	If you're with us, you are more dangerous on the bad.		
+#Record	SecondE2	Chasing the enemy came up faster, find a place to hide!		
+				
+#Record	ThirdR0	Hmm, don't believe it, so remarkable that, under the enemy's reinforcements you will die...	
+#Record	ThirdE1	But, hurry up, they're coming!	
+#Record	ThirdR2	Let's hope we survive this, may the Gods be with us!		
+				
+#Record	ForthR0	Yea, I have no idea how strong they are. Endless to attack here,	
+#Record	ForthE1	How long before support comes?
+#Record	ForthR2	No idea! But we'll try to as much as possible.		
+				
+#Record	FifthR0	Is even worse than I imagined. Live up to now ....		
+#Record	FifthR1	But they will continue to attack, if that could not withstand, I must take now to leave here as soon as possible.		
+#Record	FifthE2	Pairs of A, bravery and reckless are two different things ah.		
+				
+#Record	SixthE0	Do not think the enemy will multiply??	
+#Record	SixthR1	The enemy only seeded panic.		
+#Record	SixthE2	Although more and more enemies, but the attacks are getting weaker. But it seems the enemy continues to grow.		
+				
+#Record	SeventhE0	Let's panic the enemy?	
+#Record	SeventhR1	What did you say?		
+#Record	SeventhE2	If the current support for the military arrives, you can immediately repulse the enemy.		
+				
+#Record	EighthR0	You have quite a powerful mind, we must rely on you,		
+#Record	EighthE1	Now left a lot of enemies, do not relax our vigilance ah		
+#Record	EighthR2	There's also a number of additional enemies, be careful ah!		
+				
+#Record	NinethE0	Ron, you hurt all right? Need some help?	
+#Record	NinethR1	It does not matter, Aldrin. Even if I am one person can insist that one day it	
+#Record	NinethE2	Is not it? Fortunately! There came again. The one person you can rely on confrontation.		
+				
+#Record	TenthR0	I just thought, Eidelin. This place we can build the training of new recruits, don't you think so?		
+#Record	TenthE1	Again, we shouldn't make jokes atm.		
+#Record	TenthR2	Ming ~ grats on your first joke, lol	
+				
+#Record	SucR0	Suspect? Why the sudden retreat of the enemy?		
+#Record	SucE1	Yes reinforcements. Reinforcements attacked the enemy's main force!		
+#Record	SucR2	This is just great, we have finally survived		
+#Record	SucE3	I really appreciate your help, you saved us.		
+#Record	SucR4	We made it!	
+#Record	SucR5	You can always come over again.	
+#Record	SucR6	With this necklace will be able to find me.		
+				
+#Record	RouReturn30	In 30 seconds, You'll be moved to Roumen		
+#Record	RouReturn20	In 20 seconds, You'll be moved to Roumen		
+#Record	RouReturn10	In 10 seconds, You'll be moved to Roumen		
+#Record	RouReturn5	In 5  seconds, You'll be moved to Roumen		
+				
+#End				

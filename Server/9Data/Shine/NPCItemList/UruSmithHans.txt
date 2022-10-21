@@ -1,0 +1,43 @@
+;		ItemList in NPC										
+#ignore	\o042			; 인용부호 무시								
+#exchange	#	\x20		; # => space								
+;		2006.01.25										
+												
+#Table	Tab00	;무기										
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]					
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05					
+#Record	0 	Splitter	AvantGardeSword	SerpentSword	-	-	-					
+#Record	1 	Claymore	Flamberge	GiantSword	-	-	-					
+#Record	2 	Halberd	BikingAxe	GiantAxe	-	-	-					
+#Record	3 	WarMace	BattleMace	GiantMace	-	-	-					
+#Record	4 	WarHammer	BattleHammer	GiantHammer	-	-	-					
+#Record	5 	WarBow	BattleBow	GiantBow	-	-	-					
+#Record	6 	WarCrossBow	BattleCrossBow	GiantCrossBow	-	-	-					
+#Record	7 	FairyStaff	BattleStaff	GiantStaff	-	-	-					
+#Record	8 	FairyWand	BattleWand	GiantWand	-	-	-					
+												
+#Table	Tab01	;방어구										
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]					
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05					
+#Record	0 	BrigandineArmor	LightPlateBoots	LightPlateHelmet	LightPlatePants	LightPlateArmor	HalfPlateBoots					
+#Record	1 	HalfPlateHelmet	HalfPlatePants	HalfPlateArmor	MightyPlateBoots	MightyPlateHelmet	MightyPlatePants					
+#Record	2 	MightyPlateArmor	FuryBoots	FuryHelmet	FuryPants	FuryArmor	-					
+#Record	3 	FSplendor	AvantGardeShield	LionHeartShield	-	-	-					
+#Record	4 	PlateArmor	FieldPlateBoots	FieldPlateHelmet	FieldPlatePants	FieldPlateArmor	FullPlateBoots					
+#Record	5 	FullPlateHelmet	FullPlatePants	FullPlateArmor	HolyBoots	HolyHelmet	HolyPants					
+#Record	6 	HolyArmor	CharityBoots	CharityHelmet	CharityPants	CharityArmor	-					
+#Record	7 	Splendor	ReflectionShield	Towershield	-	-	-					
+#Record	8 	HunterArmor	MasterBoots	MasterHat	MasterPants	MasterArmor	DuskBoots					
+#Record	9 	DuskHat	DuskPants	DuskArmor	DarknessBoots	DarknessHat	DarknessPants					
+#Record	10 	DarknessArmor	SpeedyBoots	SpeedyHat	SpeedyPants	SpeedyArmor	-					
+#Record	11 	NatureShirt	ElementBoots	ElementHat	ElementPants	ElementShirt	SuperiorBoots
+#Record	12 	SuperiorHat	SuperiorPants	SuperiorShirt	wisdomBoots	wisdomHat	wisdomPants
+#Record	13 	wisdomShirt	WizardlyBoots	WizardlyHat	WizardlyPants	WizardlyShirt	-
+							
+#Table	Tab02	;악세서리					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0 	-	-	-	-	-	-
+#Record	1 	-	-	-	-	-	-
+							
+#End							

@@ -1,0 +1,193 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		UrgSwaDn01_01	N	4698	6829	241	1029	0
+#record		UrgSwaDn01_02	N	6645	6810	221	1054	0
+#record		UrgSwaDn01_03	N	5676	5782	664	112	0
+#record		UrgSwaDn01_04	N	7598	5700	302	657	0
+#record		UrgSwaDn01_05	N	3711	5728	294	649	0
+#record		UrgSwaDn01_06	N	5672	4305	440	115	0
+#record		UrgSwaDn01_07	N	6637	4452	365	429	0
+#record		UrgSwaDn01_08	N	4675	4488	353	399	0
+#record		UrgSwaDn01_069	N	7707	4645	435	93	0
+#record		UrgSwaDn01_10	N	3555	4652	396	98	0
+#record		UrgSwaDn01_11	N	3280	3258	331	373	0
+#record		UrgSwaDn01_12	N	8041	3266	336	357	0
+#record		UrgSwaDn01_13	N	7816	2478	312	118	0
+#record		UrgSwaDn01_14	N	3504	2490	343	94	0
+#record		UrgSwaDn01_15	N	5643	9112	245	743	0
+#record		UrgSwaDn01_16	N	5654	10882	267	783	0
+#record		UrgSwaDn01_17	N	3887	10084	0	0	500
+#record		UrgSwaDn01_18	N	4851	10261	451	117	0
+#record		UrgSwaDn01_19	N	4975	9452	371	112	0
+#record		UrgSwaDn01_20	N	4721	8937	598	125	0
+#record		UrgSwaDn01_21	N	6866	8686	856	110	0
+#record		UrgSwaDn01_22	N	8225	8520	0	0	500
+#record		UrgSwaDn01_23	N	7136	10518	858	130	0
+#record		UrgSWaDn01_24	N	7121	9458	622	101	0
+#record		UrgSWaDn01_25	N	6293	9743	360	104	0
+#record		UrgSWaDn01_26	N	8156	10364	117	497	0
+#record		UrgSWaDn01_27	N	4912	11541	1602	122	0
+#record		UrgSWaDn01_28	N	7904	11535	760	110	0
+#record		UrgSWaDn01_29	N	8681	10744	391	108	0
+#record		UrgSWaDn01_30	N	2349	8937	1060	110	0
+#record		UrgSWaDn01_31	N	3142	9845	102	682	0
+#record		UrgSWaDn01_32	N	2575	11514	276	88	0
+#record		UrgSWaDn01_33	N	1276	11235	0	0	492
+#record		UrgSWaDn01_34	N	9873	11285	657	354	0
+#record		UrgSWaDn01_35	N	9734	9927	0	0	500
+#record		UrgSWaDn01_36	N	985	8817	96	932	0
+#record		UrgSWaDn01_37	N	1600	8034	460	114	0
+#record		UrgSWaDn01_38	N	2262	6988	117	623	0
+#record		UrgSWaDn01_39	N	2551	5674	123	828	0
+#record		UrgSWaDn01_40	N	2545	3694	116	1086	0
+#record		UrgSWaDn01_41	N	1777	2028	0	0	359
+#record		UrgSWaDn01_42	N	1767	2807	114	362	0
+#record		UrgSWaDn01_43	N	2542	1452	136	737	0
+#record		UrgSWaDn01_44	N	3579	763	892	85	0
+#record		UrgSWaDn01_45	N	10347	8766	126	834	0
+#record		UrgSWaDn01_46	N	9705	8019	496	110	0
+#record		UrgSWaDn01_47	N	9033	6976	113	594	0
+#record		UrgSWaDn01_48	N	8769	5304	118	1189	0
+#record		UrgSWaDn01_49	N	8766	2986	113	1018	0
+#record		UrgSWaDn01_50	N	8771	1256	123	574	0
+#record		UrgSWaDn01_51	N	7757	768	928	120	0
+#record		UrgSWaDn01_52	N	6395	941	0	0	51
+#record		UrgSWaDn01_53	N	6807	1291	0	0	51
+#record		UrgSWaDn01_54	N	7036	2897	0	0	51
+#record		UrgSWaDn01_55	N	6245	3655	0	0	51
+#record		UrgSWaDn01_56	N	4914	945	0	0	51
+#record		UrgSWaDn01_57	N	4238	1742	0	0	51
+#record		UrgSWaDn01_58	N	4581	3339	0	0	51
+#record		UrgSWaDn01_59	N	5645	1259	0	0	51
+#record		UrgSWaDn01_60	N	5844	1727	0	0	51
+#record		UrgSWaDn01_61	N	5456	1715	0	0	51
+#record		UrgSWaDn01_62	N	5845	2311	0	0	51
+#record		UrgSWaDn01_63	N	5462	2311	0	0	51
+#record		UrgSWaDn01_64	N	6276	1532	0	0	205
+#record		UrgSWaDn01_65	N	5004	1534	0	0	170
+#record		UrgSWaDn01_66	N	5600	3088	0	0	528
+#record		UrgSWaDn01_67	N	4816	2275	0	0	500
+#record		UrgSWaDn01_68	N	6565	2304	0	0	500
+#record		UrgSWaDn01_69	N	6383	3057	0	0	114
+#record		UrgSWaDn01_70	N	5643	2018	0	0	121
+#record		UrgSWaDn01_71	N	5653	1258	0	0	191								
+#record		UrgSWaDn01_33_1	N	1348	10127	0	0	584								
+#record		UrgSWaDn01_33_2	N	2028	10902	0	0	485								
+#record		UrgSWaDn01_33_3	N	2128	10119	0	0	282								
+#record		UrgSWaDn01_34_1	N	9852	10593	665	346	0								
+
+
+
+#table	MobRegen															
+;		GroupID	MobIndex	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		UrgSwaDn01_01	Slug	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_02	Slug	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_03	Slug	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_04	Slug	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_05	Slug	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_06	MadSlug	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_07	MadSlug	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_08	MadSlug	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_069	MadSlug	4	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_10	MadSlug	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_11	MadSlug	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_12	MadSlug	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_13	MadSlug	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_14	MadSlug	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_15	Shadow	8	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_16	Shadow	10	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_17	Shadow	4	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_17	RedShadow	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_18	Shadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_19	Shadow	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_20	Shadow	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_21	Shadow	7	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_22	Shadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_22	RedShadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSwaDn01_23	RedShadow	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_24	Shadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_24	RedShadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_25	Shadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_26	RedShadow	4	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_27	RedShadow	12	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_28	RedShadow	8	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_29	RedShadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_30	RedShadow	10	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_31	RedShadow	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_32	RedShadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_33	RedShadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_33	BigMudMan	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_34	RedShadow	6	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_34	BigMudMan	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_35	RedShadow	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_36	LivingStatue	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_37	LivingStatue	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_38	LivingStatue	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_39	LivingStatue	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_39	LivingStone	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_40	LivingStatue	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_40	LivingStone	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_41	LivingStatue	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_41	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_42	LivingStatue	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_43	LivingStatue	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_43	LivingStone	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_44	LivingStatue	4	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_44	LivingStone	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_45	LivingStatue	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_46	LivingStatue	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_47	LivingStatue	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_47	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_48	LivingStatue	6	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_48	LivingStone	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_49	LivingStatue	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_49	LivingStone	3	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_50	LivingStatue	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_50	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_51	LivingStatue	4	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_51	LivingStone	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_52	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_53	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_54	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_55	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_56	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_57	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_58	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_59	ShadowMaster	1	600	585	615	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_60	BlackShadow	1	60	45	75	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_61	BlackShadow	1	60	45	75	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_62	BlackShadow	1	60	45	75	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_63	BlackShadow	1	60	45	75	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_64	LivingStatue	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_64	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_65	LivingStatue	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_65	LivingStone	1	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_66	LivingStatue	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_67	LivingStatue	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_67	LivingStone	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_68	LivingStatue	5	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_68	LivingStone	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_69	LivingStone	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_70	LivingStone	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_71	RedShadow	2	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		UrgSWaDn01_33_1	RedShadow	4	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		UrgSWaDn01_33_1	BigMudMan	2	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		UrgSWaDn01_33_2	RedShadow	3	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		UrgSWaDn01_33_2	BigMudMan	1	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		UrgSWaDn01_33_3	RedShadow	1	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		UrgSWaDn01_33_3	BigMudMan	1	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		UrgSWaDn01_34_1	RedShadow	5	9	1	15	-4	5	-2	8	0	10	2	13	4
+#record		UrgSWaDn01_34_1	BigMudMan	2	9	1	15	-4	5	-2	8	0	10	2	13	4
+
+#end

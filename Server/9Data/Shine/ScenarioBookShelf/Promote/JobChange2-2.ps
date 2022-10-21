@@ -1,0 +1,332 @@
+open [main]
+    var PlayerHandle        ""
+        LoginWait           ""
+
+        RollingNumber       0
+
+        Door1               ""
+        Door2               ""
+        Gambler             ""
+        Roulette            ""
+        DiceHandle1         ""
+        DiceHandle2         ""
+        DiceHandle3         ""
+        DiceHandle4         ""
+        DiceHandle5         ""
+        DiceHandle6         ""
+
+        SelectedDiceHandle  ""
+        SelectedDiceNumber  ""     ; 1~6
+        SelectedDiceHandle  ""
+
+        RouletteResult      ""
+
+        Center              ""
+        Left                ""
+        Right               ""
+
+        Temp                ""
+        InterruptBlock      ""
+        InterruptArg        "".
+
+
+    ; 문리젠, 닫기
+    doorbuild Door1 "Job2_GamOb_door" 550 1480 0 1000 "Normal".
+    doorclose Door1 "Job2_Door00".
+    doorbuild Door2 "Job2_GamOb_door" 550 2214 0 1000 "Normal".
+    doorclose Door2 "Job2_Door00".
+
+    npcstand Roulette "Job2_GamOb_stick-up"   554  551    0  1000 "Normal".
+
+    npcstand DiceHandle1 "Job2_GamOb_dice-01"  646  498  0  1000 "Normal".
+    npcstand DiceHandle2 "Job2_GamOb_dice-02"  646  600  0  1000 "Normal".
+    npcstand DiceHandle3 "Job2_GamOb_dice-03"  556  654  0  1000 "Normal".
+    npcstand DiceHandle4 "Job2_GamOb_dice-04"  468  600  0  1000 "Normal".
+    npcstand DiceHandle5 "Job2_GamOb_dice-05"  468  498  0  1000 "Normal".
+    npcstand DiceHandle6 "Job2_GamOb_dice-06"  556  449  0  1000 "Normal".
+
+
+    scriptfile "JobChange2-2".
+
+    waitlogin LoginWait.                                                    ; 플레이어의 로긴 기다림
+    if LoginWait == 0
+    then open
+        call "QuestFail".
+    close
+
+    findhandle PlayerHandle "Player" 0.                                     ; 플레이어의 핸들을 찾음(처음 하나만)
+
+    pause Sec 3.
+
+    npcstand Gambler "Job2_JokerTm" 832 1018  0 1000 "Normal".
+
+    pause Sec 2.
+
+    ;;;;;;;;;;;;
+    ;; 첫인사 ;;
+    ;;;;;;;;;;;;
+    chatwin "Job2_JokerTm" "Intro00".      ; "어서오게"
+    pause Sec 2.
+    chatwin "Job2_JokerTm" "Intro01".
+    pause Sec 2.
+    chatwin "Job2_JokerTm" "Intro02".
+    pause Sec 2.
+    chatwin "Job2_JokerTm" "Intro03".
+    pause Sec 2.
+    chatwin "Job2_JokerTm" "Intro04".
+    pause Sec 2.
+    chatwin "Job2_JokerTm" "Intro05".
+
+
+    timelimit Min 20.               ; 제한시간 20분
+    interruptclear all.
+
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+
+    ;;;;;;;;;;;;;;;;
+    ;; 룰렛돌리기 ;;
+    ;;;;;;;;;;;;;;;;
+    open [Rouletting]
+        SelectedDiceHandle = "".
+        infinite
+        open
+            call "DeleteEffect".
+            chatwin "Job2_JokerTm" "Roulette1".        ; "주사위중 하나를 고르고 룰렛을 돌려 보게나"
+            SelectedDiceNumber = "".
+            SelectedDiceHandle = "".
+
+
+            ;;;; 주사위 선택 단계
+            interruptset NPCClickHandle "Dice" 99999 DiceHandle1    "DiceRoutine".
+            interruptset NPCClickHandle "Dice" 99999 DiceHandle2    "DiceRoutine".
+            interruptset NPCClickHandle "Dice" 99999 DiceHandle3    "DiceRoutine".
+            interruptset NPCClickHandle "Dice" 99999 DiceHandle4    "DiceRoutine".
+            interruptset NPCClickHandle "Dice" 99999 DiceHandle5    "DiceRoutine".
+            interruptset NPCClickHandle "Dice" 99999 DiceHandle6    "DiceRoutine".
+            interruptset NPCClickHandle "Dice" 99999 Roulette       "RouletteRoutine".
+
+            open [DiceSelect]
+                infinite
+                open
+                    waitinterrupt InterruptBlock "InterruptArg".
+                    call InterruptBlock.
+                close
+            close   ;[DiceSelect]
+
+
+            interrupterase "Dice".                              ; 이름이 Dice인 인터럽트 모두 지움
+
+
+            ;;;; 룰렛 돌리는 단계
+            RollingNumber = RollingNumber + 1.
+
+            ; 10회 이후에는 무조건 맞춤
+            if RollingNumber >= 10
+            then open
+                printf "Reinforce match".
+                RouletteResult = SelectedDiceNumber.
+            close
+            else open
+                printf "Random match".
+                RouletteResult = @Random(1 6).
+            close
+
+            animate Roulette "Stop" % RouletteResult.           ; 회전 애니메이션
+            effectloc Temp "Job2_Gamble" 554 551 0 10000 1000.  ; 회전이펙트 10초간
+
+            printf "Roullet : " % RouletteResult % " " % "Stop" % RouletteResult.
+
+
+            ;;;; 10초간 주사위 흔들기
+            animate DiceHandle1         "dice_move".
+            animate DiceHandle2         "dice_move".
+            animate DiceHandle3         "dice_move".
+            animate DiceHandle4         "dice_move".
+            animate DiceHandle5         "dice_move".
+            animate DiceHandle6         "dice_move".
+            animate SelectedDiceHandle  "dice_on".
+
+            pause Sec 11.                                       ; 멈출 때까지 기다림
+
+
+
+            ;;;; 10초후 주사위 멈추기
+            animate DiceHandle1         "dice_off".
+            animate DiceHandle2         "dice_off".
+            animate DiceHandle3         "dice_off".
+            animate DiceHandle4         "dice_off".
+            animate DiceHandle5         "dice_off".
+            animate DiceHandle6         "dice_off".
+            animate SelectedDiceHandle  "dice_on".
+
+
+;무조건 맞추기(지울것)
+;RouletteResult = SelectedDiceNumber.
+
+            if RouletteResult === SelectedDiceNumber
+            then open           ; 맞추었음
+                effectloc Temp "Job2_GamS" 554 551 0 4000 1000.  ; 성공이펙트 4초간
+                chatwin "Job2_JokerTm" "PlayerWin".      ; "내 운도 다 된 모양이군. 자네가 이겼네"
+                break "Rouletting".
+            close
+
+
+            ;;;; 몹과 싸우는 단계
+            open [MobFight]
+                effectloc Temp "Job2_GamF" 554 551 0 5000 1000.  ; 실패이펙트 5초간
+                regengroup "Job2_Dn01" "Job2_Dice" % RouletteResult % "-1".
+                regengroup "Job2_Dn01" "Job2_Dice" % RouletteResult % "-2".
+
+                interruptset MobEliminate "" 1 "MobBreak".
+                pause Sec 5.    ; 리젠될 때를 기다림
+
+                infinite
+                open
+                    waitinterrupt InterruptBlock "InterruptArg".
+                    call InterruptBlock.
+                close
+            close   ;[MobFight]
+        close
+    close   ;[Rouletting]
+
+
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;; 마지막 방으로 들어가기 ;;
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    chatwin "Job2_JokerTm" "Reward".      ; "자네가 찾는 것은 저 안에 있네"
+    dooropen Door1 "Job2_Door00".
+    dooropen Door2 "Job2_Door00".
+
+    interruptclear all.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+
+    interruptset AreaEntry "" 1 "Job2_Zone00" "LastRoomEntry".
+
+    open [WaitLastBattle]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close   ;[WaitLastBattle]
+
+
+    ;;;;;;;;;;;;;;;;;
+    ;; 마지막 전투 ;;
+    ;;;;;;;;;;;;;;;;;
+    doorclose Door1 "Job2_Door00".
+    doorclose Door2 "Job2_Door00".
+
+    mobregen Gambler "Job2_JokerT" 555 2594 273 1000 "Normal".
+    chatwin "Job2_JokerT" "Betray".        ; "네따위에게 보물을 뺏길순 없어"
+
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset DeadHandle "" 1 Gambler "QuestSuc".
+
+    open [LastBattle]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close
+close
+
+open [DeleteEffect]
+    if SelectedDiceHandle != ""
+    then open
+        animate SelectedDiceHandle "dice_off".
+    close
+
+    SelectedDiceHandle = "".
+close
+
+open [FindDice]    ; 어떤 주사위가 클릭되었는지 확인(결과는 SelectedDiceNumber에 저장)
+    printf "FindDice".
+    SelectedDiceNumber = 1.
+    while SelectedDiceNumber <= 6
+    open
+        printf "Num " % SelectedDiceNumber % " left " % SelectedDiceHandle % " Right " % #("DiceHandle" % SelectedDiceNumber).
+        if SelectedDiceHandle === #("DiceHandle" % SelectedDiceNumber)
+        then open
+            break "FindDice".
+        close
+        SelectedDiceNumber = SelectedDiceNumber + 1.
+    close
+close
+
+open [DiceRoutine]
+    call "DeleteEffect".
+
+    SelectedDiceHandle = InterruptArg.
+
+    ; 어떤 주사위가 클릭되었는지 확인
+    call "FindDice".
+
+    if SelectedDiceNumber > 6
+    then open
+        SelectedDiceNumber = "".
+        SelectedDiceHandle = "".
+        call "DeleteEffect".
+        break "DiceRoutine".
+    close
+
+    animate SelectedDiceHandle "dice_on".
+close
+
+open [RouletteRoutine]
+    if SelectedDiceNumber == ""
+    then open
+        chatwin "Job2_JokerTm" "NotSelect".      ; "먼저 주사위를 선택하라니까"
+    close
+    else open
+        chatwin "Job2_JokerTm" "Luck".      ; "자네에게 행운을... 그리고 내게는 더 큰 행운을... 크크큭"
+        break "DiceSelect".
+    close
+close
+
+open [MobBreak]
+    break "MobFight".
+close
+
+open [LastRoomEntry]
+    break "WaitLastBattle".
+close
+
+open [QuestSuc]
+    itemdrop Gambler "Job2_STpiece3" 1000000.       ; 드롭(100% 확률)
+
+    chatwin "Job2_JokerTm" "LastScript0".
+    pause Sec 2.
+    chatwin "Job2_JokerTm" "LastScript1".
+
+    questresult Suc.                   ; 성공패킷 날림
+
+    broadcast all "RouReturn30".
+    pause sec 10.
+    broadcast all "RouReturn20".
+    pause sec 10.
+    broadcast all "RouReturn10".
+    pause sec 5.
+    broadcast all "RouReturn5".
+    pause sec 5.
+    linkto all "Rou" "Rou" 5323 4501.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+    broadcast all "RouReturn30".
+    pause sec 10.
+    broadcast all "RouReturn20".
+    pause sec 10.
+    broadcast all "RouReturn10".
+    pause sec 5.
+    broadcast all "RouReturn5".
+    pause sec 5.
+    linkto all "Rou" "Rou" 5323 4501.
+    break "main".
+close

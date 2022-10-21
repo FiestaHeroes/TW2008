@@ -1,0 +1,27 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Intro0	Welcome to our future heroes!		
+#Record	Intro1	The country is in crisis, we need help.		
+#Record	Intro2	To fully utilize your talents.		
+#Record	Intro3	By the way, you can't use life stones and others.		
+#Record	Intro4	However, some syrups are hidden!		
+				
+#Record	DualStart	Let the fighting begin!		
+				
+#Record	DualStop	Stop stop... Enough!		
+				
+#Record	DualResult	First %s, second %, third %s. The winners will get treasure chests.		
+				
+#Record	KQReturn30	Returning to Elderine in 30 seconds.		
+#Record	KQReturn20	Returning to Elderine in 30 seconds.		
+#Record	KQReturn10	Returning to Elderine in 30 seconds.		
+#Record	KQReturn5	Returning to Elderine in 30 seconds.		
+				
+#End				
+;	2006/09/19 ?? Translated by Csharp			

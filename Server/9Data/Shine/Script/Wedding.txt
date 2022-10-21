@@ -1,0 +1,33 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; ???? ??
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Wedding1	Welcome everyone to the wedding, please take your seats.	
+#Record	Wedding2	Let us begin..	
+#Record	Wedding3	Dearly beloved, we are virtually gathered here today...	
+#Record	Wedding4	To join these two together in marriage.
+#Record	Wedding5	Before we continue, does anybody protest to this marriage?	
+#Record	Wedding6	Speak now... or it wont really matter either way.	
+#Record	Wedding7	I see that the wedding is unopposed so we'll continue.	
+#Record	Wedding8	Before us is a man and a woman (I think)	
+#Record	Wedding9	Who wish to be joined for 'love'. (Or maybe it's the buff they want)	
+#Record	Wedding10	Such a thing occurs only so often...	
+#Record	Wedding11	... and so these times must take unnecessarily long.	
+#Record	Wedding12	And now, some words from a talking book.	
+#Record	Book1	We do promise to be there for eachother,	
+#Record	Book2	through poison and disease...
+#Record	Book3	through debuff and invulnerability.	
+#Record	Book4	We'll stand side by side in support of eachother...	
+#Record	Book5	and never give up no matter how outleveled the other becomes!
+#Record	Book6	Through events and pvp...	
+#Record	Book7	and all things in between...	
+#Record	Book8	We'll stand by eachother (even if only for the buff)	
+#Record	Book9	Nothing can seperate us once we accept.
+#Record	Wedding13	Click on the book to finalize your vows to eachother.	
+#Record	Wedding14	Congratulations to the new couple! Your friends may spam their AoEs at this time.	
+#Record	Wedding15	Credits to Shizel for the low quality translation.	
+#End			

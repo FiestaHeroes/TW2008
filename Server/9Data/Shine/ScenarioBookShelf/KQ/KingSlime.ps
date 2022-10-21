@@ -1,0 +1,279 @@
+open [main]
+    var InterruptBlock      1
+        InterruptArg        2
+        Door1               3
+        Door2               4
+        Door3               5
+        Guard               "6"
+        EffDoor1            "7"
+        EffDoor2            "8"
+        EffDoor3            "9"
+        KingSlime           "ABCDE".
+
+    doorbuild Door1 "KQ_SlimeGate" 9860 6094  272 1000 "Normal".      ; 1층과 2층 사이
+    doorbuild Door2 "KQ_SlimeGate" 6692 3944    6 1000 "Normal".      ; 2층과 3층 사이
+    doorbuild Door3 "KQ_SlimeGate" 5894 6098   88 1000 "Normal".      ; 3층과 4층 사이
+
+    doorclose Door1 "CloseGate01".           ; 모든 문을 닫음
+    doorclose Door2 "CloseGate02".
+    doorclose Door3 "CloseGate03".
+
+    effectobj EffDoor1 Door1 "KQ_SlimeGate" 3600000 1000.
+    effectobj EffDoor2 Door2 "KQ_SlimeGate" 3600000 1000.
+    effectobj EffDoor3 Door3 "KQ_SlimeGate" 3600000 1000.
+
+    waitlogin Guard.
+    if Guard == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+
+    pause Sec 5.
+
+    scriptfile "KQKingSlime".
+
+    npcstand Guard "EldSpeGuard01" 2099 10440 180 1000 "Normal".
+
+    chatwin "EldSpeGuard01" "StartWarn0".
+    pause Sec 3.                        ; 3초간 대기
+
+    chatwin "EldSpeGuard01" "StartWarn1".
+    pause Sec 3.                        ; 3초간 대기
+
+    chatwin "EldSpeGuard01" "StartWarn2".
+    pause Sec 3.                        ; 3초간 대기
+
+    chatwin "EldSpeGuard01" "StartWarn3".
+    pause Sec 3.                        ; 3초간 대기
+
+    chatwin "EldSpeGuard01" "StartWarn4".
+    pause Sec 3.                        ; 3초간 대기
+
+    vanish Guard.
+
+    timelimit Min 50.
+
+    call "FirstFloor".
+    call "SecondFloor".
+    call "ThirdFloor".
+    call "TopFloor".
+close
+
+;; 문 테스트용, 10초마다 문 여닫기
+;open [FirstFloor]
+;    interruptclear.
+;    interruptset TimeInterval 10000 "DoorOC".
+;    var DoorState.
+;    DoorState = "Close".
+;    infinite
+;    open
+;        waitinterrupt InterruptBlock "InterruptArg".
+;        call InterruptBlock.
+;    close
+;close
+;
+;open [DoorOC]
+;    if DoorState === "Close"
+;    then open
+;        dooropen Door1 "CloseGate01".
+;        DoorState = "Open".
+;    close
+;    else open
+;        doorclose Door1 "CloseGate01".
+;        DoorState = "Close".
+;    close
+;close
+;
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [FirstFloor]
+    regengroup "KDEddyHill" "KDEddyHillArea05".
+    regengroup "KDEddyHill" "KDEddyHillArea07".
+    regengroup "KDEddyHill" "KDEddyHillArea06".
+    regengroup "KDEddyHill" "KDEddyHillArea11".
+    regengroup "KDEddyHill" "KDEddyHillArea14".
+    regengroup "KDEddyHill" "KDEddyHillArea13".
+    regengroup "KDEddyHill" "KDEddyHillArea12".
+    regengroup "KDEddyHill" "KDEddyHillArea16".
+    regengroup "KDEddyHill" "KDEddyHillArea09".
+    regengroup "KDEddyHill" "KDEddyHillArea10".
+    regengroup "KDEddyHill" "KDEddyHillArea08".
+    regengroup "KDEddyHill" "KDEddyHillArea24".
+    regengroup "KDEddyHill" "KDEddyHillArea15".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "FirstMobEleminate".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FirstMobEleminate]
+    dooropen Door1 "CloseGate01".
+    vanish EffDoor1.
+    break "FirstFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [SecondFloor]
+    regengroup "KDEddyHill" "KDEddyHillArea17".
+    regengroup "KDEddyHill" "KDEddyHillArea49".
+    regengroup "KDEddyHill" "KDEddyHillArea50".
+    regengroup "KDEddyHill" "KDEddyHillArea48".
+    regengroup "KDEddyHill" "KDEddyHillArea28".
+    regengroup "KDEddyHill" "KDEddyHillArea53".
+    regengroup "KDEddyHill" "KDEddyHillArea18".
+    regengroup "KDEddyHill" "KDEddyHillArea19".
+    regengroup "KDEddyHill" "KDEddyHillArea51".
+    regengroup "KDEddyHill" "KDEddyHillArea52".
+    regengroup "KDEddyHill" "KDEddyHillArea20".
+    regengroup "KDEddyHill" "KDEddyHillArea21".
+    regengroup "KDEddyHill" "KDEddyHillArea56".
+    regengroup "KDEddyHill" "KDEddyHillArea57".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "SecondMobEleminate".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SecondMobEleminate]
+    dooropen Door2 "CloseGate02".
+    vanish EffDoor2.
+    break "SecondFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [ThirdFloor]
+    regengroup "KDEddyHill" "KDEddyHillArea26".
+    regengroup "KDEddyHill" "KDEddyHillArea22".
+    regengroup "KDEddyHill" "KDEddyHillArea27".
+    regengroup "KDEddyHill" "KDEddyHillArea25".
+    regengroup "KDEddyHill" "KDEddyHillArea23".
+    regengroup "KDEddyHill" "KDEddyHillArea30".
+    regengroup "KDEddyHill" "KDEddyHillArea29".
+    regengroup "KDEddyHill" "KDEddyHillArea03".
+    regengroup "KDEddyHill" "KDEddyHillArea04".
+    regengroup "KDEddyHill" "KDEddyHillArea45".
+    regengroup "KDEddyHill" "KDEddyHillArea46".
+    regengroup "KDEddyHill" "KDEddyHillArea47".
+    regengroup "KDEddyHill" "KDEddyHillArea44".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "ThirdMobEleminate".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ThirdMobEleminate]
+    dooropen Door3 "CloseGate03".
+    vanish EffDoor3.
+    break "ThirdFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [TopFloor]
+    mobregen KingSlime "KQ_KingSlime" 7081 5972 90 1000 "Normal".
+
+    chatwin "KQ_KingSlime" "KingSlime0".
+    pause Sec 2.                        ; 2초간 대기
+    chatwin "KQ_KingSlime" "KingSlime1".
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "QuestFail".
+    interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "QuestSuccess".
+    interruptset HPLow "" 1 KingSlime 800 "KingSlimeSummon1".
+    interruptset HPLow "" 1 KingSlime 600 "KingSlimeSummon2".
+    interruptset HPLow "" 1 KingSlime 400 "KingSlimeSummon3".
+    interruptset HPLow "" 1 KingSlime 200 "KingSlimeSummon4".
+    interruptset DeadHandle "" 1 KingSlime "KingSlimeDead".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [KingSlimeSummon1]
+    npcshout KingSlime "KingSlimeSummon".
+    summonmob KingSlime "KQ_Slime" 3.
+close
+
+open [KingSlimeSummon2]
+    npcshout KingSlime "KingSlimeSummon".
+    summonmob KingSlime "KQ_FireSlime" 3.
+close
+
+open [KingSlimeSummon3]
+    npcshout KingSlime "KingSlimeSummon".
+    summonmob KingSlime "KQ_IronSlime" 4.
+close
+
+open [KingSlimeSummon4]
+    npcshout KingSlime "KingSlimeSummon".
+    summonmob KingSlime "KQ_QueenSlime" 1.
+    summonmob KingSlime "KQ_PrinceSlime" 2.
+close
+
+open [KingSlimeDead]
+    npcshout KingSlime "KingSlimeDead".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestSuccess]
+    questresult Suc.                   ; 성공패킷 날림
+    reward KingdomQuest.
+
+    someoneshout "Guardian" "GuardianSuc0".
+    pause Sec 2.                        ; 2초간 대기
+
+    someoneshout "Guardian" "GuardianSuc1".
+    pause Sec 2.                        ; 2초간 대기
+
+    someoneshout "Guardian" "GuardianSuc2".
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Rou" "Rou" 5323 4501.
+    endofkq.
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+    linkto all "Rou" "Rou" 5323 4501.
+    endofkq.
+    break "main".
+close

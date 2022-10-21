@@ -1,0 +1,43 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[64]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	SpyName	警備槍兵		
+#Record	MaraName	威風凜凜的瑪拉		
+#Record	MarloneName	領袖風範的瑪侖		
+				
+#Record	SpyLie0	啊，嚇我一跳！		
+#Record	SpyLie1	啊，不好意思，以為被海盜發現了........		
+#Record	SpyLie2	為了剿滅海盜，我正在監視呢。		
+#Record	SpyLie3	稍等，我去拿武器來幫你。		
+#Record	SpyReport0	什麼?討伐軍來了?		
+#Record	SpyReport1	是的。幸虧我趕緊跑過來，要不........		
+#Record	SpyReport2	全軍戒備！無論發生什麼情況也要在出港之前先撐50分鐘！		
+#Record	SpyReport3	你趕快報告給司令官。		
+#Record	SpyReport4	是！		
+#Record	MiddleReport0	中間防線被佔領。		
+#Record	MiddleReport1	真是沒用的傢伙。		
+#Record	MiddleReport2	別擔心，瑪拉，我瑪侖會幫你消滅掉全部敵人。		
+#Record	MiddleReport3	哼！不能獨自好好欣賞。		
+#Record	MiddleReport4	全體準備進攻！		
+#Record	MidMaraDead	可惡啊，氣死我啦。。		
+#Record	MidMarloneDead	不行！		
+#Record	LastMaraDead	這，這樣結束了嗎?		
+#Record	LastMarloneDead	天空真美麗........		
+				
+#Record	Fail0	首領大人，沒有我在的話，一定會遭到突襲。		
+#Record	Fail1	不是我要誇讚我自己，只是就是這樣啊， 嘿嘿嘿		
+#Record	Fail2	所以，前幾天做的承諾........		
+#Record	Fail3	給我滾蛋。不要再讓我看到！		
+				
+;	KQ ??			
+#Record	KQReturn30	30秒後移到艾德林城		
+#Record	KQReturn20	20秒後移到艾德林城		
+#Record	KQReturn10	10秒後移到艾德林城		
+#Record	KQReturn5	5秒後移到艾德林城		
+				
+#End				

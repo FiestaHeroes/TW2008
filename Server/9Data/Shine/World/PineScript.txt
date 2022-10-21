@@ -1,0 +1,49 @@
+;	Project-G	FieldInform													
+;	PineScripts	which	is	loaded	when	server	load								
+															
+;#Ignore	\o042	; 인용부호 무시													
+;#Exchange	#	\x20	;	# => space											
+#Delimiter	\x20	;	나중에 space를 delimiter로 넣고 delimiter 제거기능 넣을것!!!!												
+															
+#Table	PineScript														
+#ColumnType	String[32]														
+#ColumnName	ScriptName	; *.ps													
+#Record	KQ/KingSlime														
+#Record	KQ/MaraPirate														
+#Record	KQ/UnderHall														
+#Record	KQ/GoldHill														
+#Record	KQ/MiniDragon														
+#Record	KQ/Kingkong														
+#Record	KQ/ConditionOfHero								
+#Record	KQ/Honeying								
+#Record	KQ/UnderHall2								
+#Record	KQ/GordonMaster								
+#Record	Quest/Quest								
+#Record	Promote/JobChange1								
+#Record	Promote/JobChange2-1								
+#Record	Promote/JobChange2-2								
+#Record	Promote/JobChange2-3								
+#Record	Guild/GuildTournament								
+#Record	Wedding/Wedding								
+#Record	KQ/HMiniDragon								
+
+#Table	DialogFile	; *.txt							
+#ColumnType	String[32]								
+#ColumnName	ScriptName								
+#Record	KQKingSlime
+#Record	KQMaraPirate
+#Record	KQUnderHall
+#Record	KQGoldHill
+#Record	KQMiniDragon
+#Record	KQKingkong
+#Record	KQConditionOfHero
+#Record	KQHoneying
+#Record	KQGordonMaster
+#Record	JobChange1
+#Record	JobChange2-1
+#Record	JobChange2-2
+#Record	JobChange2-3
+#Record	Wedding
+;	Scenario
+
+#End

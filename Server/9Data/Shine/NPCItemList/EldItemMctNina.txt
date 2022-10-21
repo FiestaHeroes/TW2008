@@ -1,0 +1,50 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2006.01.25					
+
+#Table	Tab00	;아이템 상점(엘더린)					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	MightySoul01	Revival01	WolfClaw01	MagicBurst01	-	-
+#Record	1	WindyRaid01	SilverLining01	NatureCasting01	ChainCasting01	-	-
+#Record	2	Recipe_El3	Recipe_Lix3	Recipe_Xir3	-	-	-
+#Record	3	Recipe_NorHpPotion	Recipe_NorSpPotion	Recipe_NorConHPPotion	Recipe_NorConSPPotion	-	-
+#Record	4	Recipe_NorPsnResiPotion	Recipe_NorDssResiPotion	Recipe_NorCurResiPotion	Recipe_NorPsnCurPotion	Recipe_NorDssCurPotion	-
+#Record	5	Recipe_NorTHScroll	Recipe_NorTBScroll	Recipe_NorMRScroll	Recipe_NorMaxSPScroll	Recipe_NorCurScroll	-
+#Record	6	Converter1	Converter2	Converter3	Converter4	-	-
+#Record	7	LowMagicCrystal	LowBeastLeather	LowMeat	LowSkin	LowSpiritDust	LowBrokenBone
+#Record	8	LowCleanWater	LowKylinLeather	LowPledge	LowGemDust	LowSoulDust	LowBeastTooth
+#Record	9	Dressing	Mustard	GoldDust	Vinegar01	Butter01	Sugar
+#Record	10	Salt	Wine	Cheese01	ChiliSauce	SugarSauce	Oil
+#Record	11	Egg	SoyaMilk	Liquor	Milk	Sweet	Cook_Boiled01
+#Record	12	Cook_Pie02	Cook_Meatball01	Cook_Sausage01	Cook_Soup05	Cook_Stew03	Cook_Pudding01
+#Record	13	AimingShot01	AimingShot02	AimingShot03	AimingShot04	AimingShot05	AimingShot06
+#Record	14	AimingShot07	AimingShot08	AimingShot09	AimingShot10	AimingShot11	BashStrike01
+#Record	15	BashStrike02	BashStrike03	BashStrike04	BashStrike05	BashStrike06	BashStrike07
+#Record	16	BashStrike08	BashStrike09	BattleBlow01	Benediction01	BersekerFrenzy01	BersekerFrenzy02
+#Record	17	BersekerFrenzy03	BersekerFrenzy04	BersekerFrenzy05	BersekerFrenzy06	BersekerFrenzy07	BersekerFrenzy08
+#Record	18	BersekerFrenzy09	Binding01	BiteArrow01	BiteArrow02	BiteArrow03	BiteArrow04
+#Record	19	BiteArrow05	BiteArrow06	BiteArrow07	BiteArrow08	BiteArrow09	Bleach01
+#Record	20	Blessing01	Blessing02	Blessing03	Blessing04	Blessing05	Blessing06
+#Record	21	Blessing07	Blessing08	Blessing09	Blessing10	Blessing11	Blind01
+#Record	22	Blink01	Blur01	Blur02	Blur03	Blur04	Blur05
+#Record	23	Blur06	Blur07	Blur08	Blur09	BoneArrow01	BoneArrow02
+#Record	24	BoneArrow03	BoneArrow04	BoneArrow05	BoneArrow06	BoneArrow07	BoneArrow08
+#Record	25	BoneArrow09	BoneArrow10	BoneArrow11	BowMastery01	BowMastery02	BowMastery03
+#Record	26	BowMastery04	BowMastery05	BowMastery06	BowMastery07	BowMastery08	BowMastery09
+#Record	27	BowMastery10	BowMastery11	BowMastery12	BowMastery13	BowMastery14	BowMastery15
+#Record	28	BraveMastery01	BraveMastery02	BraveMastery03	BraveMastery04	BraveMastery05	BraveMastery06
+#Record	29	BraveMastery07	BraveMastery08	BraveMastery09	BraveMastery10	BraveMastery11	BraveMastery12
+#Record	30	BraveMastery13	BraveMastery14	BraveMastery15	Break01	Break02	Break03
+#Record	31	Break04	Break05	Break06	Break07	Break08	Break09
+#Record	32	Break10	Buckler01	CBowMastery01	CBowMastery02	CBowMastery03	CBowMastery04
+#Record	33	CBowMastery05	CBowMastery06	CBowMastery07	CBowMastery08	CBowMastery09	CBowMastery10
+#Record	34	CBowMastery11	CBowMastery12	CBowMastery13	CBowMastery14	ChainCasting01	ChainLightning01
+#Record	35	ChainLightning02	ChainLightning03	ChainLightning04	ChainLightning05	ChainLightning06	ChainLightning07
+#Record	36	ChainLightning08	ChainLightning09	CrossCasting01	CrossCounter01	CrushStrike01	CrushStrike02
+#Record	37	CrushStrike03	CrushStrike04	CrushStrike05	CrushStrike06	CrushStrike07	CrushStrike08
+#Record	38	CrushStrike09	CurseMagic01	CurseMagic02	CurseMagic03	DarknessProtection01	DarknessProtection02
+#Record	39	DarknessProtection03	DarknessProtection04	DarknessProtection05	DarknessProtection06	Dash01	DeadlyBlessing01
+#Record	40	Deeper01	DegroSlash01	DegroSlash02	Detect01	Discharge01	DispelField01
+#End			

@@ -1,0 +1,28 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[64]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	LinkTitle	要移動到%s區域嗎?		
+				
+;	???? ??			
+#Record	SilverWingTitle	use the silver sky		
+#Record	SilverWingLocSet	Record current location		
+#Record	SilverWingPortal	Flight		
+				
+;	??			
+#Record	Revive	Resurrection do now?		
+				
+;	2007.1.25? ???????? ??			
+#Record	ItemBreakWarn0	The item will be destroyed?		
+#Record	ItemBreakWarn1	Are you really sure?	
+;	2007.2.16? ???????? ??			
+#Record	ItemDropWarn	You really want to drop the item?		
+				
+#End				
+				
+				
+				

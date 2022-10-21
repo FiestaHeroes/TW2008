@@ -1,0 +1,37 @@
+;		Project-G FieldInform																															
+																				; 맵에서 은빛날개나 리콜스크롤 사용 자체를 막을때(여기 들어오면 입구로만 나갈수 있음)													
+#Ignore	\o042					; 인용부호 무시														;	CanRecall에 0을 넣음												
+#Exchange	#	\x20				; # => space																											
+;#delimeter	\x20																			; 맵 안에서 은빛날개나 리콜스크롤을 사용하여 나갈 수는 있지만 은빛날개의 위치를 지정해서 들어올 수는 없을때(입구로만 들어올수 있음)													
+#Table	RecallPoint																			;	"CanRecall에는 1을, CanSilverWingLocSet에는 0을 넣음"												
+
+#ColumnType	String[32]	DWRD	String[32]	Word	Word																												
+#ColumnName	ItemIndex	ItemIdent	MapName	LinkX	LinkY																												
+#Record	StageRouRecallScroll	0	Rou	5233	4501																												
+#Record	StageEldRecallScroll	0	Eld	17214	13445																												
+#Record	StageUrgRecallScroll	0	Urg	6293	5477																												
+#Record	StageUrg_AlruinRecallScroll	0	Urg_Alruin	8003	10596																												
+#Record	Cos01Scroll	0	RouCos01	10443 	7049 																												
+#Record	Cos02Scroll	0	RouCos02	16373	5849																												
+#Record	Cos03Scroll	0	RouCos03	12969 	8475 																												
+#Record	TemDn01Scroll	0	RouTemDn01	6270 	389 																												
+#Record	TemDn02Scroll	0	RouTemDn02	5217 	927 
+#Record	Val01Scroll	0	RouVal01	12879 	3852 
+#Record	Val02Scroll	0	RouVal02	6097 	4582 
+#Record	Cem01Scroll	0	EldCem01	11166 	1388 
+#Record	Cem02Scroll	0	EldCem02	2063 	2540 
+#Record	Gbl01Scroll	0	EldGbl01	6358 	6976 
+#Record	Pri01Scroll	0	EldPri01	9935 	10604 
+#Record	PriDn01Scroll	0	EldPriDn01	2816 	8117 
+#Record	PriDn02Scroll	0	EldPriDn02	441 	5018 
+#Record	EchoScroll	0	EchoCave	22810 	22724 
+#Record	WindyScroll	0	WindyCave	20654 	21673 
+#Record	For01Scroll	0	EldFor01	7591 	19060 
+#Record	Sleep01Scroll	0	EldSleep01	8809 	8736 
+#Record	GblDn01Scroll	0	EldGbl01	895 	6882 
+#Record	GoldScroll	0	GoldCave	20291 	21507 
+#Record	CemDn01Scroll	0	EldCem01	2221 	2954 
+#Record	ElfDn01Scroll	0	Urg	10842 	11948 
+#Record	ValDn01Scroll	0	RouVal02	2465 	7947 
+#Record	StageEldGbl02RecallScroll	0	EldGbl02	10119 	8609 
+#End					

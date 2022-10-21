@@ -1,0 +1,327 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		Rcos02_01	N	17184	6871	0	0	1537
+#record		Rcos02_02	N	18641	9078	0	0	1158
+#record		Rcos02_03	N	19378	11175	0	0	1270
+#record		Rcos02_04	N	20325	12834	0	0	808
+#record		Rcos02_05	N	19047	12941	0	0	647
+#record		Rcos02_06	N	19918	14699	0	0	1256
+#record		Rcos02_07	N	19762	18626	0	0	619
+#record		Rcos02_08	N	15583	7290	0	0	591
+#record		Rcos02_09	N	12348	8870	0	0	969
+#record		Rcos02_10	N	11582	7782	982	547	13
+#record		Rcos02_11	N	13774	8755	0	0	507
+#record		Rcos02_12	N	16148	16831	675	1034	-12
+#record		Rcos02_13	N	10638	9086	0	0	787
+#record		Rcos02_14	N	13251	7578	0	0	625
+#record		Rcos02_17	N	14032	6253	0	0	366
+#record		Rcos02_18	N	11753	6659	0	0	752
+#record		Rcos02_19	N	13029	6183	0	0	752
+#record		Rcos02_20	N	10631	6776	0	0	556
+#record		Rcos02_21	N	20354	17669	0	0	654
+#record		Rcos02_22	N	20009	16563	1049	639	2
+#record		Rcos02_23	N	18588	15789	0	0	654
+#record		Rcos02_24	N	19218	17713	0	0	626
+#record		Rcos02_25	N	18463	18691	0	0	696
+#record		Rcos02_26	N	18418	16888	0	0	640
+#record		Rcos02_27	N	17430	17858	0	0	892
+#record		Rcos02_28	N	17360	16434	0	0	696
+#record		Rcos02_29	N	14870	16562	621	1043	-9
+#record		Rcos02_30	N	13570	17245	0	0	682
+#record		Rcos02_31	N	13777	15823	0	0	780
+#record		Rcos02_32	N	12209	16405	0	0	1067
+#record		Rcos02_33	N	12647	17871	0	0	507
+#record		Rcos02_34	N	11682	17903	0	0	787
+#record		Rcos02_35	N	10911	18850	0	0	500
+#record		Rcos02_36	N	12772	15003	0	0	717
+#record		Rcos02_37	N	13939	14622	0	0	766
+#record		Rcos02_38	N	13487	9764	0	0	724
+#record		Rcos02_39	N	9527	9813	0	0	661
+#record		Rcos02_40	N	9064	10880	0	0	675
+#record		Rcos02_41	N	12574	10493	0	0	773
+#record		Rcos02_42	N	11378	9994	0	0	682
+#record		Rcos02_43	N	10348	10429	0	0	668
+#record		Rcos02_44	N	9957	11526	0	0	612
+#record		Rcos02_45	N	11368	11180	0	0	815
+#record		Rcos02_46	N	12484	11746	0	0	542
+#record		Rcos02_47	N	10700	12288	0	0	584
+#record		Rcos02_48	N	11733	12566	0	0	829
+#record		Rcos02_49	N	12965	12621	0	0	500
+#record		Rcos02_50	N	13670	13347	0	0	640
+#record		Rcos02_51	N	13103	13523	0	0	815
+#record		Rcos02_52	N	8359	13272	0	0	514
+#record		Rcos02_53	N	9275	15163	0	0	500
+#record		Rcos02_54	N	8795	14343	0	0	626
+#record		Rcos02_55	N	7903	14759	0	0	528
+#record		Rcos02_56	N	8495	15401	0	0	500
+#record		Rcos02_57	N	7739	13958	0	0	500
+#record		Rcos02_58	Y	12431	14338	0	0	51
+#record		Rcos02_59	Y	13463	17257	0	0	51
+#record		Rcos02_60	Y	12437	12167	0	0	51
+#record		Rcos02_61	N	10878	12914	0	0	51
+#record		Rcos02_62	N	11012	16213	0	0	51
+#record		Rcos02_63	N	7804	15452	0	0	51
+#record		Rcos02_100	N	11760	4728	0	0	689
+#record		Rcos02_101	N	10573	4494	0	0	871
+#record		Rcos02_102	N	8947	4391	0	0	934
+#record		Rcos02_103	N	7281	4354	0	0	850
+#record		Rcos02_104	N	6022	3932	0	0	626
+#record		Rcos02_105	N	8935	4543	2912	414	-5
+#record		Rcos02_106	N	15205	10719	1029	190	62
+#record		Rcos02_107	N	15405	11535	0	0	836
+#record		Rcos02_108	N	16992	14379	0	0	640
+#record		Rcos02_109	N	15828	14140	0	0	703
+#record		Rcos02_110	N	16510	13417	0	0	500
+#record		Rcos02_111	N	16034	12674	840	515	21
+#record		Rcos02_P1	N	10052	12093	155	2111	-123
+#record		Rcos02_P2	N	9972	8924	156	1305	-43
+#record		Rcos02_P3	N	11368	16763	197	1305	-11
+#record		Rcos02_P4	N	9481	14576	83	632	27
+#record		Rcos02_P5	N	17936	19045	105	1191	-117
+#record		Rcos02_P6	N	20220	18374	161	1528	-38
+#record		Rcos02_P7	N	20044	10767	3785	194	-73
+#record		Rcos02_P8	N	9667	3815	164	2516	-93
+#record		Rcos02_P9	N	18239	11374	240	3651	16
+#record		Rcos02_64	N	16413	5704	0	0	689
+#record		Rcos02_65	N	17856	5754	0	0	654
+#record		PresentBox1	N	13361	11146	7674	8577	0
+#record		Rcos02_P10	N	17233	6663	0	0	1537
+#record		Rcos02_66	N	17850	7639	0	0	1284
+#record		Rcos02_67	N	15160	7348	0	0	450
+#record		Rcos02_68	N	17150	5498	0	0	640
+#record		Rcos02_69	N	16489	6288	0	0	787
+#record		Rocs02_70	N	17992	6629	0	0	815
+#record		Rcos02_71	N	16580	7617	0	0	682
+#record		Rcos02_72	N	17482	8494	0	0	584
+#record		Rcos02_73	N	18565	7472	0	0	633
+#record		Rcos02_74	Y	10962	10751	0	0	58
+#record		Rcos02_75	Y	11588	18279	0	0	51
+#record		Rcos02_76	Y	11539	6905	0	0	51
+#record		Rcos02_77	Y	13199	10312	0	0	51
+
+
+
+#table	MobRegen							
+;		GroupID	MobIndex	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Rcos02_01	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_01	HeroSlime	1	3600	3000	4000	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_02	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_02	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_02	MushRoomFighter	3	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_03	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_03	SpeedySlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_03	MushRoomFighter	3	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_04	MushRoomFighter	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_04	SpeedySlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_04	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_05	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_05	MushRoomFighter	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_06	MushRoomFighter	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_06	SpeedySlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_06	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_07	MushRoomFighter	2	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_07	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_08	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_09	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_09	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_10	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_11	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_12	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_12	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_13	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_13	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_14	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_17	SpeedySlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_17	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_18	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_19	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_19	SpeedySlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_20	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_20	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_21	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_22	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_22	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_23	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_23	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_24	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_25	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_26	FireMushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_27	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_28	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_29	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_29	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_30	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_30	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_31	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_31	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_32	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_32	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_33	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_33	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_34	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_34	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_35	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_36	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_36	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_37	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_37	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_38	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_38	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_39	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_39	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_40	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_41	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_41	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_42	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_42	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_43	SlowSlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_43	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_44	Crab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_45	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_46	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_47	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_47	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_48	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_48	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_49	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_49	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_50	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_50	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_51	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_51	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_52	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_53	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_54	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_54	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_55	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_55	SpeedyHoneying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_56	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_57	BlueCrab	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_58	GangImp	1	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_58	SubImp	2	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_59	GangImp	1	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_59	SubImp	2	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_60	GangImp	1	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_60	SubImp	2	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_61	KingCrab	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_62	KingCrab	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_63	KingCrab	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Rcos02_100	SmartPhino	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_100	JokeKebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_101	SmartPhino	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_101	JokeKebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_102	LittleLizardMan	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_102	Kebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_103	Kebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_103	LittleLizardMan	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_104	LittleLizardMan	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_105	ProckZone	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_106	JokeKebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_106	SmartPhino	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_107	SmartPhino	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_107	JokeKebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_108	LittleLizardMan	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_108	Kebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_109	Kebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_109	LittleLizardMan	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_110	LittleLizardMan	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_111	LittleLizardMan	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_111	Kebing	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_P1	STARFISH1	3	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P1	CLAM1	5	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P2	STARFISH1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P2	CLAM1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P3	CLAM1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P3	STARFISH1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P4	STARFISH1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P4	CLAM1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	WOOD1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	WOOD2	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	WOOD3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	HERB1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	HERB2	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	HERB3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	MUSHROOM1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	MUSHROOM2	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P5	MUSHROOM3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	WOOD1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	WOOD2	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	WOOD3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	HERB1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	HERB2	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	HERB3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	MUSHROOM1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	MUSHROOM2	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P6	MUSHROOM3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	WOOD1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	WOOD2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	WOOD3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	HERB1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	HERB2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	HERB3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	MUSHROOM1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	MUSHROOM2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P7	MUSHROOM3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	WOOD1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	WOOD2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	WOOD3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	HERB1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	HERB2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	HERB3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	MUSHROOM1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	MUSHROOM2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P8	MUSHROOM3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	WOOD1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	WOOD2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	WOOD3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	HERB1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	HERB2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	HERB3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	MUSHROOM1	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	MUSHROOM2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P9	MUSHROOM3	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_64	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_65	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		PresentBox1	PresentBox2	3	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		Rcos02_P10	MUSHROOM1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P10	MUSHROOM2	2	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P10	MUSHROOM3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P10	WOOD1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P10	WOOD2	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P10	WOOD3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P10	HERB1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P10	HERB2	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_P10	HERB3	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Rcos02_66	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_66	Imp	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_67	SpeedySlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_68	Slime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_69	Slime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rocs02_70	Slime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_71	Slime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_71	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_72	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_72	SpeedySlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_73	SpeedySlime	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_73	MushRoom	3	5	1	7	-3	15	-2	25	0	60	1	120	2
+#record		Rcos02_74	GangImp	1	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_74	SubImp	2	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_75	GangImp	1	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_75	SubImp	2	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_76	GangImp	1	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_76	SubImp	2	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_77	GangImp	1	180	170	190	-10	8	-5	15	0	60	5	120	10
+#record		Rcos02_77	SubImp	2	180	170	190	-10	8	-5	15	0	60	5	120	10
+
+#end																

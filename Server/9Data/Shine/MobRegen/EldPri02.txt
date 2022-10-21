@@ -1,0 +1,305 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		1	N	2308	4645	0	0	521
+#record		2	N	2541	3528	0	0	422
+#record		3	N	2750	2684	0	0	380
+#record		4	N	5892	3971	0	0	598
+#record		5	N	4431	3769	0	0	373
+#record		7	N	3358	2531	0	0	254
+#record		8	N	3852	2564	0	0	212
+#record		10	N	4796	2882	0	0	233
+#record		11	N	5256	3065	0	0	282
+#record		12	N	3522	3698	0	0	535
+#record		13	N	5952	3203	0	0	500
+#record		14	N	6734	2896	0	0	324
+#record		15	N	7435	2808	0	0	352
+#record		17	N	7426	3790	0	0	359
+#record		18	N	8173	3709	0	0	500
+#record		20	N	8214	2543	0	0	156
+#record		21	N	8557	2546	0	0	170
+#record		22	N	8983	2641	0	0	212
+#record		23	N	8973	3615	0	0	317
+#record		26	N	1496	4390	0	0	366
+#record		27	N	4849	4529	0	0	219
+#record		28	N	4307	4619	0	0	324
+#record		30	N	3001	5488	0	0	500
+#record		31	N	1963	5270	618	182	-35
+#record		32	N	9143	4747	0	0	500
+#record		33	N	9758	4217	0	0	289
+#record		34	N	7596	4573	1191	86	-12
+#record		35	N	6257	5251	1359	194	2
+#record		36	N	4682	5318	0	0	51
+#record		37	N	4030	5688	0	0	51
+#record		38	N	7926	5193	0	0	51
+#record		39	N	4253	6136	0	0	500
+#record		41	N	3220	7325	0	0	500
+#record		42	N	8377	6132	0	0	500
+#record		43	N	9369	6407	0	0	633
+#record		hero001	Y	6460	6229	0	0	93
+#record		44	N	8594	7201	0	0	500
+#record		45	N	3714	8018	0	0	492
+#record		46	N	6987	8360	0	0	535
+#record		47	N	5420	8073	0	0	500
+#record		48	N	6391	7460	0	0	500
+#record		49	N	7232	6455	0	0	500
+#record		50	N	5756	6355	0	0	316
+#record		51	N	8067	8181	0	0	471
+#record		53	N	4307	7360	0	0	408
+#record		55	N	5242	7108	0	0	457
+#record		58	N	5414	8825	453	240	-6
+#record		59	N	6403	8982	509	329	-9
+#record		60	N	7295	8973	467	348	11
+#record		61	N	8332	8498	269	751	-30
+#record		62	N	6186	8251	0	0	759
+#record		63	N	7514	7161	0	0	815
+#record		64	N	3480	9876	0	0	500
+#record		65	N	2782	9438	0	0	387
+#record		67	N	4104	11310	0	0	323
+#record		68	N	1465	8187	0	0	380
+#record		69	N	1671	9432	0	0	422
+#record		70	N	3023	11015	0	0	387
+#record		71	N	2394	10314	0	0	344
+#record		73	N	1207	10660	0	0	394
+#record		74	N	2185	11210	0	0	282
+#record		75	N	9429	9576	0	0	303
+#record		77	N	10440	11116	0	0	310
+#record		78	N	9791	10647	0	0	274
+#record		79	N	9636	11580	0	0	337
+#record		80	N	9952	8906	94	606	-24
+#record		81	N	11031	7662	0	0	500
+#record		83	N	10924	9064	0	0	605
+#record		84	N	10832	10185	0	0	535
+#record		PresentBox	N	6352	6653	5405	5338	0
+#record		Prod_001	N	6490	7403	0	0	1733
+#record		Prod_002	N	3460	3687	0	0	1305
+#record		Prod_003	N	7910	3671	0	0	1291
+#record		Prod_004	N	10498	9673	945	2141	-10
+#record		Prod_005	N	2683	9936	0	0	1824
+#record		Quest_001	N	3993	4540	0	0	51
+#record		Quest_002	N	5896	4316	0	0	51
+#record		Quest_003	N	7165	3542	0	0	51
+#record		Quest_004	N	8151	3967	0	0	51
+#record		Quest_005	N	6550	3230	0	0	51
+#record		Quest_006	N	7509	4501	0	0	51
+#record		Quest_007	N	8733	3241	0	0	51
+#record		Quest_008	N	10394	9773	0	0	51
+#record		Quest_009	N	9155	11770	0	0	51
+#record		Quest_010	N	10339	7756	0	0	51
+#record		Quest_011	N	11237	7374	0	0	51
+#record		Quest_012	N	11507	8963	0	0	51								
+#record		Quest_013	N	10840	11050	0	0	51								
+#record		Quest_014	N	1188	7951	0	0	51								
+#record		Quest_015	N	1657	9000	0	0	51								
+#record		Quest_016	N	1671	10064	0	0	51								
+#record		Quest_017	N	1320	10888	0	0	51								
+#record		Quest_018	N	2838	11466	0	0	51								
+#record		85	N	4384	7372	0	0	51								
+
+
+
+#table	MobRegen															
+;		GroupID	MobIndex	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		1	Harkan	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		2	Harkan	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		3	Harkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		4	Harkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		4	WeakenedOgre	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		5	Harkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		7	Harkan	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		8	Harkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		10	Harkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		11	WeakenedOgre	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		12	Harkan	5	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		13	WeakenedOgre	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		14	KingCall	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		15	KingCall	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		17	WeakenedOgre	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		18	WeakenedOgre	4	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		20	KingCall	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		21	KingCall	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		22	KingCall	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		23	WeakenedOgre	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		26	Harkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		27	WeakenedOgre	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		28	WeakenedOgre	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		30	WeakenedOgre	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		31	WeakenedOgre	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		32	KingCall	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		33	KingCall	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		34	KingCall	6	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		35	VampireBat	10	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		35	LightingViVi	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		36	LightingViVi	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		37	LightingViVi	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		38	LightingViVi	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		39	VampireBat	4	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		39	LightingViVi	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		41	VampireBat	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		41	LightingViVi	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		42	VampireBat	4	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		42	LightingViVi	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		43	VampireBat	4	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		43	LightingViVi	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		hero001	S_VampireBat	1	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		hero001	VampireBat	5	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		44	VampireBat	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		44	LightingViVi	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		45	LightingViVi	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		45	VampireBat	4	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		46	Prisoner	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		46	Torturer	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		47	Prisoner	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		47	Torturer	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		48	Prisoner	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		48	Torturer	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		49	Prisoner	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		49	Torturer	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		50	Prisoner	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		50	Torturer	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		51	Prisoner	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		51	Torturer	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		53	Prisoner	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		53	Torturer	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		55	Prisoner	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		55	Torturer	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		58	DeadTreeSoul	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		58	SeniorTorturer	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		59	SeniorTorturer	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		59	DeadTreeSoul	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		60	DeadTreeSoul	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		60	SeniorTorturer	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		61	SeniorTorturer	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		61	DeadTreeSoul	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		62	DeadTreeSoul	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		62	SeniorTorturer	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		63	SeniorTorturer	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		63	DeadTreeSoul	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		63	Prisoner	2	25	15	35	-10	5	-5	8	0	10	2	13	4
+#record		64	DisHarkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		64	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		65	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		65	DisHarkan	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		67	KaraSolider	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		67	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		67	DisHarkan	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		68	DisHarkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		68	KaraSolider	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		68	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		69	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		69	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		69	DisHarkan	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		70	DisHarkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		70	KaraSolider	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		70	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		71	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		71	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		71	DisHarkan	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		73	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		73	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		73	DisHarkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		74	KaraSolider	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		74	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		75	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		75	DisHarkan	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		77	KaraSolider	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		77	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		77	DisHarkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		78	DisHarkan	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		78	KaraSolider	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		78	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		79	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		79	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		80	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		80	DisHarkan	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		81	DisHarkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		81	KaraSolider	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		81	KaraTempler	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		83	KaraSolider	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		83	KaraTempler	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		83	DisHarkan	2	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		84	DisHarkan	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		84	KaraSolider	3	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		84	KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		PresentBox	PresentBox10	2	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+#record		Prod_001	MUSHROOM4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	MUSHROOM5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	MUSHROOM6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	FLOWER1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	WOOD4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	WOOD5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	WOOD6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	HERB4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	HERB5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_001	HERB6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	HERB4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	HERB5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	HERB6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	WOOD4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	WOOD5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	WOOD6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	FLOWER1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	MUSHROOM4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	MUSHROOM5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_002	MUSHROOM6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	MUSHROOM4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	MUSHROOM5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	MUSHROOM6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	FLOWER1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	WOOD4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	WOOD5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	WOOD6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	HERB4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	HERB5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_003	HERB6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	HERB4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	HERB5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	HERB6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	WOOD4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	WOOD5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	WOOD6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	FLOWER1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	MUSHROOM4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	MUSHROOM5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_004	MUSHROOM6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	MUSHROOM4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	MUSHROOM5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	MUSHROOM6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	FLOWER1	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	WOOD4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	WOOD5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	WOOD6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	HERB4	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	HERB5	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Prod_005	HERB6	1	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		Quest_001	Ogre	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Quest_002	Ogre	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Quest_003	Ogre	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Quest_004	Ogre	1	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		Quest_005	KingCall1stBrother	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_006	KingCall2stBrother	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_007	KingCall3stBrother	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_008	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_009	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_010	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_011	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_012	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_013	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_014	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_015	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_016	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_017	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		Quest_018	Q_A_KaraTempler	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+#record		85	LightingViVi	1	25	15	35	-10	10	-5	25	0	60	5	120	10
+
+#end

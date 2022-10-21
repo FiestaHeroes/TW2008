@@ -1,0 +1,72 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		boss	Y	2913	5826	0	0	51
+#record		mine1	N	2197	4011	132	511	0
+#record		mine2	N	4067	4159	131	559	0
+#record		etc	N	5118	4590	0	0	51
+#record		etc2	N	5163	4372	0	0	51
+#record		etc3	N	5177	4123	0	0	51
+#record		etc4	N	5183	3908	0	0	51
+#record		etc2-1	N	1047	4405	0	0	51
+#record		etc2-2	N	1057	4212	0	0	51
+#record		etc2-3	N	1045	4024	0	0	51
+#record		etc2-4	N	2211	3974	0	0	51
+#record		b1	N	2710	5499	0	0	51
+#record		b2	N	3132	5522	0	0	51
+#record		sub1	N	3177	4029	0	0	134
+#record		sum2	N	2704	4394	0	0	106
+#record		sub3	N	3620	4463	0	0	106
+#record		run1	N	4060	4019	0	0	51
+#record		run2	N	3498	3665	0	0	51
+
+
+
+#table	MobRegen							
+;		GroupID	MobIndex	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		boss	Helga	1	3600	3600	3600	-5	5	-2	8	0	10	2	13	5
+#record		boss	B_SubHel01	1	3600	3600	3600	-5	5	-2	8	0	10	2	13	5
+#record		boss	B_SubHel02	1	3600	3600	3600	-5	5	-2	8	0	10	2	13	5
+#record		boss	B_SubHel03	1	3600	3600	3600	-5	5	-2	8	0	10	2	13	5
+#record		boss	B_SubHel04	1	3600	3600	3600	-5	5	-2	8	0	10	2	13	5
+#record		mine1	MINE9	1	600	595	605	-5	5	-2	8	0	10	2	13	5
+#record		mine2	MINE9	1	600	595	605	-5	5	-2	8	0	10	2	13	5
+#record		etc	B_SubHel01	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2	B_SubHel02	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc3	B_SubHel03	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc4	B_SubHel04	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2-1	B_SubHel01	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2-2	B_SubHel02	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2-3	B_SubHel03	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		etc2-4	B_SubHel05	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		b1	B_SubHel01	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		b1	B_SubHel02	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		b1	B_SubHel03	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		b1	B_SubHel04	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		b2	B_SubHel01	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		b2	B_SubHel02	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		b2	B_SubHel03	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		b2	B_SubHel04	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub1	B_SubHel06	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub1	B_SubHel07	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub1	B_SubHel08	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sum2	B_SubHel06	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sum2	B_SubHel07	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sum2	B_SubHel08	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub3	B_SubHel06	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub3	B_SubHel07	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		sub3	B_SubHel08	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		run1	B_SubHel05	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+#record		run2	B_SubHel05	1	120	115	125	-5	5	-2	8	0	10	2	13	5
+
+#end																

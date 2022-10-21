@@ -1,0 +1,39 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; ???? ??
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+#Record	KQReturn60	You'll be warped back in 60 seconds.	
+#Record	KQReturn50	You'll be warped back in 50 seconds.	
+#Record	KQReturn40	You'll be warped back in 40 seconds.	
+#Record	KQReturn30	You'll be warped back in 30 seconds.	
+#Record	KQReturn20	You'll be warped back in 20 seconds.	
+#Record	KQReturn10	You'll be warped back in 10 seconds.	
+#Record	KQReturn50	You'll be warped back in 5 seconds.	
+
+#Record	KQFReturn30	You'll be warped back in 30 seconds.	
+#Record	KQFReturn20	You'll be warped back in 20 seconds.
+#Record	KQFReturn10	You'll be warped back in 10 seconds.
+#Record	KQFReturn5	You'll be warped back in 5 seconds.
+
+#Record	Kingkong01	What! Expedition members, oh no!
+#Record	Kingkong02	Roar! They'll suffer!
+#Record	Kingkong03	Bleh bla blah, Chuck norris :3
+#Record	Kingkong04	Those that touch my wife..Grmbll!
+#Record	Kingkong05	RIP. Bones are all what's left!
+
+#Record	Phinoflie01	Dear King Kong, my dear~~
+#Record	Phinoflie02	A group's coming this way!
+#Record	Phinoflie03	They want to hurt me..
+#Record	Phinoflie04	Fear me!
+#Record	Phinoflie05	Please King Kong, take revenge....
+#Record	Phinoflie06	Bones are all what's left...
+		
+
+#Record	Heal01	I felt the energy~
+
+#Record	Summon01	Wake me up to attack them! Fast!
+		
+#End		

@@ -1,0 +1,44 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+#Record	Rumenus0	感覺到西北方有種神聖的氣氛，去那裏看看吧.		
+#Record	Rumenus1	在那裏可以見到己沒有惡氣的英雄萊因赫特.		
+#Record	Rumenus2	去見那個英雄找出可以擊敗這裏惡靈的頭緒回來…		
+#Record	Rumenus3	我能幫你的就到此了，希望能再見到你		
+				
+#Record	ItemDrop	發現了鑰匙		
+				
+#Record	Hero00	我是出來擊退惡靈戈登領主的萊因赫特.		
+#Record	Hero01	我連裝滿厄爾比斯神力的裝備都帶來了，但卻變成你們看到的這個狼狽像.		
+#Record	Hero02	長久以來我都在等待可以分送這裝滿厄爾比斯神力的武器給….		
+#Record	Hero03	我將這些武器分給各位,希望你們能將這裏的惡靈擊退.		
+#Record	Hero04	這個劍是可以撕破惡靈保護罩的勇士劍．		
+#Record	Hero05	在惡靈身上都有巨大的保護罩		
+#Record	Hero06	若不用這個劍，就不無法傷害到對方．		
+#Record	Hero07	持有此劍的人及其周圍的人，		
+#Record	Hero08	都可以不受惡靈保護罩的影響，去擊傷惡靈．		
+#Record	Hero09	接下來是純正紅寶石，它可以拆穿一切的假象		
+#Record	Hero10	惡靈在假象避護下，欺騙著你們		
+#Record	Hero11	我們可以用這個純正紅寶石，讓這假象無用武之地		
+#Record	Hero12	還可以幫你找到惡靈的位置		
+#Record	Hero13	還有會給你精神之水晶，		
+#Record	Hero14	精神之水晶，可以幫你找到惡靈的位置		
+#Record	Hero15	惡靈在眼前消失時使用．		
+#Record	Hero16	最後你們往惡靈的方向走，會發現有一個沒有鑰匙的門		
+#Record	Hero17	那個門被下過?，所以用普通的方式是打不開的.		
+#Record	Hero18	要接受使用邪惡力量的怪物的幫助，這樣才能破壞．		
+#Record	Hero19	那個門要怎麼打開，就要看各位了.		
+				
+#Record	GM_Teleport800	你們這些可笑的人，有本事就來找我啊.		
+#Record	GM_Teleport600	你們清醒吧，黑暗的力量....		
+#Record	GM_Teleport400	你們是贏不了我的....		
+#Record	GM_Teleport200	愚昧的人們啊！你們會發現生命的延長，只是痛苦的增加....		
+				
+#Record	Success	不行!!!!		
+#Record	Fail	呵呵呵....美味的靈魂都聚在這裏了....		
+				
+#End				

@@ -1,0 +1,199 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		1	N	4917	10801	0	0	471
+#record		2	N	4307	10759	0	0	51
+#record		3	N	4552	10475	0	0	51
+#record		4	N	5712	10346	0	0	317
+#record		5	N	6508	9657	0	0	731
+#record		6	N	7659	10597	0	0	556
+#record		7	N	4018	10057	523	424	49
+#record		8	N	4616	8564	0	0	443
+#record		9	N	3129	10265	0	0	549
+#record		10	N	2236	9554	0	0	457
+#record		11	N	2387	10248	0	0	500
+#record		12	N	2823	7243	0	0	51
+#record		13	N	3189	7271	0	0	51
+#record		14	N	3188	8264	0	0	415
+#record		15	N	2033	8052	0	0	268
+#record		16	N	2064	8693	0	0	247
+#record		17	N	2714	8822	225	101	44
+#record		18	N	2593	7848	0	0	268
+#record		19	N	4036	7971	0	0	247
+#record		20	N	4765	9260	0	0	338
+#record		21	N	1587	4595	0	0	394
+#record		22	N	1543	3729	0	0	500
+#record		23	N	1545	3764	0	0	51
+#record		24	N	3230	4607	0	0	500
+#record		25	N	3258	4505	0	0	65
+#record		26	N	3312	3610	0	0	464
+#record		27	N	2533	3190	0	0	324
+#record		28	N	2863	3364	0	0	51
+#record		29	N	3103	1669	0	0	352
+#record		30	N	2982	2539	0	0	254
+#record		31	N	3709	2381	0	0	233
+#record		32	N	10341	2965	0	0	556
+#record		33	N	9119	1933	788	53	0
+#record		34	N	10314	2230	562	333	0
+#record		35	N	7619	1775	0	0	689
+#record		36	N	6660	1835	0	0	668
+#record		37	N	7843	3922	0	0	878
+#record		38	N	6525	3496	0	0	794
+#record		39	N	6045	4433	707	298	-13
+#record		40	N	5002	3740	0	0	654
+#record		41	N	4632	1672	0	0	513
+#record		42	N	4814	2520	317	513	6
+#record		43	N	9667	6184	0	0	457
+#record		44	N	7780	6141	0	0	408
+#record		45	N	6440	6282	0	0	556
+#record		46	N	5315	6038	0	0	500
+#record		47	N	3397	6815	0	0	268
+#record		48	N	4246	6739	0	0	345
+#record		49	N	5616	7155	497	338	-19
+#record		50	N	7092	7915	0	0	394
+#record		51	N	5535	7283	1813	239	-19
+#record		52	N	3763	6708	0	0	51
+#record		53	N	4832	6885	569	51	-13
+#record		54	N	6080	7346	443	65	-30
+#record		55	N	6361	7559	0	0	219
+#record		56	N	7002	8671	0	0	198
+#record		Pbox01	N	6303	3182	5179	2535	1
+#record		Pbox02	N	4472	8715	3302	2855	0
+#record		Prod01	N	3267	9210	0	0	1677
+#record		Prod02	N	6720	3438	0	0	1893
+#record		Q_Mush01	N	3415	9253	0	0	1838
+#record		Q_Mush02	N	2512	4029	0	0	1403
+#record		Q_Mush03	N	6146	5867	1545	3861	0
+#record		57	N	9246	6682	0	0	303
+#record		58	N	8325	6083	0	0	268
+#record		59	N	6521	5471	0	0	72
+#record		60	N	6783	5170	0	0	65
+#record		61	N	10633	6274	648	281	-10
+#record		62	N	2238	1688	0	0	51
+#record		63	N	2454	1518	0	0	65
+
+
+
+#table	MobRegen															
+;		GroupID	MobIndex	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		1	MarloneMegaton	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		2	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		3	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		4	MarloneMegaton	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		5	MarloneMegaton	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		5	MarloneArcher	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		6	MarloneMegaton	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		7	MarloneArcher	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		7	MarloneMegaton	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		8	MarloneFighter	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		8	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		9	MarloneMegaton	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		9	MarloneFighter	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		10	MarloneFighter	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		10	MarloneCaptain	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		11	MarloneFighter	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		12	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		13	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		14	MarloneCaptain	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		14	MarloneFighter	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		15	MarloneCaptain	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		16	MarloneCaptain	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		17	MarloneFighter	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		18	MarloneCaptain	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		19	MarloneCaptain	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		20	MarloneFighter	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		21	MarloneMegaton	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		22	MarloneMegaton	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		23	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		24	MarloneMegaton	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		25	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		26	MarloneMegaton	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		27	MarloneMegaton	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		28	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		29	MarloneFighter	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		29	MarloneCaptain	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		30	MarloneFighter	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		31	MarloneCaptain	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		32	DesertWolf	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		32	DesertArchon	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		33	DesertArchon	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		33	DesertWolf	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		34	DesertWolf	6	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		35	DesertWolf	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		35	DesertArchon	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		36	DesertWolf	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		36	DesertArchon	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		37	DesertTree	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		37	Spider	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		38	Spider	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		38	DesertTree	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		39	DesertTree	6	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		40	Bat	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		40	DesertTree	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		41	MarloneCaptain	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		41	MarloneFighter	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		42	MarloneCaptain	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		42	MarloneFighter	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		43	DesertWolf	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		43	DesertArchon	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		44	DesertWolf	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		44	DesertArchon	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		45	DesertTree	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		45	Spider	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		46	Bat	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		46	DesertTree	5	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		47	MarloneFighter	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		48	MarloneCaptain	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		49	MarloneCaptain	4	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		49	MarloneFighter	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		50	MarloneFighter	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		51	MarloneFighter	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		51	MarloneCaptain	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		52	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		53	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		54	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		55	MarloneCaptain	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		56	MarloneMegaton	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		Pbox01	PresentBox7	1	14400	14390	14410	-10	10	-5	20	0	60	5	120	10
+#record		Pbox02	PresentBox7	1	14400	14390	14410	-10	10	-5	20	0	60	5	120	10
+#record		Prod01	MUSHROOM4	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	MUSHROOM5	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	MUSHROOM6	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	HERB4	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	HERB5	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	HERB6	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	WOOD4	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	WOOD5	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod01	WOOD6	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	HERB4	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	HERB5	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	HERB6	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	WOOD4	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	WOOD5	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	WOOD6	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	MUSHROOM4	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	MUSHROOM5	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Prod02	MUSHROOM6	1	240	230	250	-10	3	-5	15	0	60	5	120	10
+#record		Q_Mush01	Q_Desert_Mush	10	180	170	190	-10	3	-5	15	0	60	5	120	10
+#record		Q_Mush02	Q_Desert_Mush	5	180	170	190	-10	3	-5	15	0	60	5	120	10
+#record		Q_Mush03	Q_Desert_Mush	15	180	170	190	-10	3	-5	15	0	60	5	120	10
+#record		57	DesertWolf	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		58	DesertArchon	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		59	DesertTree	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		60	DesertTree	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		61	DesertWolf	3	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		61	DesertArchon	2	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		62	MarloneArcher	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		63	MarloneMegaton	1	33	18	48	-15	10	-10	20	0	60	10	120	15
+
+#end																

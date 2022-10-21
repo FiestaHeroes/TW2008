@@ -1,0 +1,33 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; ???? ??
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+#Record	Cancel	Cancel	
+#Record	Yes	Yes	
+#Record	No	No		
+		
+			
+;	?? ? ?????		
+#Record	RecallDisableField	Non-moving area			
+#Record	KQEntryInCamp0	Into the kingdom quest area	
+#Record	KQEntryInCamp1	Please get out of your mini house
+			
+; 20060626 ??			
+#Record	PresentBoxInvenFull	Inventory full cannot open chest	
+#Record	PresentBoxInformCall	Chest could not be opened please re-open	
+			
+; 20060804 ??			
+#Record	LevelLimit	Level limit for area(%d-%d)	
+#Record	PartyLimitedField	Cannot enter with party	
+			
+			
+; 20070221			
+#Record	ButtonOK	Check	
+#Record	ButtonCancel	Cancel	
+			
+#Record	DeamonDead	The Demon Gods have been laid to rest.	
+			
+#End			

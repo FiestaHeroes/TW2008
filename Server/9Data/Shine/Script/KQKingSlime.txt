@@ -1,0 +1,32 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[64]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Guardian	警衛槍兵		
+				
+#Record	KingSlime0	那些侮辱神聖史萊姆的可惡的傢伙們！		
+#Record	KingSlime1	你們將永遠得到詛咒！		
+#Record	KingSlimeSummon	史萊姆們，用我賦予的力量去消滅他們吧！		
+#Record	KingSlimeDead	我的神！請告訴我，難道史萊姆的時代真的一去不復返了嗎！		
+				
+#Record	StartWarn0	在這幹什麼，難道不知道我們現在正處於危機中嗎?		
+#Record	StartWarn1	史萊姆王的軍隊開始進攻了。		
+#Record	StartWarn2	50分鐘內必須消滅全部史萊姆，否則要出大事。		
+#Record	StartWarn3	我去找援軍。		
+#Record	StartWarn4	你們不要阻攔，趕快避一避吧！		
+				
+#Record	GuardianSuc0	你們沒事吧?		
+#Record	GuardianSuc1	大概過5分鐘，援軍就能到。		
+#Record	GuardianSuc2	這期間，請大家要躲到安全的地方去。		
+				
+;	KQ ??			
+#Record	KQReturn30	30秒後，移動到羅恩鎮。		
+#Record	KQReturn20	20秒後，移動到羅恩鎮。		
+#Record	KQReturn10	10秒後，移動到羅恩鎮。		
+#Record	KQReturn5	5秒後，移動到羅恩鎮。		
+				
+#End				

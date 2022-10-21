@@ -1,0 +1,232 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		EldFor01_01	N	9033	17241	370	485	0
+#record		EldFor01_02	N	7758	16163	171	567	43
+#record		EldFor01_03	N	8657	13307	906	111	40
+#record		EldFor01_04	N	9094	13767	59	586	-37
+#record		EldFor01_05	N	9064	15099	724	474	25
+#record		EldFor01_06	N	10165	14443	572	798	-136
+#record		EldFor01_07	N	9998	12259	123	387	-4
+#record		EldFor01_08	N	11412	13844	104	927	156
+#record		EldFor01_09	N	9759	10001	235	764	0
+#record		EldFor01_10	N	6478	11221	427	1002	-3
+#record		EldFor01_11	N	11087	12645	70	496	-87
+#record		EldFor01_12	N	6727	13257	0	0	681
+#record		EldFor01_13	N	7009	8955	0	0	1081
+#record		EldFor01_14	N	7822	7044	1318	668	0
+#record		EldFor01_15	N	8962	8530	0	0	822
+#record		EldFor01_16	N	8016	11682	1022	319	50
+#record		EldFor01_17	N	11229	11707	490	146	-15
+#record		EldFor01_18	N	12289	11046	376	161	29
+#record		EldFor01_19	N	11575	8418	69	1045	51
+#record		EldFor01_20	N	12393	12186	162	530	37
+#record		EldFor01_21	N	12254	7493	212	637	68
+#record		EldFor01_22	N	13037	8576	69	651	28
+#record		EldFor01_23	N	14457	7970	568	266	18
+#record		EldFor01_24	N	14286	10411	52	605	20
+#record		EldFor01_25	N	15677	8707	690	170	43
+#record		EldFor01_26	N	11410	9479	55	893	37
+#record		EldFor01_27	N	16197	12431	4879	2377	87
+#record		EldFor01_28	N	15332	9779	0	0	551
+#record		EldFor01_29	N	16235	11601	0	0	815
+#record		EldFor01_30	N	17463	10317	0	0	623
+#record		EldFor01_31	N	17552	11774	0	0	500
+#record		EldFor01_32	N	11977	17085	0	0	773
+#record		EldFor01_33	N	10111	17197	0	0	822
+#record		EldFor01_34	N	11740	15730	0	0	387
+#record		EldFor01_35	N	11850	18286	721	241	-10
+#record		EldFor01_36	Y	12517	14854	390	649	-28
+#record		EldFor01_37	N	14286	19549	0	0	261
+#record		EldFor01_38	N	16168	13606	1713	125	-16
+#record		EldFor01_39	N	14412	12096	737	90	21
+#record		EldFor01_40	N	13484	17413	52	624	35
+#record		EldFor01_41	N	14838	14760	465	63	16
+#record		EldFor01_42	N	15074	16358	84	327	41
+#record		EldFor01_43	N	15627	15110	350	54	0
+#record		EldFor01_44	N	13428	13718	310	77	-123
+#record		EldFor01_45	N	8974	19035	0	0	843
+#record		EldFor01_46	N	10472	19237	0	0	626
+#record		EldFor01_47	N	12147	19688	0	0	843
+#record		EldFor01_48	N	13960	19424	0	0	1046
+#record		EldFor001	N	11294	17162	0	0	1157
+#record		EldFor002	N	7000	9848	689	3216	-9
+#record		EldFor01_1111	N	7040	11270	994	235	-89
+#record		EldFor01003	N	17094	11114	1434	685	55
+#record		EldFor004	N	9613	14677	485	1108	-59
+#record		ForZoneHerb03	N	15898	8443	136	420	-25
+#record		ForZoneHerb04	N	15477	9237	247	341	-4								
+#record		ForZoneWood01	N	7663	9274	644	223	51								
+#record		ForZoneWood02	N	7233	10135	193	593	-2								
+#record		ForZoneWood03	N	8966	9102	896	229	-28								
+#record		ForZoneMush01	N	17789	10660	0	0	500								
+#record		ForZoneMush02	N	16954	10781	0	0	500								
+#record		ForZoneMush03	N	17314	11507	772	289	8								
+#record		EldForPbox01	N	9770	12480	3448	6726	0								
+#record		EldFor01_49	N	17394	9489	0	0	500								
+
+
+
+#table	MobRegen															
+;		GroupID	MobIndex	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		EldFor01_01	Lips	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_01	Greenky	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_02	Lips	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_02	Greenky	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_03	Lips	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_03	Greenky	4	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_04	Stonie	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_04	NaiadSoul	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_05	Stonie	8	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_05	NaiadSoul	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_06	NaiadSoul	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_06	Stonie	7	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_07	Stonie	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_07	Q_QueenSpider	1	55	40	70	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_08	Stonie	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_08	NaiadSoul	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_09	CloverTrumpy	6	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_09	Q_QueenSpider	1	55	40	70	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_10	LizardMan	4	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_10	ElvenTree	4	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_10	GiantElvenTree	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_11	NaiadSoul	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_12	ElvenTree	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_12	LizardMan	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_13	LizardMan	7	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_13	ElvenTree	6	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_13	GiantElvenTree	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_14	LizardMan	6	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_14	ElvenTree	8	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_14	GiantElvenTree	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_15	CloverTrumpy	7	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_15	Q_QueenSpider	2	55	40	70	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_16	CloverTrumpy	10	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_16	Q_QueenSpider	1	55	40	70	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_17	ElfKnightSoul	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_17	HeartTrumpy	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_18	ElfKnightSoul	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_18	HeartTrumpy	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_19	ElfKnightSoul	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_19	HeartTrumpy	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_20	ElfKnightSoul	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_20	HeartTrumpy	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_21	HeartTrumpy	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_21	RedStonie	4	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_22	HeartTrumpy	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_22	RedStonie	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_23	RedStonie	4	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_23	HeartTrumpy	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_24	RedStonie	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_25	RedStonie	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_25	BlueCloverTrumpy	4	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_26	ElfKnightSoul	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_26	HeartTrumpy	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_27	PresentBox14	1	7200	7185	7215	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_28	RedStonie	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_28	BlueCloverTrumpy	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_29	RedStonie	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_29	BlueCloverTrumpy	8	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_30	BlueCloverTrumpy	8	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_31	BlueCloverTrumpy	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_32	Greenky	4	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_32	Archon	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_32	GreenkyBig	1	55	40	70	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_33	Greenky	4	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_33	Archon	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_33	GreenkyBig	1	55	40	70	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_34	Greenky	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_34	Archon	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_35	Greenky	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_35	Archon	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_36	S_Greenky	1	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		EldFor01_36	Greenky	5	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		EldFor01_37	LegendaryTree	1	360	345	375	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_38	BlueCloverTrumpy	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_39	RedStonie	3	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_39	BlueCloverTrumpy	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_40	GiantPixy	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_41	BlueCloverTrumpy	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_41	RedStonie	1	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_42	BlueCloverTrumpy	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_43	BlueCloverTrumpy	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_44	BlueCloverTrumpy	2	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_45	GiantPixy	8	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_46	GiantPixy	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_47	GiantPixy	8	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_48	GiantPixy	9	45	30	60	-15	8	-10	15	0	60	10	120	15
+#record		EldFor001	MUSHROOM7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor001	MUSHROOM8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor001	MUSHROOM9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor001	WOOD7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor001	WOOD8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor001	WOOD9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor001	HERB7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor001	HERB8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor001	HERB9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	HERB7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	HERB8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	HERB9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	WOOD7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	WOOD8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	WOOD9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	MUSHROOM7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	MUSHROOM8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor002	MUSHROOM9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01_1111	CloverTrumpy	8	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	HERB7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	HERB8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	HERB9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	WOOD7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	WOOD8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	WOOD9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	MUSHROOM8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	MUSHROOM7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor01003	MUSHROOM9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	MUSHROOM7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	MUSHROOM8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	MUSHROOM9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	WOOD7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	WOOD8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	WOOD9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	HERB7	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	HERB8	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldFor004	HERB9	1	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneHerb03	HERB7	6	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneHerb03	HERB8	5	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneHerb03	HERB9	6	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneHerb04	HERB7	6	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneHerb04	HERB8	5	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneHerb04	HERB9	6	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood01	WOOD7	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood01	WOOD8	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood01	WOOD9	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood02	WOOD7	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood02	WOOD8	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood02	WOOD9	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood03	WOOD7	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood03	WOOD8	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneWood03	WOOD9	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush01	MUSHROOM7	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush01	MUSHROOM8	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush01	MUSHROOM9	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush02	MUSHROOM7	5	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush02	MUSHROOM8	4	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush02	MUSHROOM9	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush03	MUSHROOM7	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush03	MUSHROOM8	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		ForZoneMush03	MUSHROOM9	3	200	100	210	-100	5	-50	15	0	150	5	300	10
+#record		EldForPbox01	PresentBox14	1	7200	7185	7215	-15	8	-10	15	0	60	10	120	15
+#record		EldFor01_49	BlueCloverTrumpy	5	45	30	60	-15	8	-10	15	0	60	10	120	15
+
+#end																

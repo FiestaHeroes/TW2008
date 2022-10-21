@@ -1,0 +1,35 @@
+;	Shine NPC table(ShineNPC.txt)			
+#ignore	\o042		; ???? ??	
+#exchange	#	\x20	; # => space	
+;#delimiter	\x20			
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Intro0	Muahaha, all you guys are looking for is.. Gold.		
+#Record	Intro1	We've lured you with a nice trap & now you will suffer!		
+#Record	Intro2	I was a bit bored so.. I've put the key somewhere hidden.		
+				
+#Record	FirstGateOpen	Hmm, you guys are stronger than I thought...		
+				
+#Record	SecondGateOpen	Defense lines, get ready! They broke our 2nd gate.		
+				
+#Record	ThirdGateOpen	Grmblll, stupid kids!		
+				
+#Record	LastGateOpen0	Hurry up!		
+#Record	LastGateOpen1	Don't bail out now!		
+				
+;	2005? 5? 26? ??			
+#Record	ItemDrop	The hidden key was found.		
+				
+;	KQ ??			
+#Record	KQReturn30	You'll be warped back to Elderine in 30 seconds.		
+#Record	KQReturn20	You'll be warped back to Elderine in 20 seconds.		
+#Record	KQReturn10	You'll be warped back to Elderine in 10 seconds..		
+#Record	KQReturn5	You'll be warped back to Elderine in 5 seconds.		
+				
+#End				
+				
+				
+				
+				

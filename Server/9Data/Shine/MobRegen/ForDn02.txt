@@ -1,0 +1,174 @@
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		tr1-1	Y	5654	7074	0	0	121
+#record		tr2-1	N	6527	7034	0	0	121
+#record		tr3-1	N	5726	5342	0	0	170
+#record		tr4-1	N	6489	5404	0	0	184
+#record		tr1-4	N	7956	6137	0	0	170
+#record		tr2-3	N	8435	6782	0	0	177
+#record		tr2-4	N	8433	7476	0	0	205
+#record		tr2-6	N	8452	5713	0	0	198
+#record		tr2-9	N	8388	3871	0	0	205
+#record		t3	N	7773	3827	0	0	198
+#record		t3-2	N	6596	3835	0	0	254
+#record		t3-3	N	5130	3827	0	0	226
+#record		t3-4	N	4290	3842	0	0	219
+#record		t3-8	N	3787	6676	0	0	226
+#record		t3-11	N	5072	8483	0	0	261
+#record		t3-13	N	6822	8431	0	0	191
+#record		t4	N	3572	10379	0	0	500
+#record		t4-1	N	1848	8656	0	0	500
+#record		t4-2	N	2292	10033	0	0	142
+#record		t4-7	N	487	6568	0	0	352
+#record		t4-8	N	503	5685	0	0	373
+#record		t4-9	N	1410	5666	0	0	331
+#record		t5-2	N	4938	2754	0	0	142
+#record		t5-3	N	4639	2378	0	0	128
+#record		t5-4	N	1884	3571	0	0	500
+#record		t5-5	N	3576	1867	0	0	500
+#record		t5-6	N	5052	9255	0	0	128
+#record		t5-9	N	10352	8664	0	0	500
+#record		t6	N	7704	9889	0	0	170
+#record		t6-1	N	7368	9592	0	0	163
+#record		t6-2	N	9765	10202	0	0	177
+#record		t6-3	N	10302	9391	0	0	142
+#record		t6-5	N	8939	7162	0	0	142
+#record		t6-9	N	10849	6576	0	0	359
+#record		t7	N	11782	6575	0	0	317
+#record		t7-1	N	11815	5759	0	0	436
+#record		t7-2	N	10846	5660	0	0	331
+#record		t7-22	N	5616	11793	0	0	310
+#record		t7-6	N	5672	10872	0	0	359
+#record		t7-7	N	6750	11360	0	0	198
+#record		t7-8	N	5478	11340	0	0	156
+#record		t7-10	N	5474	1274	0	0	100
+#record		t7-11	N	5795	766	0	0	107
+#record		t7-12	N	5485	226	0	0	107
+#record		t7-13	N	6315	274	0	0	163
+#record		t7-14	N	6865	903	0	0	100
+#record		t7-15	N	6814	1611	0	0	121
+#record		t7-24	N	7280	2846	0	0	156
+#record		t7-16	N	9784	4703	0	0	156
+#record		t7-17	N	10366	3591	0	0	500
+#record		t7-20	N	8691	1851	0	0	500
+
+
+
+#table	MobRegen															
+;		GroupID	MobIndex	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		tr1-1	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr2-1	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr3-1	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr4-1	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr1-4	P_SpadeGuardTrumpy1	2	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr2-3	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr2-3	P_Fighter5M	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr2-4	P_DiaTrumpy	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr2-4	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr2-6	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr2-9	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		tr2-9	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-2	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-3	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-3	P_DiaTrumpy	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-4	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-8	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-11	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-11	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-13	P_SpadeGuardTrumpy1	2	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t3-13	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4	P_SpadeGuardTrumpy1	2	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4	P_DiaTrumpy	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-1	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-1	P_Fighter5M	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-1	P_Mage5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-2	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-2	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-7	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-7	P_Mage5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-8	P_Fighter5M	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-8	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-9	P_Archer5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-9	P_Mage5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-9	P_Fighter5M	2	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t4-9	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-2	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-3	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-4	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-4	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-4	P_Mage5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-5	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-5	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-5	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-5	P_Archer5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-6	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-6	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-9	P_DiaTrumpy	2	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-9	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t5-9	P_Mage5F	2	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6-1	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6-1	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6-2	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6-3	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6-5	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6-9	P_Fighter5M	2	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6-9	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t6-9	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7	P_SpadeGuardTrumpy3	3	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-1	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-1	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-1	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-2	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-2	P_Fighter5M	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-2	P_Archer5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-2	P_Mage5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-22	P_SpadeGuardTrumpy4	2	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-6	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-6	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-6	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-6	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-6	P_Mage5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-7	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-7	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-8	P_DiaTrumpy	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-10	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-11	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-12	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-13	P_Fighter5M	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-13	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-14	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-15	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-24	P_DiaTrumpy	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-24	P_Mage5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-16	P_SpadeGuardTrumpy4	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-17	P_SpadeGuardTrumpy2	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-17	P_SpadeGuardTrumpy3	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-17	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-17	P_DiaTrumpy	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-17	P_Archer5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-20	P_Fighter5M	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-20	P_Cleric5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-20	P_Archer5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-20	P_Mage5F	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-20	P_SpadeGuardTrumpy1	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+#record		t7-20	P_DiaTrumpy	1	70	60	80	-10	20	-5	40	0	50	5	60	10
+
+#end																

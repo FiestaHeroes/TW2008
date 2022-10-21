@@ -1,0 +1,278 @@
+; 길드 토너먼트를 위한 스크립트 프로그램
+; 초기변수 InitFlag = "Map StoneAX StoneAY GuildA GuildAX GuildAY DoorAX DoorAY DoorAD DoorAOpenBlock
+;                                          GuildB GuildBX GuildBY DoorBX DoorBY DoorBD DoorBOpenBlock"
+
+open [main]
+    var Sub              0
+        Map              ""
+        StoneAX          0
+        StoneAY          0
+        GuildA           0
+        GuildAX          0
+        GuildAY          0
+        DoorA0X          0
+        DoorA0Y          0
+        DoorA0D          0
+        DoorA0OpenBlock  ""
+        DoorA1X          0
+        DoorA1Y          0
+        DoorA1D          0
+        DoorA1OpenBlock  ""
+        DoorA2X          0
+        DoorA2Y          0
+        DoorA2D          0
+        DoorA2OpenBlock  ""
+        GuildB           0
+        GuildBX          0
+        GuildBY          0
+        DoorB0X          0
+        DoorB0Y          0
+        DoorB0D          0
+        DoorB0OpenBlock  ""
+        DoorB1X          0
+        DoorB1Y          0
+        DoorB1D          0
+        DoorB1OpenBlock  ""
+        DoorB2X          0
+        DoorB2Y          0
+        DoorB2D          0
+        DoorB2OpenBlock  ""
+        DoorA0           0
+        DoorA1           0
+        DoorA2           0
+        DoorB0           0
+        DoorB1           0
+        DoorB2           0
+        StoneA           0
+        ExploreMin       0
+        ReadySec         0
+        BattleTimeMin    0
+        InterruptBlock   ""
+        InterruptArg     "".
+
+    ; 변수세팅
+    Map              = @RemoveFirst("InitFlag" " ").          ; 리스트형태인 InitFlag에서 " "로 분리된 첫째원소를 Map에 넣고 InitFlag에서는 지움.
+    StoneAX          = @RemoveFirst("InitFlag" " ").
+    StoneAY          = @RemoveFirst("InitFlag" " ").
+    GuildA           = @RemoveFirst("InitFlag" " ").
+    GuildAX          = @RemoveFirst("InitFlag" " ").
+    GuildAY          = @RemoveFirst("InitFlag" " ").
+    DoorA0X          = @RemoveFirst("InitFlag" " ").
+    DoorA0Y          = @RemoveFirst("InitFlag" " ").
+    DoorA0D          = @RemoveFirst("InitFlag" " ").
+    DoorA0OpenBlock  = @RemoveFirst("InitFlag" " ").
+    DoorA1X          = @RemoveFirst("InitFlag" " ").
+    DoorA1Y          = @RemoveFirst("InitFlag" " ").
+    DoorA1D          = @RemoveFirst("InitFlag" " ").
+    DoorA1OpenBlock  = @RemoveFirst("InitFlag" " ").
+    DoorA2X          = @RemoveFirst("InitFlag" " ").
+    DoorA2Y          = @RemoveFirst("InitFlag" " ").
+    DoorA2D          = @RemoveFirst("InitFlag" " ").
+    DoorA2OpenBlock  = @RemoveFirst("InitFlag" " ").
+    GuildB           = @RemoveFirst("InitFlag" " ").
+    GuildBX          = @RemoveFirst("InitFlag" " ").
+    GuildBY          = @RemoveFirst("InitFlag" " ").
+    DoorB0X          = @RemoveFirst("InitFlag" " ").
+    DoorB0Y          = @RemoveFirst("InitFlag" " ").
+    DoorB0D          = @RemoveFirst("InitFlag" " ").
+    DoorB0OpenBlock  = @RemoveFirst("InitFlag" " ").
+    DoorB1X          = @RemoveFirst("InitFlag" " ").
+    DoorB1Y          = @RemoveFirst("InitFlag" " ").
+    DoorB1D          = @RemoveFirst("InitFlag" " ").
+    DoorB1OpenBlock  = @RemoveFirst("InitFlag" " ").
+    DoorB2X          = @RemoveFirst("InitFlag" " ").
+    DoorB2Y          = @RemoveFirst("InitFlag" " ").
+    DoorB2D          = @RemoveFirst("InitFlag" " ").
+    DoorB2OpenBlock  = @RemoveFirst("InitFlag" " ").
+    ExploreMin       = @RemoveFirst("InitFlag" " ").
+    ReadySec         = @RemoveFirst("InitFlag" " ").
+    BattleTimeMin    = InitFlag.
+
+
+	
+    ; 모든 문을 세움
+    Sub = 0.
+    while Sub < 3
+    open
+        doorbuild #("DoorA" % Sub) "KQ_Gate5" #("DoorA" % Sub % "X") #("DoorA" % Sub % "Y") #("DoorA" % Sub % "D") 1000 "Normal".      ; GuildA를 막기 위한 문
+        doorbuild #("DoorB" % Sub) "KQ_Gate5" #("DoorB" % Sub % "X") #("DoorB" % Sub % "Y") #("DoorB" % Sub % "D") 1000 "Normal".      ; GuildB를 막기 위한 문
+        Sub = Sub + 1.
+    close
+
+    ; 모든 문을 엶
+    Sub = 0.
+    while Sub < 3
+    open
+        dooropen #("DoorA" % Sub) #("DoorA" % Sub % "OpenBlock").
+        dooropen #("DoorB" % Sub) #("DoorB" % Sub % "OpenBlock").
+        Sub = Sub + 1.
+    close
+
+    timelimit Min ExploreMin.        ; 2분간 맵 탐험, MapInvestigation 내에 있던것을 이곳으로 이동. 첫번째 로그인 시간으로부터 5분을 세는것을 방지하기 위함.
+    
+    ; 일정시간 지나도록 로긴 안함
+    waitlogin StoneA.
+    if StoneA == 0
+    then open
+        call "QuestFail".
+    close
+
+
+    ; 맵 탐사
+    call "MapInvestigation".
+
+    ; 경기준비
+    call "ReadyToBattle".
+
+    ; 경기중
+    call "DuringBattle".
+
+    ; 마무리
+    call "CancelOfTournament".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [MapInvestigation]
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "CancelOfTournament".
+    interruptset TimeOut "" 1 "EndOfInvestigation".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [EndOfInvestigation]
+    break "MapInvestigation".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [ReadyToBattle]
+    ; 모든 문을 닫음
+    Sub = 0.
+    while Sub < 3
+    open
+        doorclose #("DoorA" % Sub) #("DoorA" % Sub % "OpenBlock").
+        doorclose #("DoorB" % Sub) #("DoorB" % Sub % "OpenBlock").
+        Sub = Sub + 1.
+    close
+
+
+
+
+
+    ; 각 길드원 원위치
+    interruptclear.                 ; 초기위치로 링크이동하는 동안 스크립트 끝내기 방지
+    collect Guild Map GuildAX GuildAY GuildA.       ; GuildA 길드를 Map의 GuildAX GuildAY 좌표로 이동시킴(Guild가 플래그)
+    collect Guild Map GuildBX GuildBY GuildB.       ; GuildA 길드를 Map의 GuildBX GuildBY 좌표로 이동시킴
+
+
+    ; 일정시간 지나도록 로긴 안함
+    waitlogin StoneA.
+    if StoneA == 0
+    then open
+        call "QuestFail".
+    close
+
+
+    ; 각 길드의 스톤 리젠
+    mobregen StoneA "GuildStone" StoneAX StoneAY 0 1000 "Normal".
+
+
+    mobattr Guild StoneA GuildA.        ; StoneA의 길드를 GuildA로 세팅(Guild가 플래그)
+
+
+    timelimit Sec ReadySec.       ; 30초간 대기
+
+    interruptset TimeOut "" 1 "BattleStart".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [BattleStart]
+    ; 모든 문 엶
+    Sub = 0.
+    while Sub < 3
+    open
+        dooropen #("DoorA" % Sub) #("DoorA" % Sub % "OpenBlock").
+        dooropen #("DoorB" % Sub) #("DoorB" % Sub % "OpenBlock").
+        Sub = Sub + 1.
+    close
+
+    break "ReadyToBattle".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [DuringBattle]
+    timelimit Min BattleTimeMin.
+
+    interruptclear.
+    interruptset PlayerEliminate "" 1 "CancelOfTournament".
+    interruptset TimeOut "" 1 "GuildAWin".                  ; 길드스톤을 지킨 경우
+    interruptset DeadHandle "" 1 StoneA "GuildBWin".        ; 길드스톤이 깨진 경우
+    interruptset GuildEliminate "" 1 GuildA "GuildBWin".    ; GuildA가 전멸시
+    interruptset GuildEliminate "" 1 GuildB "GuildAWin".    ; GuildB가 전멸시
+    interruptset Sec "" 99999 10 "TournamentON".            ; 죽었다가 들어올 수 있으므로 10초에 한번씩 전투중임을 보냄
+    interruptset Sec "" 99999 30 "MobGuildSet".             ; 죽었다가 들어올 수 있으므로 30초에 한번씩 길드석의 길드정보를 보냄
+
+    call "TournamentON".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [TournamentON]
+    battlestart Guild GuildA GuildB.
+close
+
+open [MobGuildSet]
+    mobattr Guild StoneA GuildA.        ; StoneA의 길드를 GuildA로 세팅(Guild가 플래그)
+close
+
+
+open [GuildAWin]
+    var Winner GuildA
+        Loser  GuildB.
+
+    call "EndOfTournament".
+close
+
+open [GuildBWin]
+    var Winner GuildB
+        Loser  GuildA.
+
+    call "EndOfTournament".
+close
+
+open [EndOfTournament]
+    battlestop Guild.
+
+    gtresult Suc  Winner.
+    gtresult Fail Loser.
+
+	endofgt Winner Loser.  ; EndOfGuildTournament : 필드의 FieldMap::fm_GuildTournamentInform 클리어, guildtournamentarray[].gta_Struct.nTournamentSeed 클리어
+
+	scriptfile "KQCommon".
+	
+    broadcast all "KQEldReturn30".
+    pause sec 10.
+    broadcast all "KQEldReturn20".
+    pause sec 10.
+    broadcast all "KQEldReturn10".
+    pause sec 5.
+    broadcast all "KQEldReturn5".
+    pause sec 5.
+    linkto all "Eld" "Eld" 17214 13445.
+    break "main".
+close
+
+open [CancelOfTournament]
+    endofgt 0 0.  ; EndOfGuildTournament : 필드의 FieldMap::fm_GuildTournamentInform 클리어, guildtournamentarray[].gta_Struct.nTournamentSeed 클리어
+    break "main".
+close
