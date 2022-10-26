@@ -25,7 +25,7 @@
 #Record	16 	ShockBlade01	ShockBlade02	ShockBlade03	ShockBlade04	ShockBlade05	-				
 #Record	17 	KillDrain01	KillDrain02	KillDrain03	KillDrain04	KillDrain05	-				
 #Record	18 	MagicBlade01	MagicBlade02	MagicBlade03	MagicBlade04	MagicBlade05	-				
-#Record	19 	TripleHit12	MightySoul09	oraleDecrease09	CrushStrike06	CrushStrike07	CrushStrike08				
+#Record	19 	TripleHit12	MightySoul09	CrushStrike06	CrushStrike07	CrushStrike08	-				
 											
 #Table	Tab01	;파이터 패시브									
 #ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]				

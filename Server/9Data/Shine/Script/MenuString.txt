@@ -6,7 +6,7 @@
 #ColumnType	INDEX	STRING[64]		
 #ColumnName	ScrIndex	ScrString		
 				
-#Record	LinkTitle	要移動到%s區域嗎?		
+#Record	LinkTitle	Do you want to move to %s field?		
 				
 ;	???? ??			
 #Record	SilverWingTitle	use the silver sky		

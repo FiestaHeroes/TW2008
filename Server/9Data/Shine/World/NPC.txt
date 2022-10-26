@@ -1,5 +1,5 @@
 ;	Shine NPC table(ShineNPC.txt)																
-#ignore	\o042				; ÀÎ¿ëºÎÈ£ ¹«½Ã												
+#ignore	\o042				; ï¿½Î¿ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½												
 #exchange	#	\x20			; # => space												
 #delimiter	\x20				; Space is delimiter												
 
@@ -11,118 +11,73 @@
 #ColumnType									Index	String[33]	String[33]	DWRD	DWRD	WORD	WORD	WORD	BYTE
 #ColumnName									argument	MapServer	MapClient	Coord-X	Coord-Y	Direct	LevelFrom	LevelTo	Party
 
-																
-;	·ç¸Ç npc																	
 #recordin	ShineNPC	RouSmithJames	Rou	5937	6644	0	1	Merchant	Weapon								
 #recordin	ShineNPC	RouSoulMctJulia	Rou	8032	6469	0	1	Merchant	SoulStone							
 #recordin	ShineNPC	RouTownChiefRoumenus	Rou	5988	4677	178	1	ClientMenu	-							
 #recordin	ShineNPC	RouWeaponTitleMctZach	Rou	4985	5853	-177	1	Merchant	WeaponTitle							
-;	#recordin	ShineNPC	RouGaianMaria	Rou	5039	4105	-124	1	QuestNpc	Quest							
 #recordin	ShineNPC	RouSkillRubi	Rou	7129	6115	173	1	Merchant	Skill							
 #recordin	ShineNPC	RouItemMctPey	Rou	7133	5428	0	1	Merchant	Item							
 #recordin	ShineNPC	RouStoreRaina	Rou	6407	5208	-18	1	StoreManager	-							
-;	#recordin	ShineNPC	RouFurnitureMctZzing	Rou				1	-	-							
 #recordin	ShineNPC	RouRookieGuideRaemi	Rou	7572	4492	-166	1	QuestNpc	Quest							
-;	#recordin	ShineNPC	RouDiggerPalmers	Rou				1	-	-							
 #recordin	ShineNPC	RouGrandfatherRobin	Rou	4478	6735	0	1	QuestNpc	Quest							
-;	·ç¸Ç Çì¾î¼¥ npc																
 #recordin	ShineNPC	Vietree	Rou	7428	5286	43	1	QuestNpc	Quest							
-;	·ç¸Ç ±æµå npc																
 #recordin	ShineNPC	RouGuildBrom	Rou	4948	5015	0	0	NPCMenu	Guild							
-;	¾È³» Ç¥ÁöÆÇ 																
 #recordin	ShineNPC	PostCos01	Rou	8909	9840	13	1	QuestNpc	Quest							
 #recordin	ShineNPC	PostCos02	Rou	2816	9464	-134	1	QuestNpc	Quest							
 #recordin	ShineNPC	PostCos03	Rou	4589	4213	-146	1	QuestNpc	Quest							
 #recordin	ShineNPC	PostRoumenus	Rou	6173	4537	170	1	QuestNpc	Quest							
 #recordin	ShineNPC	PostRemi	Rou	7768	4616	-176	1	QuestNpc	Quest							
-;	ÇÏ¿ì½º Á¸ 																
 #recordin	ShineNPC	HouseZonePost	Rou	7824	5170	-100	1	QuestNpc	Quest							
 #recordin	ShineNPC	HouseZonePost	Rou	4838	4118	32	1	QuestNpc	Quest							
-;	¿¤´õ¸° npc																
 #recordin	ShineNPC	EldSmithKarls	Eld	16734	14837	0	1	Merchant	Weapon							
 #recordin	ShineNPC	EldWeaponTitleMctBran	Eld	15613	15123	39	1	Merchant	WeaponTitle							
 #recordin	ShineNPC	EldSoulMctAvon	Eld	16175	14938	0	1	Merchant	SoulStone							
 #recordin	ShineNPC	EldStoreKyle	Eld	14357	11980	-171	1	StoreManager	-							
 #recordin	ShineNPC	EldItemMctNina	Eld	17382	12362	173	1	Merchant	Item							
-;	¿¤´õ¸° ½ºÅ³ npc À§Ä¡ ÀÓ½ÃÀû¿ë																
 #recordin	ShineNPC	EldWarSkillMarty	Eld	12893	12729	-143	1	Merchant	Skill							
 #recordin	ShineNPC	EldPalSkillKeest	Eld	13529	12692	135	1	Merchant	Skill							
 #recordin	ShineNPC	EldScoSkillDeikid	Eld	13520	14180	46	1	Merchant	Skill							
 #recordin	ShineNPC	EldWizSkillWishis	Eld	12934	14189	-46	1	Merchant	Skill							
-;	¿¤´õ¸° ½ºÅ³ npc À§Ä¡ 																
-;	#recordin	ShineNPC	EldWarSkillMarty	Eld	16901	10406	-88	1	Merchant	Skill							
-;	#recordin	ShineNPC	EldPalSkillKeest	Eld	10746	16068	-90	1	Merchant	Skill							
-;	#recordin	ShineNPC	EldScoSkillDeikid	Eld	10634	10040	-153	1	Merchant	Skill							
-;	#recordin	ShineNPC	EldWizSkillWishis	Eld	15119	15694	0	1	Merchant	Skill							
 #recordin	ShineNPC	EldGuardCaptainShutian	Eld	13571	13412	-91	1	QuestNpc	Quest							
 #recordin	ShineNPC	EldGuardNus	Eld	17973	10584	-10	1	QuestNpc	Quest							
 #recordin	ShineNPC	EldKidWorze	Eld	16445	13378	89	1	QuestNpc	Quest							
 #recordin	ShineNPC	EldMrsMisen	Eld	16629	12068	147	1	QuestNpc	Quest							
-;	#recordin	ShineNPC	EldFurnitureMctBiette	Eld	16970	15825	0	1	Merchant	Quest							
-;	#recordin	ShineNPC	EldGuild	Eld	13865	10181	0	1	QuestNpc	Quest							
-;	#recordin	ShineNPC	EldGaianBjurin	Eld	10310	11169	-96	1	QuestNpc	Quest							
-;	#recordin	ShineNPC	EldCastleLordElderiss	Eld	10373	13430	-88	1	QuestNpc	Quest							
 #recordin	ShineNPC	EldItemMctKenton	Eld	14630	14613	-14	1	Merchant	Item							
-;	#recordin	ShineNPC	EldDiggerRoyquin	Eld	12916	10930	-175	1	Gatenpc	Gate							
-;	#recordin	ShineNPC	Rachel	Eld	16562	13436	89	1	JobMaster	Job							
-;	#recordin	ShineNPC	EldItemMctNina	Eld					JobMaster	Job							
-;	¿¤´õ¸° ±æµå npc																
 #recordin	ShineNPC	EldGuildPredrick	Eld	10266	13436	-92	0	NPCMenu	Guild							
-;	Å½¿åÀÇ ÇØ¾È Æ÷ÅÐ °æºñº´																
 #recordin	ShineNPC	EldSpeGuard02	Eld	16709	9195	175	0	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard02	Eld	16499	9195	175	0	Guard	Quest							
-;	ºØ±«µÈ °¨¿Á ÅÍ Æ÷ÅÐ °æºñº´																
 #recordin	ShineNPC	EldSpeGuard02	Eld	13321	9110	-179	0	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard02	Eld	13113	9110	-179	0	Guard	Quest							
-;	´Þºû¹¦Áö Æ÷ÅÐ °æºñº´																
 #recordin	ShineNPC	EldSpeGuard02	Eld	13652	16755	0	0	Guard	Quest							
 #recordin	ShineNPC	EldArcGuard02	Eld	13442	16755	0	0	Guard	Quest							
-;	¸Þ¸¶¸¥ ¾È°³½£ °æºñº´																
 #recordin	ShineNPC	EldSpeGuard02	Eld	18476	13589	90	0	Guard	Quest							
 #recordin	ShineNPC	EldArcGuard02	Eld	18476	13210	90	0	Guard	Quest							
-;	°Ç¹° ÀÔ±¸ ±ÙÀ§º´ 																
 #recordin	ShineNPC	EldSpeGuard02	Eld	11008	13147	-124	0	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard02	Eld	11147	12944	-124	0	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard01	Eld	11008	13685	-48	1	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard02	Eld	11147	13877	-48	0	Guard	Quest							
-;	°Ç¹° ÀÔ±¸ ¾ÆÃ³ 																
 #recordin	ShineNPC	EldArcGuard01	Eld	10505	13608	-90	1	Guard	Quest							
 #recordin	ShineNPC	EldArcGuard02	Eld	10505	13234	-90	0	Guard	Quest							
-;	¿òÁ÷ÀÌ´Â Ç³¼±¾Õ ¾ÆÃ³																
 #recordin	ShineNPC	EldArcGuard02	Eld	17595	13693	83	0	Guard	Quest							
 #recordin	ShineNPC	EldArcGuard02	Eld	17595	13133	86	0	Guard	Quest							
-;	°æ±âÀå °æºñº´																
-;	#recordin	ShineNPC	EldArcGuard02	Eld	15665	10311	-92	0	Guard	Quest							
-;	#recordin	ShineNPC	EldArcGuard02	Eld	16448	10319	94	0	Guard	Quest							
-;	°æ±âÀå °æºñº´																	
 #recordin	ShineNPC	EldSpeGuard02	Eld	16188	11829	178	0	Guard	Quest								
 #recordin	ShineNPC	EldSpeGuard02	Eld	15935	11833	177	0	Guard	Quest								
 #recordin	ShineNPC	EldSpeGuard02	Eld	16194	10772	0	0	Guard	Quest								
 #recordin	ShineNPC	EldSpeGuard02	Eld	15925	10764	0	0	Guard	Quest								
 #recordin	ShineNPC	EldSpeGuard02	Eld	15844	9787	-179	0	Guard	Quest								
 #recordin	ShineNPC	EldSpeGuard02	Eld	16268	9787	-179	0	Guard	Quest								
-;	µ¿¿µ»ó ÃÔ¿µ¿ë npc																	
-;	½Â±Þ npc																	
 #recordin	ShineNPC	GrandMasterShone	RouVal01	12842	6467	134	1	QuestNpc	Quest								
-;	#recordin	ShineNPC	EldCastleLordElderiss	RouVal01	11842	6467	134	1	Merchant	SoulStone								
-;	ÇÏ¿ì½º Á¸ 																	
-;	°ø¿ø Áö¿ª																	
 #recordin	ShineNPC	HouseZonePost	Eld	10870	11450	175	1	QuestNpc	Quest								
 #recordin	ShineNPC	HouseZonePost	Eld	12172	9827	-87	1	QuestNpc	Quest								
-;	°Ç¹° Áö¿ª																	
 #recordin	ShineNPC	HouseZonePost	Eld	13973	14188	24	1	QuestNpc	Quest							
 #recordin	ShineNPC	HouseZonePost	Eld	13974	16664	89	1	QuestNpc	Quest							
 #recordin	ShineNPC	HouseZonePost	Eld	17821	16768	-72	1	QuestNpc	Quest							
 #recordin	ShineNPC	HouseZonePost	Eld	17796	14180	-33	1	QuestNpc	Quest							
-;	³îÀÌÅÍ																
 #recordin	ShineNPC	HouseZonePost	Eld	18282	11891	-176	1	QuestNpc	Quest							
 #recordin	ShineNPC	HouseZonePost	Eld	17221	10531	88	1	QuestNpc	Quest							
 #recordin	ShineNPC	HouseZonePost	Eld	18045	9289	0	1	QuestNpc	Quest							
-;	¼ºÁÖ ¿¤¹Ù¸¶																
 #recordin	ShineNPC	EldCastleLordElderiss	Eld	10659	16064	-91	1	QuestNpc	Quest							
-;	°áÈ¥ ÁøÇà ¿£ÇÇ¾¾																
 #recordin	ShineNPC	WeddingDreian	Eld	10901	14942	-111	1	Merchant	Item							
-;	¿ì¸£°¡ npc																
 #recordin	ShineNPC	UruSmithHans	Urg	6837	7418	54	1	Merchant	Weapon							
 #recordin	ShineNPC	UruItemMctVellon	Urg	6337	5022	0	1	Merchant	Item							
 #recordin	ShineNPC	UruTownChiefAdrien	Urg	7966	6638	76	1	QuestNpc	Quest							
@@ -131,72 +86,45 @@
 #recordin	ShineNPC	UruFurnitureForestTeem	Urg	5897	5189	0	1	QuestNpc	Quest							
 #recordin	ShineNPC	UruStoreCurly	Urg	6778	5067	-9	1	StoreManager	-							
 #recordin	ShineNPC	UruSkillChyburn	Urg	7909	8083	44	1	Merchant	Skill							
-;	ºñÇà¼± ¿ÞÂÊ °æºñº´																
 #recordin	ShineNPC	EldSpeGuard02	Urg	7968	4901	-23	0	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard02	Urg	7774	4790	-29	0	Guard	Quest							
-;	ºñÇà¼± ¿À¸¥ÂÊ °æºñº´																
 #recordin	ShineNPC	EldSpeGuard02	Urg	5126	5209	50	0	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard02	Urg	5002	5350	38	0	Guard	Quest							
-;	¿ì·ç°¡ µÚÂÊ±æ °æºñº´																
 #recordin	ShineNPC	EldSpeGuard02	Urg	4898	7634	136	0	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard02	Urg	4687	7451	136	0	Guard	Quest							
-;	Å·Äù npc ÂÊ °æºñº´																
 #recordin	ShineNPC	EldSpeGuard02	Urg	7308	6371	79	0	Guard	Quest							
 #recordin	ShineNPC	EldSpeGuard02	Urg	7247	6651	81	0	Guard	Quest								
-;	Å·Äù npc ÂÊ °æºñº´																	
 #recordin	ShineNPC	EldSpeGuard02	Urg	5537	6178	-98	0	Guard	Quest								
 #recordin	ShineNPC	EldSpeGuard02	Urg	5501	6414	-95	0	Guard	Quest								
-;	ÇÏ¿ì½º Á¸ 																	
 #recordin	ShineNPC	HouseZonePost	Urg	7513	6641	75	1	QuestNpc	Quest								
 #recordin	ShineNPC	HouseZonePost	Urg	5347	5929	-98	1	QuestNpc	Quest								
-;	¸ð·¡¹Ù¶÷ Ä·ÇÁ npc																	
 #recordin	ShineNPC	HednisSkillGrunt	EldGbl02	9837	8621	131	1	Merchant	Skill								
 #recordin	ShineNPC	HednisSmithRohan	EldGbl02	9491	8688	113	1	Merchant	Weapon								
 #recordin	ShineNPC	HednisSoulKeroll	EldGbl02	9608	8179	54	1	Merchant	SoulStone								
 #recordin	ShineNPC	HednisStoreDrein	EldGbl02	9472	8355	64	1	StoreManager	-								
-;	¸ð·¡¹Ù¶÷ Ä·ÇÁ °æºñº´																	
 #recordin	ShineNPC	HednisArcGuard01	EldGbl02	8727	9989	147	0	Guard	Quest								
 #recordin	ShineNPC	HednisFigGuard01	EldGbl02	8404	9761	141	0	Guard	Quest								
 #recordin	ShineNPC	HednisArcGuard01	EldGbl02	10140	6903	0	0	Guard	Quest								
 #recordin	ShineNPC	HednisFigGuard01	EldGbl02	10409	6947	0	0	Guard	Quest							
-;	¸ð·¡¹Ù¶÷ Ä·ÇÁ »çÀý´Ü																
 #recordin	ShineNPC	HednisMageWoman	EldGbl02	10219	8891	0	0	QuestNpc	Quest							
 #recordin	ShineNPC	HednisClericMan	EldGbl02	10226	8830	157	0	QuestNpc	Quest							
-;	ºÒÅ¸´Â µ¹ ÀÌµ¿ »ó´Ü																
 #recordin	ShineNPC	MctMasterMaxUtter	UrgFire01	23408	2215	101	1	Guard	Quest							
 #recordin	ShineNPC	ItemMctJelluin	UrgFire01	23558	2454	114	1	Merchant	Item							
 #recordin	ShineNPC	StoneMctTomson	UrgFire01	23630	2625	109	1	Merchant	SoulStone							
-;	#recordin	ShineNPC	mercenary01	UrgFire01	23260	2190	132	0	Guard	Quest							
-;	#recordin	ShineNPC	mercenary02	UrgFire01	23225	2169	155	0	Guard	Quest							
-;	ºÒÅ¸´Â µ¹ ºûÀÇ ±âµÕ																
 #recordin	ShineNPC	PillarofLight	UrgFire01	2602	12731	0	1	Guard	Quest							
-;	¿©¸íÀÇ ´Ë ÇÊµå npc																
 #recordin	ShineNPC	DustAdventurer04	UrgSwa01	12448	13668	0	1	Guard	Quest							
 #recordin	ShineNPC	SecretaryCleo	UrgSwa01	10986	4052	0	1	Guard	Quest							
 #recordin	ShineNPC	DustAdventurer03	UrgSwa01	20536	12766	140	1	Guard	Quest							
 #recordin	ShineNPC	PriestMediang	UrgSwa01	20091	21870	0	1	Guard	Quest								
-;	°íºí¸° Ä·ÇÁ npc																	
 #recordin	ShineNPC	VegetarianGoblin	EldGbl01	6918	3076	0	1	Guard	Quest								
 #recordin	ShineNPC	SpyGoblin	EldGbl01	8117	1347	0	1	Guard	Quest								
-;	´ÜµÎ´ë ÇüÀå npc																	
 #recordin	ShineNPC	PatrolGuardianPolmon	EldPri02	2868	6142	49	1	Guard	Quest								
-;	ÇÊµå °ÔÀÌÆ® À§Ä¡ 																	
-;	·ç¸Ç																	
 #recordin	ShineNPC	MapLinkGate	Rou	2715	10006	-67	0	Gate	GateRou1								
 #recordin	LinkTable								GateRou1	RouCos02	RouCos02	17548	5068	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	Rou	8953	10441	-44	0	Gate	GateRou2								
 #recordin	LinkTable								GateRou2	RouCos01	RouCos01	9086	5645	0	1	150	1
 #recordin	ShineNPC	RouGaianMaria	Rou	4015	3185	-144	0	Gate	GateRou4								
 #recordin	LinkTable								GateRou4	RouCos03	RouCos03	7514	15412	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	Rou	2913	10107	-67	0	Gate	GateRou5								
-;	#recordin	LinkTable								GateRou5	RouCos02_1	RouCos02_1	17548	5068	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	Rou	2768	9786	-67	0	Gate	GateRou6								
-;	#recordin	LinkTable								GateRou6	RouCos02_2	RouCos02_2	17548	5068	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	Rou	9213	10347	13	0	Gate	GateRou7								
-;	#recordin	LinkTable								GateRou7	RouCos01_1	RouCos01_1	9086	5645	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	Rou	9396	10205	45	0	Gate	GateRou8								
-;	#recordin	LinkTable								GateRou8	RouCos01_2	RouCos01_2	9086	5645	0	1	150	1
-;	¸ð·¡¹Ù´Ù																	
 #recordin	ShineNPC	MapLinkGate	RouCos01	9100	5477	-6	0	Gate	GateRouCos011								
 #recordin	LinkTable								GateRouCos011	Rou	Rou	9085	10325	-75	1	150	1
 #recordin	ShineNPC	MapLinkGate	RouCos01	16476	11039	-27	0	Gate	GateRouCos012								
@@ -205,37 +133,18 @@
 #recordin	LinkTable								GateRouCos013	EchoCave	EchoCave	2182	2703	-133	1	150	1
 #recordin	ShineNPC	MapLinkGate	RouCos01	9514	19746	0	0	Gate	GateRouCos014								
 #recordin	LinkTable								GateRouCos014	RouVal01	RouVal01	14571	4442	139	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01	16647	11067	-20	0	Gate	GateRouCos015								
-;	#recordin	LinkTable								GateRouCos015	RouCos02_1	RouCos02_1	8423	10635	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01	16303	10962	-15	0	Gate	GateRouCos016								
-;	#recordin	LinkTable								GateRouCos016	RouCos02_2	RouCos02_2	8423	10635	0	1	150	1
-;	ÆÄµµ½£																	
 #recordin	ShineNPC	MapLinkGate	RouCos02	17555	4855	0	0	Gate	GateRouCos021								
 #recordin	LinkTable								GateRouCos021	Rou	Rou	2864	9955	-51	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02	16191	20334	74	0	Gate	GateRouCos022								
-;	#recordin	LinkTable								GateRouCos022	RouVal01	RouVal01	14571	4442	139	1	150	1
 #recordin	ShineNPC	EldDiggerRoyquin	RouCos02	20664	9827	127	0	Gate	GateRouCos023								
 #recordin	LinkTable								GateRouCos023	EchoCave	EchoCave	23343	23541	47	1	150	1
 #recordin	ShineNPC	MapLinkGate	RouCos02	8300	10655	-72	0	Gate	GateRouCos024								
 #recordin	LinkTable								GateRouCos024	RouCos01	RouCos01	16371	11133	-37	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02	8275	10832	-64	0	Gate	GateRouCos025								
-;	#recordin	LinkTable								GateRouCos025	RouCos01_1	RouCos01_1	16371	11133	-37	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02	8299	10472	-88	0	Gate	GateRouCos026								
-;	#recordin	LinkTable								GateRouCos026	RouCos01_2	RouCos01_2	16371	11133	-37	1	150	1
-;	¸Þ¸¶¸¥ ¾È°³½£																	
 #recordin	ShineNPC	MapLinkGate	RouVal01	14679	4327	-33	0	Gate	GateRouVal011								
 #recordin	LinkTable								GateRouVal011	RouCos01	RouCos01	9522	19589	57	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouVal01	14679	4327	-33	0	Gate	GateRouVal012								
-;	#recordin	LinkTable								GateRouVal012	RouCos02	RouCos02	15555	20332	67	1	150	1
 #recordin	ShineNPC	MapLinkGate	RouVal01	15247	21011	25	0	Gate	GateRouVal013								
 #recordin	LinkTable								GateRouVal013	Eld	Eld	18309	13407	89	1	150	1
 #recordin	ShineNPC	MapLinkGate	RouVal01	12606	11850	0	0	Gate	GateRouVal014								
 #recordin	LinkTable								GateRouVal014	RouTemDn01	RouTemDn01	6252	1156	-178	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouVal01	14527	4273	-33	0	Gate	GateRouVal015								
-;	#recordin	LinkTable								GateRouVal015	RouCos01_1	RouCos01_1	9522	19589	57	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouVal01	14849	4262	-33	0	Gate	GateRouVal016								
-;	#recordin	LinkTable								GateRouVal016	RouCos01_2	RouCos01_2	9522	19589	57	1	150	1
-;	Å½¿åÀÇ ÇØ¾È																	
 #recordin	ShineNPC	MapLinkGate	RouCos03	13388	2070	-7	0	Gate	GateRouCos031								
 #recordin	LinkTable								GateRouCos031	Eld	Eld	16609	9334	-179	1	150	1
 #recordin	ShineNPC	MapLinkGate	RouCos03	16182	17461	48	0	Gate	GateRouCos032								
@@ -246,7 +155,6 @@
 #recordin	LinkTable								GateRouCos034	EchoCave	EchoCave	9240	21838	34	1	150	1
 #recordin	ShineNPC	MapLinkGate	RouCos03	4301	5192	-59	0	Gate	GateRouCos035								
 #recordin	LinkTable								GateRouCos035	EldGbl02	EldGbl02	1751	3037	0	1	150	1
-;	ºÒÅ¸´Â ¾ð´ö																	
 #recordin	ShineNPC	MapLinkGate	RouVal02	4914	9319	0	0	Gate	GateRouVal021								
 #recordin	LinkTable								GateRouVal021	EldCem01	EldCem01	11478	11478	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	RouVal02	2195	3313	-114	0	Gate	GateRouVal022								
@@ -255,21 +163,12 @@
 #recordin	LinkTable								GateRouVal023	ValDn01	ValDn01	1159	11349	-25	20	29	1
 #recordin	ShineNPC	MapLinkGate	RouVal02	10978	4288	-82	0	Gate	GateRouVal024								
 #recordin	LinkTable								GateRouVal024	EldGbl02	EldGbl02	6486	11164	0	1	150	1		
-;	ºû³ª´Â µ¹ 1Ãþ																			
 #recordin	ShineNPC	MapLinkGate	RouTemDn01	6260	732	179	0	Gate	GateRouTemDn011										
 #recordin	LinkTable								GateRouTemDn011	RouVal01	RouVal01	12605	11495	0	1	150	1		
 #recordin	ShineNPC	MapLinkGate	RouTemDn01	8999	4936	0	0	Gate	GateRouTemDn012										
 #recordin	LinkTable								GateRouTemDn012	RouTemDn02	RouTemDn02	5203	828	0	1	150	1		
-;	#recordin	ShineNPC	EldSpeGuard03	RouTemDn01	5446	6642	0	0	Gate	GateRouTemDn013										
-;	#recordin	LinkTable								GateRouTemDn013	ElfDn02	ElfDn02	5230	3846	0	60	69	0		
-;	#recordin	ShineNPC	EldSpeGuard03	RouTemDn01	1146	4319	0	0	Gate	GateRouTemDn014										
-;	#recordin	LinkTable								GateRouTemDn014	PriDn02	PriDn02	5154	5059	0	50	59	0		
-;	ºû³ª´Â µ¹ 2Ãþ																			
 #recordin	ShineNPC	MapLinkGate	RouTemDn02	5206	483	0	0	Gate	GateRouTemDn021										
 #recordin	LinkTable								GateRouTemDn021	RouTemDn01	RouTemDn01	8961	5389	0	1	150	1		
-;	#recordin	ShineNPC	EldSpeGuard03	RouTemDn02	5211	8555	180	0	Gate	GateRouTemDn022										
-;	#recordin	LinkTable								GateRouTemDn022	CemDn02	CemDn02	9791	6907	0	30	39	1		
-;	¿¤´õ¸° 																			
 #recordin	ShineNPC	MapLinkGate	Eld	18525	13403	-89	0	Gate	GateEld1								
 #recordin	LinkTable								GateEld1	RouVal01	RouVal01	15247	20843	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	Eld	13221	8958	0	0	Gate	GateEld2								
@@ -278,20 +177,12 @@
 #recordin	LinkTable								GateEld3	RouCos03	RouCos03	13361	2378	172	1	150	1
 #recordin	ShineNPC	MapLinkGate	Eld	13547	16820	0	0	Gate	GateEld4								
 #recordin	LinkTable								GateEld4	EldCem01	EldCem01	11468	1229	123	1	150	1
-;	¿¤´õ¸° ¹èÆ²ÇÊµå °æºñº´																	
 #recordin	ShineNPC	EldSpeGuard03	Eld	17684	11564	94	0	Gate	GateEld5								
 #recordin	LinkTable								GateEld5	BFGate01	BFGate01	1589	301	0	1	150	1
-;	ox ÄûÁî¸Ê °ÔÀÌÆ®																	
 #recordin	ShineNPC	OX_GateSpeGuard	Eld	15935	11833	177	0	Gate	GateEld6								
 #recordin	LinkTable								GateEld6	OX_field	OX_field	6467	4771	0	1	150	1
-;	pvp Å×½ºÆ® Á¸ ÀÔÀå																	
-;	#recordin	ShineNPC	EldSpeGuard03	Eld	17505	13370	89	0	Gate	GateEld5								
-;	#recordin	LinkTable								GateEld5	ElfDn02	ElfDn02	5230	3846	0	1	150	1
-;	´Þºû¹¦Áö																	
 #recordin	ShineNPC	MapLinkGate	EldCem01	11509	11829	12	0	Gate	GateEldCem011								
 #recordin	LinkTable								GateEldCem011	RouVal02	RouVal02	4918	9043	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	EldCem01	982	12298	-58	0	Gate	GateEldCem012								
-;	#recordin	LinkTable								GateEldCem012	EldCem02	EldCem02	1218	855	-128	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldCem01	11829	1135	-72	0	Gate	GateEldCem013								
 #recordin	LinkTable								GateEldCem013	Eld	Eld	13560	16571	0	1	150	1
 #recordin	ShineNPC	RouDiggerPalmers	EldCem01	862	8528	-20	0	Gate	GateEldCem014								
@@ -302,16 +193,10 @@
 #recordin	LinkTable								GateEldCem016	EldGbl02	EldGbl02	10461	3429	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldCem01	982	12298	-58	0	Gate	GateEldCem017								
 #recordin	LinkTable								GateEldCem017	Linkfield01	Linkfield01	3823	3087	0	1	150	1
-;	µ¢±¼¹«´ý																	
 #recordin	ShineNPC	MapLinkGate	EldCem02	11896	12189	0	0	Gate	GateEldCem021								
 #recordin	LinkTable								GateEldCem021	EldGbl01	EldGbl01	6580	7467	41	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	EldCem02	958	674	57	0	Gate	GateEldCem022								
-;	#recordin	LinkTable								GateEldCem022	EldCem01	EldCem01	1249	12145	-67	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	EldCem02	4474	11896	0	0	Gate	GateEldCem023								
-;	#recordin	LinkTable								GateEldCem023	CemDn02	CemDn02	5678	15617	0	30	39	1
 #recordin	ShineNPC	MapLinkGate	EldCem02	958	674	57	0	Gate	GateEldCem024								
 #recordin	LinkTable								GateEldCem024	Linkfield01	Linkfield01	9817	10895	0	1	150	1
-;	°íºí¸° Ä·ÇÁ																	
 #recordin	ShineNPC	MapLinkGate	EldGbl01	6015	7004	51	0	Gate	GateEldGbl011								
 #recordin	LinkTable								GateEldGbl011	EldPri01	EldPri01	2575	1686	152	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldGbl01	6752	7642	56	0	Gate	GateEldGbl012								
@@ -320,42 +205,26 @@
 #recordin	LinkTable								GateEldGbl013	WindyCave	WindyCave	23343	23541	47	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldGbl01	684	6867	86	0	Gate	GateEldGbl014								
 #recordin	LinkTable								GateEldGbl014	GblDn01	GblDn01	5091	548	0	40	49	1
-;	#recordin	ShineNPC	MapLinkGate	EldGbl01	4334	1092	-140	0	Gate	GateEldGbl015								
-;	#recordin	LinkTable								GateEldGbl015	GblDn02	GblDn02	5081	6146	0	40	49	1
-;	ºØ±«µÈ °¨¿Á ÅÍ																	
 #recordin	ShineNPC	MapLinkGate	EldPri01	1280	2198	24	0	Gate	EldPri011								
 #recordin	LinkTable								EldPri011	Eld	Eld	13221	9175	178	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldPri01	9428	10076	46	0	Gate	EldPri012								
 #recordin	LinkTable								EldPri012	EldPriDn01	EldPriDn01	3127	8715	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldPri01	2662	1415	-23	0	Gate	EldPri013								
 #recordin	LinkTable								EldPri013	EldGbl01	EldGbl01	6157	7131	-131	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	EldPri01	1078	11129	-10	0	Gate	EldPri014								
-;	#recordin	LinkTable								EldPri014	Urg	Urg	1807	11270	-57	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldPri01	5504	1259	93	0	Gate	EldPri015								
 #recordin	LinkTable								EldPri015	PriDn01	PriDn01	12208	4514	-90	50	59	1
 #recordin	ShineNPC	MapLinkGate	EldPri01	480	2800	-10	0	Gate	EldPri016								
 #recordin	LinkTable								EldPri016	EldPri02	EldPri02	1663	3602	-57	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldPri01	1078	11129	-10	0	Gate	EldPri017								
 #recordin	LinkTable								EldPri017	Linkfield02	Linkfield02	2763	6479	0	1	150	1
-;	¼û°ÜÁø °¨¿Á 1Ãþ																	
 #recordin	ShineNPC	MapLinkGate	EldPriDn01	3124	9042	-2	0	Gate	GateEldPriDn011								
 #recordin	LinkTable								GateEldPriDn011	EldPri01	EldPri01	9935	10604	-134	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldPriDn01	12540	8038	0	0	Gate	GateEldPriDn012								
 #recordin	LinkTable								GateEldPriDn012	EldPriDn02	EldPriDn02	370	5055	87	1	150	1
-;	¼û°ÜÁø °¨¿Á2Ãþ																	
 #recordin	ShineNPC	MapLinkGate	EldPriDn02	206	5062	92	0	Gate	GateEldPriDn021								
 #recordin	LinkTable								GateEldPriDn021	EldPriDn01	EldPriDn01	12535	7808	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	EldPriDn02				0	Gate	GateEldPriDn022								
-;	#recordin	LinkTable								GateEldPriDn022	°í´ë¿¤ÇÁ½£	°í´ë¿¤ÇÁ½£				1	150	1
-;	È­¿°±¤»ê																	
 #recordin	ShineNPC	MapLinkGate	UrgFireDn01	2447	11386	-84	0	Gate	UrgFireDn001								
 #recordin	LinkTable								UrgFireDn001	UrgFire01	UrgFire01	2253	3215	-134	1	150	1
-;	¿µÈ¥ÀÇ ½ÅÀü																	
-;	#recordin	ShineNPC	MapLinkGate	UrgSwaDn01	5666	6808	0	0	Gate	UrgFireDn001								
-;	#recordin	LinkTable								UrgFireDn001	EldPri01	EldPri01	9935	10604	-134	1	150	1
-;	¿ì·ç°¡ 																	
-;	#recordin	ShineNPC	MapLinkGate	Urg	1603	11498	-49	0	Gate	Urg01								
-;	#recordin	LinkTable								Urg01	EldPri01	EldPri01	1133	10955	-13	1	150	1
 #recordin	ShineNPC	RouDiggerPalmers	Urg	1175	2343	-129	0	Gate	Urg02								
 #recordin	LinkTable								Urg02	GoldCave	GoldCave	2182	2703	-133	1	150	1
 #recordin	ShineNPC	MapLinkGate	Urg	11591	2686	-66	0	Gate	Urg03								
@@ -364,90 +233,55 @@
 #recordin	LinkTable								Urg04	ElfDn01	ElfDn01	2660	6901	-89	60	69	1
 #recordin	ShineNPC	MapLinkGate	Urg	1528	9368	-49	0	Gate	Urg05								
 #recordin	LinkTable								Urg05	EldPri02	EldPri02	9942	2893	-13	1	150	1
-;	¿ì·ç°¡ ¹èÆ²ÇÊµå °æºñº´																	
 #recordin	ShineNPC	EldSpeGuard03	Urg	8450	6765	78	0	Gate	Urg06								
 #recordin	LinkTable								Urg06	BFGate02	BFGate02	1589	301	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	Urg	1603	11498	-49	0	Gate	Urg07								
 #recordin	LinkTable								Urg07	Linkfield02	Linkfield02	2400	9241	0	1	150	1
-;	¿¤ÇÁ ½£																	
 #recordin	ShineNPC	MapLinkGate	EldFor01	7376	20092	-15	0	Gate	EldFor011								
 #recordin	LinkTable								EldFor011	Urg	Urg	11355	2770	-67	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldFor01	16051	16585	21	0	Gate	EldFor012								
 #recordin	LinkTable								EldFor012	EldSleep01	EldSleep01	8590	8806	52	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldFor01	19331	8608	-130	0	Gate	EldFor013								
 #recordin	LinkTable								EldFor013	ForDn01	ForDn01	5825	6128	-90	70	79	1
-;	#recordin	ShineNPC	MapLinkGate	EldFor01	19262	8558	45	0	Gate	EldFor012								
-;	#recordin	LinkTable								EldFor012	¼­±¤ÀÇ ´Ë	¼­±¤ÀÇ ´Ë				1	150	1
-;	ÀáÀÚ´Â ½£																	
 #recordin	ShineNPC	MapLinkGate	EldSleep01	8323	8704	54	0	Gate	EldSleep011								
 #recordin	LinkTable								EldSleep011	EldFor01	EldFor01	16035	16333	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldSleep01	17437	7144	94	0	Gate	EldSleep012								
 #recordin	LinkTable								EldSleep012	UrgFire01	UrgFire01	2411	24635	0	1	150	1
-;	Ã¤Áýµ¿±¼																	
 #recordin	ShineNPC	RouDiggerPalmers	EchoCave	1997	2501	-136	0	Gate	EchoCave1								
 #recordin	LinkTable								EchoCave1	RouCos01	RouCos01	12707	13200	-63	1	150	1
 #recordin	ShineNPC	EldDiggerRoyquin	EchoCave	23605	23768	49	0	Gate	EchoCave2								
 #recordin	LinkTable								EchoCave2	RouCos02	RouCos02	20573	9858	48	1	150	1
 #recordin	ShineNPC	RouDiggerDolTurn	EchoCave	9435	22125	41	0	Gate	EchoCave3								
 #recordin	LinkTable								EchoCave3	RouCos03	RouCos03	20422	3877	101	1	150	1
-;	Ã¤Áýµ¿±¼2																	
 #recordin	ShineNPC	RouDiggerPalmers	WindyCave	1997	2501	-136	0	Gate	WindyCave1								
 #recordin	LinkTable								WindyCave1	EldCem01	EldCem01	753	8310	-63	1	150	1
 #recordin	ShineNPC	EldDiggerRoyquin	WindyCave	23605	23768	49	0	Gate	WindyCave2								
 #recordin	LinkTable								WindyCave2	EldGbl01	EldGbl01	11382	5758	83	1	150	1
-;	Ã¤Áýµ¿±¼3																	
 #recordin	ShineNPC	RouDiggerPalmers	GoldCave	1997	2501	-136	0	Gate	GoldCave1								
 #recordin	LinkTable								GoldCave1	Urg	Urg	1255	2371	-114	1	150	1
-;	#recordin	ShineNPC	EldDiggerRoyquin	GoldCave	23605	23768	49	0	Gate	GoldCave2								
-;	#recordin	LinkTable								GoldCave2	EldGbl01	EldGbl01	11382	5758	83	1	150	1
-;	¼û°ÜÁø ºÀ¿ì¸®																	
 #recordin	ShineNPC	MapLinkGate	GblDn01	5086	458	0	0	Gate	GblDn011								
 #recordin	LinkTable								GblDn011	EldGbl01	EldGbl01	895	6882	82	1	150	1
 #recordin	ShineNPC	TempSoul	GblDn01	5075	4540	0	1	Merchant	SoulStone								
-;	¸ÁÀÚÀÇ ¹«´ý																	
 #recordin	ShineNPC	MapLinkGate	CemDn01	7892	1520	33	0	Gate	CemDn011								
 #recordin	LinkTable								CemDn011	EldCem01	EldCem01	2408	2623	-41	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	GblDn01					Gate	CemDn012								
-;	#recordin	LinkTable								CemDn012	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ						
 #recordin	ShineNPC	TempSoul	CemDn01	11373	6813	135	1	Merchant	SoulStone								
-;	½Ã·ÃÀÇ ¶¥ 																	
 #recordin	ShineNPC	MapLinkGate	ElfDn01	2481	6894	90	0	Gate	ElfDn011								
 #recordin	LinkTable								ElfDn011	Urg	Urg	10842	11948	-33	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	ElfDn01					Gate	ElfDn013								
-;	#recordin	LinkTable								ElfDn013	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ				1	150	1
-;	¸»·ÐÅ¬·£ ¼Ò±¼																	
 #recordin	ShineNPC	MapLinkGate	ValDn01	1038	11590	-17	0	Gate	ValDn011								
 #recordin	LinkTable								ValDn011	RouVal02	RouVal02	2440	7947	68	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	ValDn01					Gate	ValDn012								
-;	#recordin	LinkTable								ValDn012	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ				1	150	1
 #recordin	ShineNPC	TempSoul	ValDn01	4235	2065	-147	1	Merchant	SoulStone								
-;	¾îµÒÀÇ ±¼·¹																	
 #recordin	ShineNPC	MapLinkGate	PriDn01	12384	4508	-90	0	Gate	PriDn001								
 #recordin	LinkTable								PriDn001	EldPri01	EldPri01	5654	1253	-87	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	PriDn01					Gate	PriDn002								
-;	#recordin	LinkTable								PriDn002	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ				1	150	1
-;	Æ®·³ÇÇÀÇ À¯Àû																	
 #recordin	ShineNPC	MapLinkGate	ForDn01	5960	6127	-90	0	Gate	ForDn001								
 #recordin	LinkTable								ForDn001	EldFor01	EldFor01	19223	8503	46	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	PriDn01					Gate	ForDn002								
-;	#recordin	LinkTable								ForDn002	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ	¼û°ÜÁø ºÀ¿ì¸® 2Ãþ				1	150	1
-;																		
-;	°¡µð¾ðÀÇ ¼ºÁö																	
 #recordin	ShineNPC	MapLinkGate	FireDn01	6358	6854	0	0	Gate	FireDn001								
 #recordin	LinkTable								FireDn001	UrgFire01	UrgFire01	23716	8574	158	1	150	1
-;	90¸ñÀûÇü																	
-;	#recordin	ShineNPC	MapLinkGate	SwaDn01	6030	11347	0	0	Gate	SwaDn001								
-;	#recordin	LinkTable								SwaDn001	UrgFire01	UrgFire01	23716	8574	158	1	150	1
-;	½É¿¬ÀÇ ºÀ¿ì¸®																	
 #recordin	ShineNPC	EldSpeGuard03	GblDn02	5083	6038	-179	0	Gate	EldGbl001								
 #recordin	LinkTable								EldGbl001	BFGate01	BFGate01	1801	2083	0	1	150	1
-;	½É¿¬ÀÇ ¶¥																	
 #recordin	ShineNPC	EldSpeGuard03	ElfDn02	5230	3846	0	0	Gate	ElfDn021								
 #recordin	LinkTable								ElfDn021	BFGate01	BFGate01	865	2114	0	1	150	1
-;	½É¿¬ÀÇ ±¼·¹																	
 #recordin	ShineNPC	EldSpeGuard03	PriDn02	5243	5059	90	0	Gate	PriDn021								
 #recordin	LinkTable								PriDn021	BFGate01	BFGate01	1438	2341	0	1	150	1
-;	ºÒÅ¸´Â µ¹																	
 #recordin	ShineNPC	MapLinkGate	UrgFire01	2030	24767	-76	0	Gate	UrgFire011								
 #recordin	LinkTable								UrgFire011	EldSleep01	EldSleep01	17152	7152	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	UrgFire01	23800	8367	-13	0	Gate	UrgFire012								
@@ -456,70 +290,41 @@
 #recordin	LinkTable								UrgFire013	UrgFireDn01	UrgFireDn01	2625	11402	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	UrgFire01	18683	24578	45	0	Gate	UrgFire014								
 #recordin	LinkTable								UrgFire014	UrgSwa01	UrgSwa01	5733	4075	0	1	150	1
-;	¸Þ¸¶¸¥ ¾È°³½£ ÀÓ½Ã »óÀÎ																	
 #recordin	ShineNPC	EldArcGuard03	RouVal01	13359	7862	0	1	Merchant	Item								
 #recordin	ShineNPC	TempSoul	RouVal01	13055	7862	0	1	Merchant	SoulStone								
 #recordin	ShineNPC	TempSkill	RouVal01	12776	7862	0	1	Merchant	Skill								
-;	Å½¿åÀÇ ÇØ¾È ÀÓ½Ã »óÀÎ																	
-;	#recordin	ShineNPC	EldArcGuard03	RouCos03	7010	15732	-41	1	Merchant	Item								
-;	#recordin	ShineNPC	TempSoul	RouCos03	7088	16054	-41	1	Merchant	SoulStone								
-;	#recordin	ShineNPC	TempSkill	RouCos03	7574	16040	-41	1	Merchant	Skill								
-;	´ë·ÃÀå ÀÔ±¸																	
 #recordin	ShineNPC	FbattleGate	Rou	4215	5219	-22	0	Gate	Fbattle011								
 #recordin	LinkTable								Fbattle011	Fbattle01	Fbattle01	923	3305	0	1	150	1
 #recordin	ShineNPC	FbattleGate	Eld	10223	11180	-89	0	Gate	Fbattle021								
 #recordin	LinkTable								Fbattle021	Fbattle02	Fbattle02	3666	4363	0	1	150	1
 #recordin	ShineNPC	FbattleGate	Urg	4405	6439	49	0	Gate	Fbattle031								
 #recordin	LinkTable								Fbattle031	Fbattle03	Fbattle03	2744	3085	0	1	150	1
-#recordin	ShineNPC	MapLinkGate	Bera	9292	458	90	0	Gate	GateBera2								
-#recordin	LinkTable								GateBera2	Eld	Eld	10579	9975	0	1	150	1
-#recordin	ShineNPC	MapLinkGate	Eld	10574	9860	12	0	Gate	GateEld101								
-#recordin	LinkTable								GateEld101	Bera	Bera	9142	444	0	1	150	1
-#recordin	ShineNPC	MapLinkGate	UrgSwa01	21580	9833	90	0	Gate	GateUrgSwa101								
-#recordin	LinkTable								GateUrgSwa101	Bera	Bera	12223	3421	0	1	150	1
-#recordin	ShineNPC	MapLinkGate	Bera	12446	3471	90	0	Gate	GateBera3								
-#recordin	LinkTable								GateBera3	UrgSwa01	UrgSwa01	21334	9796	0	1	150	1
-#recordin	ShineNPC	MapLinkGate	UrgSwa01	6726	22219	0	0	Gate	GateUrgSwa102								
-#recordin	LinkTable								GateUrgSwa102	Urg_Alruin	Urg_Alruin	16485	3381	0	1	150	1
-#recordin	ShineNPC	MapLinkGate	Urg_Alruin	16366	3234	0	0	Gate	GateAlruin1								
-#recordin	LinkTable								GateAlruin1	UrgSwa01	UrgSwa01	6746	22120	0	1	150	1
-;	´ë·ÃÀå Ãâ±¸																	
 #recordin	ShineNPC	FbattleGate	Fbattle01	783	3506	0	0	Gate	Fbattle012								
 #recordin	LinkTable								Fbattle012	Rou	Rou	5323	4501	0	1	150	1
 #recordin	ShineNPC	FbattleGate	Fbattle02	3845	4368	0	0	Gate	Fbattle022								
 #recordin	LinkTable								Fbattle022	Eld	Eld	17214	13445	0	1	150	1
 #recordin	ShineNPC	FbattleGate	Fbattle03	2902	3092	49	0	Gate	Fbattle032								
 #recordin	LinkTable								Fbattle032	Urg	Urg	6293	5477	0	1	150	1
-;	´ë·ÃÀå È¸º¹½ºÅæ																	
 #recordin	ShineNPC	FbattleSoul	Fbattle01	1104	1810	-105	1	Merchant	SoulStone								
 #recordin	ShineNPC	FbattleSoul	Fbattle02	2496	4440	0	1	Merchant	SoulStone								
 #recordin	ShineNPC	FbattleSoul	Fbattle03	32	2218	-88	1	Merchant	SoulStone								
-;	¸Þ¸¶¸¥ ¾È°³½£ Ä³¸¯ÅÍ npc																	
 #recordin	ShineNPC	GodEnide	RouVal01	5749	20511	-116	1	QuestNpc	Quest								
-;	¸ð·¡¹Ù¶÷ ¾ð´ö																	
 #recordin	ShineNPC	MapLinkGate	EldGbl02	6484	11270	-5	0	Gate	EldGbl021								
 #recordin	LinkTable								EldGbl021	RouVal02	RouVal02	10818	4321	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldGbl02	1730	2864	33	0	Gate	EldGbl022								
 #recordin	LinkTable								EldGbl022	RouCos03	RouCos03	4450	5230	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldGbl02	10469	3612	0	0	Gate	EldGbl023								
 #recordin	LinkTable								EldGbl023	EldCem01	EldCem01	4013	818	0	1	150	1
-;	¸ÁÀÚÀÇ ¹«´ý(30¹èÆ²ÇÊµå)																	
 #recordin	ShineNPC	EldSpeGuard03	CemDn02	5606	15618	-88	0	Gate	CemDn021								
 #recordin	LinkTable								CemDn021	BFGate01	BFGate01	1898	1503	0	1	150	1
-;	#recordin	ShineNPC	EldSpeGuard03	CemDn02	9781	6813	-176	0	Gate	CemDn022								
-;	#recordin	LinkTable								CemDn022	BFGate01	BFGate01	1898	1503	0	1	150	1
-;	´ÜµÎ´ë ÇüÀå																	
 #recordin	ShineNPC	MapLinkGate	EldPri02	1524	3565	78	0	Gate	EldPri021								
 #recordin	LinkTable								EldPri021	EldPri01	EldPri01	595	2949	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	EldPri02	10005	2808	-28	0	Gate	EldPri022								
 #recordin	LinkTable								EldPri022	Urg	Urg	1675	9291	0	1	150	1
-;	±æµå ´ë·ÃÀå NPC(¹æ¼Û¿ë)																	
 #recordin	ShineNPC	FbattleSoul	Fbattle03_1	2436	2359	31	1	Merchant	SoulStone								
 #recordin	ShineNPC	FbattleSoul	Fbattle03_1	718	1629	-148	1	Merchant	SoulStone								
-;	OXÄûÁî																	
 #recordin	ShineNPC	MapLinkGate	OX_field	7519	4927	0	0	Gate	OX_field01								
 #recordin	LinkTable								OX_field01	Eld	Eld	16067	10304	0	1	150	1
-;	¿©¸íÀÇ ´Ë																	
 #recordin	ShineNPC	MapLinkGate	UrgSwa01	5695	3980	17	0	Gate	UrgSwa011								
 #recordin	LinkTable								UrgSwa011	UrgFire01	UrgFire01	18535	24470	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	UrgSwa01	20310	22387	12	0	Gate	UrgSwa012								
@@ -528,16 +333,12 @@
 #recordin	LinkTable								UrgSwa013	SwaDn01	SwaDn01	6067	11124	0	90	99	1
 #recordin	ShineNPC	MapLinkGate	UrgSwa01	11546	15781	0	0	Gate	UrgSwa014								
 #recordin	LinkTable								UrgSwa014	R_Helga01	R_Helga01	2318	2675	0	1	110	1
-;	´«¹°ÀÇ ´Ë																	
 #recordin	ShineNPC	MapLinkGate	SwaDn01	6068	11314	0	0	Gate	SwaDn011								
 #recordin	LinkTable								SwaDn011	UrgSwa01	UrgSwa01	9177	12881	0	1	150	1
-;	¿µÈ¥ÀÇ ½ÅÀü																	
 #recordin	ShineNPC	MapLinkGate	UrgSwaDn01	5658	6790	2	0	Gate	UrgSwaDn011								
 #recordin	LinkTable								UrgSwaDn011	UrgSwa01	UrgSwa01	20290	22302	0	1	150	1
-;	Çï°¡ÀÇ ¹«´ý																	
 #recordin	ShineNPC	MapLinkGate	R_Helga01	2306	2553	0	0	Gate	R_Helga011								
 #recordin	LinkTable								R_Helga011	UrgSwa01	UrgSwa01	11773	16078	0	1	150	1
-;	°á°èÀÇ ½£1																	
 #recordin	ShineNPC	EldSpeGuard03	BFGate01	1585	162	177	0	Gate	BFGate011								
 #recordin	LinkTable								BFGate011	Eld	Eld	17511	11551	0	1	150	1
 #recordin	ShineNPC	EldSpeGuard03	BFGate01	1799	1622	96	0	Gate	BFGate012								
@@ -548,7 +349,6 @@
 #recordin	LinkTable								BFGate014	PriDn02	PriDn02	5154	5059	0	50	59	1
 #recordin	ShineNPC	EldSpeGuard03	BFGate01	1019	1963	0	0	Gate	BFGate015								
 #recordin	LinkTable								BFGate015	ElfDn02	ElfDn02	5230	3846	0	60	69	1
-;	°á°èÀÇ ½£2																	
 #recordin	ShineNPC	EldSpeGuard03	BFGate02	1585	162	177	0	Gate	BFGate021								
 #recordin	LinkTable								BFGate021	Urg	Urg	8339	6738	0	1	150	1
 #recordin	ShineNPC	EldSpeGuard03	BFGate02	1799	1622	96	0	Gate	BFGate022								
@@ -557,82 +357,16 @@
 #recordin	LinkTable								BFGate023	FireDn02	FireDn02	6358	6865	0	80	89	1
 #recordin	ShineNPC	EldSpeGuard03	BFGate02	1274	2250	0	0	Gate	BFGate024								
 #recordin	LinkTable								BFGate024	SwaDn02	SwaDn02	6067	11124	0	90	99	1
-;	¸ð·¡¹Ù´Ù_1																	
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_1	9100	5477	-6	0	Gate	GateRouCos011_1								
-;	#recordin	LinkTable								GateRouCos011_1	Rou	Rou	9085	10325	-75	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_1	16476	11039	-27	0	Gate	GateRouCos011_2								
-;	#recordin	LinkTable								GateRouCos011_2	RouCos02	RouCos02	8423	10635	0	1	150	1
-;	#recordin	ShineNPC	RouDiggerPalmers	RouCos01_1	12658	13373	-49	0	Gate	GateRouCos011_3								
-;	#recordin	LinkTable								GateRouCos011_3	EchoCave	EchoCave	2182	2703	-133	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_1	9514	19746	0	0	Gate	GateRouCos011_4								
-;	#recordin	LinkTable								GateRouCos011_4	RouVal01	RouVal01	14571	4442	139	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_1	16647	11067	-20	0	Gate	GateRouCos011_6								
-;	#recordin	LinkTable								GateRouCos011_6	RouCos02_1	RouCos02_1	8423	10635	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_1	16303	10962	-15	0	Gate	GateRouCos011_7								
-;	#recordin	LinkTable								GateRouCos011_7	RouCos02_2	RouCos02_2	8423	10635	0	1	150	1
-;	ÆÄµµ½£_1																	
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_1	17555	4855	0	0	Gate	GateRouCos021_1								
-;	#recordin	LinkTable								GateRouCos021_1	Rou	Rou	2864	9955	-51	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_1	16191	20334	74	0	Gate	GateRouCos021_2								
-;	#recordin	LinkTable								GateRouCos021_2	RouVal01	RouVal01	14571	4442	139	1	150	1
-;	#recordin	ShineNPC	EldDiggerRoyquin	RouCos02_1	20664	9827	127	0	Gate	GateRouCos021_3								
-;	#recordin	LinkTable								GateRouCos021_3	EchoCave	EchoCave	23343	23541	47	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_1	8300	10655	-72	0	Gate	GateRouCos021_4								
-;	#recordin	LinkTable								GateRouCos021_4	RouCos01	RouCos01	16371	11133	-37	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_1	8275	10832	-64	0	Gate	GateRouCos021_5								
-;	#recordin	LinkTable								GateRouCos021_5	RouCos01_1	RouCos01_1	16371	11133	-37	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_1	8299	10472	-88	0	Gate	GateRouCos021_6								
-;	#recordin	LinkTable								GateRouCos021_6	RouCos01_2	RouCos01_2	16371	11133	-37	1	150	1
-;	¸ð·¡¹Ù´Ù_2																	
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_2	9100	5477	-6	0	Gate	GateRouCos012_1								
-;	#recordin	LinkTable								GateRouCos012_1	Rou	Rou	9085	10325	-75	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_2	16476	11039	-27	0	Gate	GateRouCos012_2								
-;	#recordin	LinkTable								GateRouCos012_2	RouCos02	RouCos02	8423	10635	0	1	150	1
-;	#recordin	ShineNPC	RouDiggerPalmers	RouCos01_2	12658	13373	-49	0	Gate	GateRouCos012_3								
-;	#recordin	LinkTable								GateRouCos012_3	EchoCave	EchoCave	2182	2703	-133	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_2	9514	19746	0	0	Gate	GateRouCos012_4								
-;	#recordin	LinkTable								GateRouCos012_4	RouVal01	RouVal01	14571	4442	139	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_2	16647	11067	-20	0	Gate	GateRouCos012_6								
-;	#recordin	LinkTable								GateRouCos012_6	RouCos02_1	RouCos02_1	8423	10635	0	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos01_2	16303	10962	-15	0	Gate	GateRouCos012_7								
-;	#recordin	LinkTable								GateRouCos012_7	RouCos02_2	RouCos02_2	8423	10635	0	1	150	1
-;	ÆÄµµ½£_2																	
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_2	17555	4855	0	0	Gate	GateRouCos022_1								
-;	#recordin	LinkTable								GateRouCos022_1	Rou	Rou	2864	9955	-51	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_2	16191	20334	74	0	Gate	GateRouCos022_2								
-;	#recordin	LinkTable								GateRouCos022_2	RouVal01	RouVal01	14571	4442	139	1	150	1
-;	#recordin	ShineNPC	EldDiggerRoyquin	RouCos02_2	20664	9827	127	0	Gate	GateRouCos022_3								
-;	#recordin	LinkTable								GateRouCos022_3	EchoCave	EchoCave	23343	23541	47	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_2	8300	10655	-72	0	Gate	GateRouCos022_4								
-;	#recordin	LinkTable								GateRouCos022_4	RouCos01	RouCos01	16371	11133	-37	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_2	8275	10832	-64	0	Gate	GateRouCos022_5								
-;	#recordin	LinkTable								GateRouCos022_5	RouCos01_1	RouCos01_1	16371	11133	-37	1	150	1
-;	#recordin	ShineNPC	MapLinkGate	RouCos02_2	8299	10472	-88	0	Gate	GateRouCos022_6								
-;	#recordin	LinkTable								GateRouCos022_6	RouCos01_2	RouCos01_2	16371	11133	-37	1	150	1
-;	¸Þ¾Æ¸®µ¿±¼¿¡¼­ ÆÄµµ½£ ¸ð·¡¹Ù´Ù·Î °¡´Â °ÔÀÌÆ® Ãß°¡																	
-;	#recordin	ShineNPC	RouDiggerPalmers	EchoCave	1933	2532	-136	0	Gate	EchoCave4								
-;	#recordin	LinkTable								EchoCave4	RouCos01_1	RouCos01_1	12707	13200	-63	1	150	1
-;	#recordin	ShineNPC	RouDiggerPalmers	EchoCave	2009	2426	-136	0	Gate	EchoCave5								
-;	#recordin	LinkTable								EchoCave5	RouCos01_2	RouCos01_2	12707	13200	-63	1	150	1
-;	#recordin	ShineNPC	EldDiggerRoyquin	EchoCave	23646	23707	49	0	Gate	EchoCave6								
-;	#recordin	LinkTable								EchoCave6	RouCos02_1	RouCos02_1	20573	9858	48	1	150	1
-;	#recordin	ShineNPC	EldDiggerRoyquin	EchoCave	23553	23815	49	0	Gate	EchoCave7								
-;	#recordin	LinkTable								EchoCave7	RouCos02_2	RouCos02_2	20573	9858	48	1	150	1
-;	½É¿¬ÀÇ À¯Àû																	
 #recordin	ShineNPC	EldSpeGuard03	ForDn02	5960	6127	-90	0	Gate	ForDn021								
 #recordin	LinkTable								ForDn021	BFGate02	BFGate02	1898	1503	0	1	150	1
-;	½É¿¬ÀÇ ¼ºÁö																	
 #recordin	ShineNPC	EldSpeGuard03	FireDn02	6358	6854	0	0	Gate	FireDn021								
 #recordin	LinkTable								FireDn021	BFGate02	BFGate02	1801	2083	0	1	150	1
-;	½É¿¬ÀÇ ´Ë																	
 #recordin	ShineNPC	EldSpeGuard03	SwaDn02	6068	11314	0	0	Gate	SwaDn021								
 #recordin	LinkTable								SwaDn021	BFGate02	BFGate02	1438	2341	0	1	150	1
-;	µ¢±¼¹«´ý°¡´Â±æ																	
 #recordin	ShineNPC	MapLinkGate	Linkfield01	3815	2897	3	0	Gate	Linkfield011								
 #recordin	LinkTable								Linkfield011	EldCem01	EldCem01	1249	12145	-67	1	150	1
 #recordin	ShineNPC	MapLinkGate	Linkfield01	9988	10809	0	0	Gate	Linkfield012								
 #recordin	LinkTable								Linkfield012	EldCem02	EldCem02	1218	855	0	1	150	1
-;	¿ì·ç°¡ °¡´Â ±æ																	
 #recordin	ShineNPC	MapLinkGate	Linkfield02	2677	6620	-27	0	Gate	Linkfield021								
 #recordin	LinkTable								Linkfield021	EldPri01	EldPri01	1133	10955	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	Linkfield02	2227	9310	-83	0	Gate	Linkfield022								
