@@ -371,4 +371,8 @@
 #recordin	LinkTable								Linkfield021	EldPri01	EldPri01	1133	10955	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	Linkfield02	2227	9310	-83	0	Gate	Linkfield022								
 #recordin	LinkTable								Linkfield022	Urg	Urg	1807	11270	0	1	150	1
+; ---------------------------
+; 5/4/2023: Cooking pot.
+; ---------------------------
+#recordin	ShineNPC	Camp	Eld	17349	12515	0	1	QuestNpc	Quest
 #End																	
