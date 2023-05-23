@@ -19,4 +19,4 @@ if ((Test-Admin) -eq $false)
 }
 
 # Setup the Firewall rules for the server. This will forward the required server ports.
-netsh.exe advfirewall firewall add rule name="_CN2012" dir=in action=allow protocol=TCP localport=9010,9013,9016,9019,9022
+netsh.exe advfirewall firewall add rule name="_TW2008" dir=in action=allow protocol=TCP localport=9010,9013,9014,9016,9019,9022
