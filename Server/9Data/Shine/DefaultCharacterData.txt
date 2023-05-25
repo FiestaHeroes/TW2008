@@ -45,7 +45,6 @@
 
 ;-----------------------------------------------------------------------------------
 ;		Class		Map	PX	PY	HP	SP	HPSoul		SPSoul		Money
-;-----------------------------------------------------------------------------------
 CHARACTER	1,		"Rou",	7744,	4735,	52,	10,	15,		7,		0
 CHARACTER	2,		"Rou",	7744,	4735,	52,	10,	15,		7,		0
 CHARACTER	3,		"Rou",	7744,	4735,	52,	10,	15,		7,		0
@@ -79,240 +78,238 @@ CHARACTER	27,		"Rou",	7744,	4735,	42,	46,	11,		15,		0
 CHARACTER	28,		"Rou",	7744,	4735,	42,	46,	11,		15,		0
 
 ;-----------------------------------------------------------------------------------												
-;		Class		ItemID,		Lot	;
-;-----------------------------------------------------------------------------------		
-ITEM		1,		250,		1	; Short Sword
-ITEM		2,		250,		1	; Short Sword
-ITEM		3,		250,		1	; Short Sword
-ITEM		4,		250,		1	; Short Sword
-ITEM		5,		250,		1	; Short Sword
-ITEM		6,		250,		1	; Short Sword
-ITEM		7,		250,		1	; Short Sword
+;		Class		ItemID,		Lot	; 생성되면 이미 인벤이 있는 아이템임		
+ITEM		1,		250,		1	; 숏소드
+ITEM		2,		250,		1	; 숏소드
+ITEM		3,		250,		1	; 숏소드
+ITEM		4,		250,		1	; 숏소드
+ITEM		5,		250,		1	; 숏소드
+ITEM		6,		250,		1	; 숏소드
+ITEM		7,		250,		1	; 숏소드
 
-ITEM		8,		750,	1	; Short Mace	
-ITEM		9,		750,	1	; Short Mace	
-ITEM		10,		750,	1	; Short Mace	
-ITEM		11,		750,	1	; Short Mace	
-ITEM		12,		750,	1	; Short Mace	
-ITEM		13,		750,	1	; Short Mace	
-ITEM		14,		750,	1	; Short Mace
+ITEM		8,		750,	1	; 숏메이스	
+ITEM		9,		750,	1	; 숏메이스	
+ITEM		10,		750,	1	; 숏메이스	
+ITEM		11,		750,	1	; 숏메이스	
+ITEM		12,		750,	1	; 숏메이스	
+ITEM		13,		750,	1	; 숏메이스	
+ITEM		14,		750,	1	; 숏메이스
 
-ITEM		15,		1250,	1	; Short Bow
-ITEM		16,		1250,	1	; Short Bow
-ITEM		17,		1250,	1	; Short Bow
-ITEM		18,		1250,	1	; Short Bow
-ITEM		19,		1250,	1	; Short Bow
-ITEM		20,		1250,	1	; Short Bow
-ITEM		21,		1250,	1	; Short Bow
+ITEM		15,		1250,	1	; 숏보우
+ITEM		16,		1250,	1	; 숏보우
+ITEM		17,		1250,	1	; 숏보우
+ITEM		18,		1250,	1	; 숏보우
+ITEM		19,		1250,	1	; 숏보우
+ITEM		20,		1250,	1	; 숏보우
+ITEM		21,		1250,	1	; 숏보우
 
-ITEM		22,		1750,	1	; Short Staff
-ITEM		23,		1750,	1	; Short Staff
-ITEM		24,		1750,	1	; Short Staff
-ITEM		25,		1750,	1	; Short Staff
-ITEM		26,		1750,	1	; Short Staff
-ITEM		27,		1750,	1	; Short Staff
-ITEM		28,		1750,	1	; Short Staff
-
+ITEM		22,		1750,	1	; 숏스태프
+ITEM		23,		1750,	1	; 숏스태프
+ITEM		24,		1750,	1	; 숏스태프
+ITEM		25,		1750,	1	; 숏스태프
+ITEM		26,		1750,	1	; 숏스태프
+ITEM		27,		1750,	1	; 숏스태프
+ITEM		28,		1750,	1	; 숏스태프
 ;-----------------------------------------------------------------------------------
-;		Class		Skill ID	; 占쏙옙占쏙옙占실몌옙 占싱뱄옙 占쏙옙占쏙옙占쏙옙		
-; ---------------------------
-; 5/4/2023: Cooking pot.
-; ---------------------------
-SKILL       1,	    29106,		; Cooking.
+; 		    Class	Skill ID	; 생성되면 이미 배운것임		
+SKILL		22,		6000,		; 매직미사일01
+SKILL		23,		6000,		; 매직미사일01
+SKILL		24,		6000,		; 매직미사일01
+SKILL		25,		6000,		; 매직미사일01
+SKILL		26,		6000,		; 매직미사일01
+SKILL		27,		6000,		; 매직미사일01
+SKILL		28,		6000,		; 매직미사일01
+
+SKILL       1,	    29200,	    ;은빛날개 사용
+SKILL       2,	    29200,		;은빛날개 사용
+SKILL       3,	    29200,      ;은빛날개 사용
+SKILL       4,	    29200,      ;은빛날개 사용
+SKILL       5,	    29200,      ;은빛날개 사용
+SKILL       6,	    29200,      ;은빛날개 사용
+SKILL       7,	    29200,      ;은빛날개 사용
+SKILL       8,	    29200,		;은빛날개 사용
+SKILL       9,	    29200,      ;은빛날개 사용
+SKILL       10,	    29200,      ;은빛날개 사용
+SKILL       11,	    29200,      ;은빛날개 사용
+SKILL       12,	    29200,		;은빛날개 사용
+SKILL       13,	    29200,      ;은빛날개 사용
+SKILL		14,	    29200,      ;은빛날개 사용
+SKILL       15,	    29200,      ;은빛날개 사용
+SKILL       16,	    29200,		;은빛날개 사용
+SKILL       17,	    29200,      ;은빛날개 사용
+SKILL       18,	    29200,      ;은빛날개 사용
+SKILL       19,	    29200,      ;은빛날개 사용
+SKILL       20,		29200,		;은빛날개 사용
+SKILL       21,	    29200,      ;은빛날개 사용
+SKILL       22,	    29200,      ;은빛날개 사용
+SKILL       23,	    29200,      ;은빛날개 사용
+SKILL       24,	    29200,		;은빛날개 사용
+SKILL       25,	    29200,      ;은빛날개 사용
+SKILL       26,	    29200,      ;은빛날개 사용
+SKILL       27,	    29200,      ;은빛날개 사용
+SKILL       28,	    29200,		;은빛날개 사용
+
+SKILL       1,	    29201,	    ;귀환스크롤 사용
+SKILL       2,	    29201,		;귀환스크롤 사용
+SKILL       3,	    29201,      ;귀환스크롤 사용
+SKILL       4,	    29201,      ;귀환스크롤 사용
+SKILL       5,	    29201,      ;귀환스크롤 사용
+SKILL       6,	    29201,      ;귀환스크롤 사용
+SKILL       7,	    29201,      ;귀환스크롤 사용
+SKILL       8,	    29201,		;귀환스크롤 사용
+SKILL       9,	    29201,      ;귀환스크롤 사용
+SKILL       10,	    29201,      ;귀환스크롤 사용
+SKILL       11,	    29201,      ;귀환스크롤 사용
+SKILL       12,	    29201,		;귀환스크롤 사용
+SKILL       13,	    29201,      ;귀환스크롤 사용
+SKILL		14,	    29201,      ;귀환스크롤 사용
+SKILL       15,	    29201,      ;귀환스크롤 사용
+SKILL       16,	    29201,		;귀환스크롤 사용
+SKILL       17,	    29201,      ;귀환스크롤 사용
+SKILL       18,	    29201,      ;귀환스크롤 사용
+SKILL       19,	    29201,      ;귀환스크롤 사용
+SKILL       20,		29201,		;귀환스크롤 사용
+SKILL       21,	    29201,      ;귀환스크롤 사용
+SKILL       22,	    29201,      ;귀환스크롤 사용
+SKILL       23,	    29201,      ;귀환스크롤 사용
+SKILL       24,	    29201,		;귀환스크롤 사용
+SKILL       25,	    29201,      ;귀환스크롤 사용
+SKILL       26,	    29201,      ;귀환스크롤 사용
+SKILL       27,	    29201,      ;귀환스크롤 사용
+SKILL       28,	    29201,		;귀환스크롤 사용
+
+SKILL       1,	    29202,	    ;스킬 배움
+SKILL       2,	    29202,		;스킬 배움
+SKILL       3,	    29202,      ;스킬 배움
+SKILL       4,	    29202,      ;스킬 배움
+SKILL       5,	    29202,      ;스킬 배움
+SKILL       6,	    29202,      ;스킬 배움
+SKILL       7,	    29202,      ;스킬 배움
+SKILL       8,	    29202,		;스킬 배움
+SKILL       9,	    29202,      ;스킬 배움
+SKILL       10,	    29202,      ;스킬 배움
+SKILL       11,	    29202,      ;스킬 배움
+SKILL       12,	    29202,		;스킬 배움
+SKILL       13,	    29202,      ;스킬 배움
+SKILL		14,	    29202,      ;스킬 배움
+SKILL       15,	    29202,      ;스킬 배움
+SKILL       16,	    29202,		;스킬 배움
+SKILL       17,	    29202,      ;스킬 배움
+SKILL       18,	    29202,      ;스킬 배움
+SKILL       19,	    29202,      ;스킬 배움
+SKILL       20,		29202,		;스킬 배움
+SKILL       21,	    29202,      ;스킬 배움
+SKILL       22,	    29202,      ;스킬 배움
+SKILL       23,	    29202,      ;스킬 배움
+SKILL       24,	    29202,		;스킬 배움
+SKILL       25,	    29202,      ;스킬 배움
+SKILL       26,	    29202,      ;스킬 배움
+SKILL       27,	    29202,      ;스킬 배움
+SKILL       28,	    29202,		;스킬 배움
+
+SKILL       1,	    29203,	    ;포션 사용
+SKILL       2,	    29203,		;포션 사용
+SKILL       3,	    29203,      ;포션 사용
+SKILL       4,	    29203,      ;포션 사용
+SKILL       5,	    29203,      ;포션 사용
+SKILL       6,	    29203,      ;포션 사용
+SKILL       7,	    29203,      ;포션 사용
+SKILL       8,	    29203,		;포션 사용
+SKILL       9,	    29203,      ;포션 사용
+SKILL       10,	    29203,      ;포션 사용
+SKILL       11,	    29203,      ;포션 사용
+SKILL       12,	    29203,		;포션 사용
+SKILL       13,	    29203,      ;포션 사용
+SKILL		14,	    29203,      ;포션 사용
+SKILL       15,	    29203,      ;포션 사용
+SKILL       16,	    29203,		;포션 사용
+SKILL       17,	    29203,      ;포션 사용
+SKILL       18,	    29203,      ;포션 사용
+SKILL       19,	    29203,      ;포션 사용
+SKILL       20,		29203,		;포션 사용
+SKILL       21,	    29203,      ;포션 사용
+SKILL       22,	    29203,      ;포션 사용
+SKILL       23,	    29203,      ;포션 사용
+SKILL       24,	    29203,		;포션 사용
+SKILL       25,	    29203,      ;포션 사용
+SKILL       26,	    29203,      ;포션 사용
+SKILL       27,	    29203,      ;포션 사용
+SKILL       28,	    29203,		;포션 사용
+
+SKILL       1,	    29204,	    ;상자 열기
+SKILL       2,	    29204,		;상자 열기
+SKILL       3,	    29204,      ;상자 열기
+SKILL       4,	    29204,      ;상자 열기
+SKILL       5,	    29204,      ;상자 열기
+SKILL       6,	    29204,      ;상자 열기
+SKILL       7,	    29204,      ;상자 열기
+SKILL       8,	    29204,		;상자 열기
+SKILL       9,	    29204,      ;상자 열기
+SKILL       10,	    29204,      ;상자 열기
+SKILL       11,	    29204,      ;상자 열기
+SKILL       12,	    29204,		;상자 열기
+SKILL       13,	    29204,      ;상자 열기
+SKILL		14,	    29204,      ;상자 열기
+SKILL       15,	    29204,      ;상자 열기
+SKILL       16,	    29204,		;상자 열기
+SKILL       17,	    29204,      ;상자 열기
+SKILL       18,	    29204,      ;상자 열기
+SKILL       19,	    29204,      ;상자 열기
+SKILL       20,		29204,		;상자 열기
+SKILL       21,	    29204,      ;상자 열기
+SKILL       22,	    29204,      ;상자 열기
+SKILL       23,	    29204,      ;상자 열기
+SKILL       24,	    29204,		;상자 열기
+SKILL       25,	    29204,      ;상자 열기
+SKILL       26,	    29204,      ;상자 열기
+SKILL       27,	    29204,      ;상자 열기
+SKILL       28,	    29204,		;상자 열기
+
+SKILL       1,	    29205,	    ;스크롤 사용
+SKILL       2,	    29205,		;스크롤 사용
+SKILL       3,	    29205,      ;스크롤 사용
+SKILL       4,	    29205,      ;스크롤 사용
+SKILL       5,	    29205,      ;스크롤 사용
+SKILL       6,	    29205,      ;스크롤 사용
+SKILL       7,	    29205,      ;스크롤 사용
+SKILL       8,	    29205,		;스크롤 사용
+SKILL       9,	    29205,      ;스크롤 사용
+SKILL       10,	    29205,      ;스크롤 사용
+SKILL       11,	    29205,      ;스크롤 사용
+SKILL       12,	    29205,		;스크롤 사용
+SKILL       13,	    29205,      ;스크롤 사용
+SKILL		14,	    29205,      ;스크롤 사용
+SKILL       15,	    29205,      ;스크롤 사용
+SKILL       16,	    29205,		;스크롤 사용
+SKILL       17,	    29205,      ;스크롤 사용
+SKILL       18,	    29205,      ;스크롤 사용
+SKILL       19,	    29205,      ;스크롤 사용
+SKILL       20,		29205,		;스크롤 사용
+SKILL       21,	    29205,      ;스크롤 사용
+SKILL       22,	    29205,      ;스크롤 사용
+SKILL       23,	    29205,      ;스크롤 사용
+SKILL       24,	    29205,		;스크롤 사용
+SKILL       25,	    29205,      ;스크롤 사용
+SKILL       26,	    29205,      ;스크롤 사용
+SKILL       27,	    29205,      ;스크롤 사용
+SKILL       28,	    29205,		;스크롤 사용
+; ------------------------------
+; 5/4/2023: Cooking and Camping
+; ------------------------------
+SKILL       1,	    29106,		; Cooking
+SKILL       1,	    29208,		; Camping
 SKILL       8,	    29106,		; Cooking
+SKILL       8,	    29208,		; Camping
 SKILL       15,	    29106,		; Cooking
+SKILL       15,	    29208,		; Camping
 SKILL       22,	    29106,		; Cooking
-SKILL       1,	    29208,		; Camping.
-SKILL       8,	    29208,		; Camping.
-SKILL       15,	    29208,		; Camping.
-SKILL       22,	    29208,		; Camping.
+SKILL       22,	    29208,		; Camping
+;-----------------------------------------------------------------------------------							
+; 		    Class	Quest ID	; 생성되면 이미 퀘스트 받은상태로 됨			
+;QUEST		1,		0			; ?
+;QUEST		8,		0			; ?
+;QUEST		15,		0			; ?
+;QUEST		22,		0			; ?
 
-SKILL		22,		6000,		; Magic Missile [01]
-SKILL		23,		6000,		; Magic Missile [01]
-SKILL		24,		6000,		; Magic Missile [01]
-SKILL		25,		6000,		; Magic Missile [01]
-SKILL		26,		6000,		; Magic Missile [01]
-SKILL		27,		6000,		; Magic Missile [01]
-SKILL		28,		6000,		; Magic Missile [01]
-
-SKILL       1,	    29200,	    ; Use Silver Wing
-SKILL       2,	    29200,		; Use Silver Wing
-SKILL       3,	    29200,      ; Use Silver Wing
-SKILL       4,	    29200,      ; Use Silver Wing
-SKILL       5,	    29200,      ; Use Silver Wing
-SKILL       6,	    29200,      ; Use Silver Wing
-SKILL       7,	    29200,      ; Use Silver Wing
-SKILL       8,	    29200,		; Use Silver Wing
-SKILL       9,	    29200,      ; Use Silver Wing
-SKILL       10,	    29200,      ; Use Silver Wing
-SKILL       11,	    29200,      ; Use Silver Wing
-SKILL       12,	    29200,		; Use Silver Wing
-SKILL       13,	    29200,      ; Use Silver Wing
-SKILL		14,	    29200,      ; Use Silver Wing
-SKILL       15,	    29200,      ; Use Silver Wing
-SKILL       16,	    29200,		; Use Silver Wing
-SKILL       17,	    29200,      ; Use Silver Wing
-SKILL       18,	    29200,      ; Use Silver Wing
-SKILL       19,	    29200,      ; Use Silver Wing
-SKILL       20,		29200,		; Use Silver Wing
-SKILL       21,	    29200,      ; Use Silver Wing
-SKILL       22,	    29200,      ; Use Silver Wing
-SKILL       23,	    29200,      ; Use Silver Wing
-SKILL       24,	    29200,		; Use Silver Wing
-SKILL       25,	    29200,      ; Use Silver Wing
-SKILL       26,	    29200,      ; Use Silver Wing
-SKILL       27,	    29200,      ; Use Silver Wing
-SKILL       28,	    29200,		; Use Silver Wing
-
-SKILL       1,	    29201,	    ; Use Return Scroll
-SKILL       2,	    29201,		; Use Return Scroll
-SKILL       3,	    29201,      ; Use Return Scroll
-SKILL       4,	    29201,      ; Use Return Scroll
-SKILL       5,	    29201,      ; Use Return Scroll
-SKILL       6,	    29201,      ; Use Return Scroll
-SKILL       7,	    29201,      ; Use Return Scroll
-SKILL       8,	    29201,		; Use Return Scroll
-SKILL       9,	    29201,      ; Use Return Scroll
-SKILL       10,	    29201,      ; Use Return Scroll
-SKILL       11,	    29201,      ; Use Return Scroll
-SKILL       12,	    29201,		; Use Return Scroll
-SKILL       13,	    29201,      ; Use Return Scroll
-SKILL		14,	    29201,      ; Use Return Scroll
-SKILL       15,	    29201,      ; Use Return Scroll
-SKILL       16,	    29201,		; Use Return Scroll
-SKILL       17,	    29201,      ; Use Return Scroll
-SKILL       18,	    29201,      ; Use Return Scroll
-SKILL       19,	    29201,      ; Use Return Scroll
-SKILL       20,		29201,		; Use Return Scroll
-SKILL       21,	    29201,      ; Use Return Scroll
-SKILL       22,	    29201,      ; Use Return Scroll
-SKILL       23,	    29201,      ; Use Return Scroll
-SKILL       24,	    29201,		; Use Return Scroll
-SKILL       25,	    29201,      ; Use Return Scroll
-SKILL       26,	    29201,      ; Use Return Scroll
-SKILL       27,	    29201,      ; Use Return Scroll
-SKILL       28,	    29201,		; Use Return Scroll
-
-SKILL       1,	    29202,	    ; Skill Learning
-SKILL       2,	    29202,		; Skill Learning
-SKILL       3,	    29202,      ; Skill Learning
-SKILL       4,	    29202,      ; Skill Learning
-SKILL       5,	    29202,      ; Skill Learning
-SKILL       6,	    29202,      ; Skill Learning
-SKILL       7,	    29202,      ; Skill Learning
-SKILL       8,	    29202,		; Skill Learning
-SKILL       9,	    29202,      ; Skill Learning
-SKILL       10,	    29202,      ; Skill Learning
-SKILL       11,	    29202,      ; Skill Learning
-SKILL       12,	    29202,		; Skill Learning
-SKILL       13,	    29202,      ; Skill Learning
-SKILL		14,	    29202,      ; Skill Learning
-SKILL       15,	    29202,      ; Skill Learning
-SKILL       16,	    29202,		; Skill Learning
-SKILL       17,	    29202,      ; Skill Learning
-SKILL       18,	    29202,      ; Skill Learning
-SKILL       19,	    29202,      ; Skill Learning
-SKILL       20,		29202,		; Skill Learning
-SKILL       21,	    29202,      ; Skill Learning
-SKILL       22,	    29202,      ; Skill Learning
-SKILL       23,	    29202,      ; Skill Learning
-SKILL       24,	    29202,		; Skill Learning
-SKILL       25,	    29202,      ; Skill Learning
-SKILL       26,	    29202,      ; Skill Learning
-SKILL       27,	    29202,      ; Skill Learning
-SKILL       28,	    29202,		; Skill Learning
-
-SKILL       1,	    29203,	    ; Use Potion
-SKILL       2,	    29203,		; Use Potion
-SKILL       3,	    29203,      ; Use Potion
-SKILL       4,	    29203,      ; Use Potion
-SKILL       5,	    29203,      ; Use Potion
-SKILL       6,	    29203,      ; Use Potion
-SKILL       7,	    29203,      ; Use Potion
-SKILL       8,	    29203,		; Use Potion
-SKILL       9,	    29203,      ; Use Potion
-SKILL       10,	    29203,      ; Use Potion
-SKILL       11,	    29203,      ; Use Potion
-SKILL       12,	    29203,		; Use Potion
-SKILL       13,	    29203,      ; Use Potion
-SKILL		14,	    29203,      ; Use Potion
-SKILL       15,	    29203,      ; Use Potion
-SKILL       16,	    29203,		; Use Potion
-SKILL       17,	    29203,      ; Use Potion
-SKILL       18,	    29203,      ; Use Potion
-SKILL       19,	    29203,      ; Use Potion
-SKILL       20,		29203,		; Use Potion
-SKILL       21,	    29203,      ; Use Potion
-SKILL       22,	    29203,      ; Use Potion
-SKILL       23,	    29203,      ; Use Potion
-SKILL       24,	    29203,		; Use Potion
-SKILL       25,	    29203,      ; Use Potion
-SKILL       26,	    29203,      ; Use Potion
-SKILL       27,	    29203,      ; Use Potion
-SKILL       28,	    29203,		; Use Potion
-
-SKILL       1,	    29204,	    ; Open Box
-SKILL       2,	    29204,		; Open Box
-SKILL       3,	    29204,      ; Open Box
-SKILL       4,	    29204,      ; Open Box
-SKILL       5,	    29204,      ; Open Box
-SKILL       6,	    29204,      ; Open Box
-SKILL       7,	    29204,      ; Open Box
-SKILL       8,	    29204,		; Open Box
-SKILL       9,	    29204,      ; Open Box
-SKILL       10,	    29204,      ; Open Box
-SKILL       11,	    29204,      ; Open Box
-SKILL       12,	    29204,		; Open Box
-SKILL       13,	    29204,      ; Open Box
-SKILL		14,	    29204,      ; Open Box
-SKILL       15,	    29204,      ; Open Box
-SKILL       16,	    29204,		; Open Box
-SKILL       17,	    29204,      ; Open Box
-SKILL       18,	    29204,      ; Open Box
-SKILL       19,	    29204,      ; Open Box
-SKILL       20,		29204,		; Open Box
-SKILL       21,	    29204,      ; Open Box
-SKILL       22,	    29204,      ; Open Box
-SKILL       23,	    29204,      ; Open Box
-SKILL       24,	    29204,		; Open Box
-SKILL       25,	    29204,      ; Open Box
-SKILL       26,	    29204,      ; Open Box
-SKILL       27,	    29204,      ; Open Box
-SKILL       28,	    29204,		; Open Box
-
-SKILL       1,	    29205,	    ; Use Scroll
-SKILL       2,	    29205,		; Use Scroll
-SKILL       3,	    29205,      ; Use Scroll
-SKILL       4,	    29205,      ; Use Scroll
-SKILL       5,	    29205,      ; Use Scroll
-SKILL       6,	    29205,      ; Use Scroll
-SKILL       7,	    29205,      ; Use Scroll
-SKILL       8,	    29205,		; Use Scroll
-SKILL       9,	    29205,      ; Use Scroll
-SKILL       10,	    29205,      ; Use Scroll
-SKILL       11,	    29205,      ; Use Scroll
-SKILL       12,	    29205,		; Use Scroll
-SKILL       13,	    29205,      ; Use Scroll
-SKILL		14,	    29205,      ; Use Scroll
-SKILL       15,	    29205,      ; Use Scroll
-SKILL       16,	    29205,		; Use Scroll
-SKILL       17,	    29205,      ; Use Scroll
-SKILL       18,	    29205,      ; Use Scroll
-SKILL       19,	    29205,      ; Use Scroll
-SKILL       20,		29205,		; Use Scroll
-SKILL       21,	    29205,      ; Use Scroll
-SKILL       22,	    29205,      ; Use Scroll
-SKILL       23,	    29205,      ; Use Scroll
-SKILL       24,	    29205,		; Use Scroll
-SKILL       25,	    29205,      ; Use Scroll
-SKILL       26,	    29205,      ; Use Scroll
-SKILL       27,	    29205,      ; Use Scroll
-SKILL       28,	    29205,		; Use Scroll
-
-;-----------------------------------------------------------------------------------
-; 		    Class	Quest ID	;
-;-----------------------------------------------------------------------------------
-;QUEST		1,		0			;
-;-----------------------------------------------------------------------------------
 
 #END
