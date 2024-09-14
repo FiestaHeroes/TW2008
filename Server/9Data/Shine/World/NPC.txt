@@ -331,14 +331,14 @@
 #recordin	LinkTable								UrgSwa012	UrgSwaDn01	UrgSwaDn01	5665	6918	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	UrgSwa01	9028	12890	90	0	Gate	UrgSwa013								
 #recordin	LinkTable								UrgSwa013	SwaDn01	SwaDn01	6067	11124	0	90	99	1
-#recordin	ShineNPC	MapLinkGate	UrgSwa01	11546	15781	0	0	Gate	UrgSwa014								
-#recordin	LinkTable								UrgSwa014	R_Helga01	R_Helga01	2318	2675	0	1	110	1
+#recordin	ShineNPC	MapLinkGate	EldSleep01	7226	11631	22	0	Gate	EldSleep013										
+#recordin	LinkTable								EldSleep013	R_Helga01	R_Helga01	3279	1201	0	1	110	1
 #recordin	ShineNPC	MapLinkGate	SwaDn01	6068	11314	0	0	Gate	SwaDn011								
 #recordin	LinkTable								SwaDn011	UrgSwa01	UrgSwa01	9177	12881	0	1	150	1
 #recordin	ShineNPC	MapLinkGate	UrgSwaDn01	5658	6790	2	0	Gate	UrgSwaDn011								
 #recordin	LinkTable								UrgSwaDn011	UrgSwa01	UrgSwa01	20290	22302	0	1	150	1
-#recordin	ShineNPC	MapLinkGate	R_Helga01	2306	2553	0	0	Gate	R_Helga011								
-#recordin	LinkTable								R_Helga011	UrgSwa01	UrgSwa01	11773	16078	0	1	150	1
+#recordin	ShineNPC	MapLinkGate	R_Helga01	3279	1131	0	0	Gate	R_Helga011									
+#recordin	LinkTable								R_Helga011	EldSleep01	EldSleep01	7274	11721	0	1	150	1
 #recordin	ShineNPC	EldSpeGuard03	BFGate01	1585	162	177	0	Gate	BFGate011								
 #recordin	LinkTable								BFGate011	Eld	Eld	17511	11551	0	1	150	1
 #recordin	ShineNPC	EldSpeGuard03	BFGate01	1799	1622	96	0	Gate	BFGate012								
