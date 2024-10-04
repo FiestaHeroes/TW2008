@@ -6,7 +6,7 @@
   <INTEGER>
 #ENDDEFINE
 
-MY_SERVER "_Zone1",	"_Zone1",	6,	0,	1
-#include "../9Data/_ServerInfo.txt"
+MY_SERVER "_Zone0",	"_Zone0",	6,	0,	0
+#include "../../9Data/ServerInfo/ServerInfo.txt"
 
 #END

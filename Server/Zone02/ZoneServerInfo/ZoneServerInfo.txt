@@ -7,6 +7,6 @@
 #ENDDEFINE
 
 MY_SERVER "_Zone2",	"_Zone2",	6,	0,	2
-#include "../9Data/_ServerInfo.txt"
+#include "../../9Data/ServerInfo/ServerInfo.txt"
 
 #END

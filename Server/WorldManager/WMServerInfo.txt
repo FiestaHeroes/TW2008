@@ -7,7 +7,7 @@
 #ENDDEFINE
 
 MY_SERVER "_WorldManager", "_WorldManager", 5,          0,         0
-#include "../9Data/_ServerInfo.txt"
+#include "../9Data/ServerInfo/ServerInfo.txt"
 
 #END
 

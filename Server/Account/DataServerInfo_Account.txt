@@ -7,6 +7,6 @@
 #ENDDEFINE
 
 MY_SERVER "_Account", "_Account", 0,          0,         0
-#include "../9Data/_ServerInfo.txt"
+#include "../9Data/ServerInfo/ServerInfo.txt"
 
 #END
