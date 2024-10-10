@@ -193,7 +193,6 @@
 #record		Rcos01_54	LittleHob	3	5	1	7	-3	15	-2	25	0	60	1	120	2
 #record		Rcos01_55	Honeying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
 #record		Rcos01_56	Honeying	3	5	1	7	-3	15	-2	25	0	60	1	120	2
-#record		Rcos01_57	Helga	1	3600	3000	4000	-3	15	-2	25	0	60	1	120	2
 #record		Rcos01_57	MaraElite	3	5	1	7	-3	15	-2	25	0	60	1	120	2
 #record		Rcos01_58	MaraCrew	3	5	1	7	-3	15	-2	25	0	60	1	120	2
 #record		Rcos01_59	MaraCrew	3	5	1	7	-3	15	-2	25	0	60	1	120	2
